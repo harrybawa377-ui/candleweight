@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Primary SEO Meta Tags -->
+    <title>Candle weight - Real-Time Market Analytics & Excel Live Streaming</title>
+    <meta name="description" content="Explore historical market candle data, track long-term trend analytics, and analyze past order depth with Candle weight.">
+
+    <!-- Browser Favicon -->
+    <link rel="icon" type="image/png" href="/favicon.png">
+
+    <!-- Vercel Analytics -->
+    <script defer src="/_vercel/insights/script.js"></script>
+
+    <!-- Open Graph / Facebook (Social Preview) -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://candleweight.com/">
+    <meta property="og:title" content="Candle weight - Real-Time Market Analytics & Excel Live Streaming">
+    <meta property="og:description" content="Access live data feeds, track market strength, and stream your Excel data online seamlessly with Candle weight.">
+    <meta property="og:image" content="https://candleweight.com/og-image.jpg">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Candle weight - Real-Time Market Analytics">
+    <meta name="twitter:description" content="High-speed market analytics, order depth tracking, and direct Excel-to-web streaming.">
+    <meta name="twitter:image" content="https://candleweight.com/og-image.jpg">
+
+    <!-- Structured Schema Data (JSON-LD) for Search Engines -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "Candle weight",
+      "operatingSystem": "Web",
+      "applicationCategory": "FinanceApplication",
+      "description": "Real-time stock market depth and Excel live data synchronization platform.",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      }
+    }
+    </script>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        :root {
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+            --border-color: #334155;
+            --text-primary: #f8fafc;
+            --text-secondary: #94a3b8;
+            --accent-color: #38bdf8;
+            --live-red: #ef4444;
+            --live-green: #22c55e;
+            --purple-glow: #818cf8;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-primary);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* TOP NAV */
+        .top-nav {
+            background-color: #0b1120;
+            border-bottom: 1px solid var(--border-color);
+            padding: 0 2rem;
+            min-height: 50px;
+            display: flex;
+            align-items: center;
+        }
+
+        .top-nav-links {
+            list-style: none;
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        .top-nav-links a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 500;
+            transition: color 0.2s ease;
+        }
+
+        .top-nav-links a:hover,
+        .top-nav-links a.active {
+            color: var(--accent-color);
+        }
+
+        /* BRAND HEADER */
+        .brand-header {
+            background-color: var(--card-bg);
+            border-bottom: 1px solid var(--border-color);
+            padding: 1.5rem 2rem;
+        }
+
+        .brand-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 1rem;
+        }
+
+        .brand-left {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .brand-logo {
+            width: 48px;
+            height: 48px;
+            background: linear-gradient(135deg, var(--accent-color), var(--purple-glow));
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 1.4rem;
+            color: #ffffff;
+            box-shadow: 0 4px 12px rgba(56, 189, 248, 0.25);
+            flex-shrink: 0;
+        }
+
+        .brand-title h1 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--text-primary);
+        }
+
+        .brand-title p {
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+        }
+
+        /* MAIN CONTENT */
+        .main-content {
+            flex: 1;
+            max-width: 1200px;
+            width: 100%;
+            margin: 2rem auto;
+            padding: 0 2rem;
+        }
+
+        .content-card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 2rem;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3);
+        }
+
+        .live-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .header-meta {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .record-count {
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+            background: rgba(51, 65, 85, 0.5);
+            padding: 4px 10px;
+            border-radius: 6px;
+        }
+
+        .status-badge {
+            font-size: 0.85rem;
+            color: var(--live-green);
+            background-color: rgba(34, 197, 94, 0.1);
+            border: 1px solid rgba(34, 197, 94, 0.3);
+            padding: 6px 12px;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        /* SEARCH CONTROLS BAR */
+        .controls-bar {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            align-items: center;
+            background-color: #0b1120;
+            padding: 1.25rem;
+            border-radius: 8px;
+            border: 1px solid var(--border-color);
+            margin-bottom: 1.5rem;
+        }
+
+        .control-group {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .control-group label {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            font-weight: 500;
+        }
+
+        input[type="date"], input[type="text"] {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            color: var(--text-primary);
+            padding: 8px 12px;
+            border-radius: 6px;
+            font-size: 0.9rem;
+            outline: none;
+            color-scheme: dark;
+        }
+
+        input[type="date"]:focus, input[type="text"]:focus {
+            border-color: var(--accent-color);
+        }
+
+        .btn-search {
+            background-color: var(--accent-color);
+            color: #000000;
+            border: none;
+            padding: 8px 18px;
+            border-radius: 6px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: opacity 0.2s ease;
+        }
+
+        .btn-search:hover {
+            opacity: 0.9;
+        }
+
+        /* DATA TABLE STYLING */
+        .table-wrapper {
+            overflow-x: auto;
+            max-height: 500vh;
+            overflow-y: auto;
+            border-radius: 6px;
+            border: 1px solid var(--border-color);
+            -webkit-overflow-scrolling: touch;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: left;
+        }
+
+        th {
+            position: sticky;
+            top: 0;
+            background-color: #0b1120;
+            color: var(--accent-color);
+            padding: 12px 16px;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            border-bottom: 2px solid var(--border-color);
+            white-space: nowrap;
+            z-index: 10;
+            cursor: pointer;
+            user-select: none;
+            transition: background-color 0.2s ease;
+        }
+
+        th:hover {
+            background-color: #1e293b;
+        }
+
+        .sort-icon {
+            margin-left: 6px;
+            font-size: 0.8rem;
+            opacity: 0.6;
+        }
+
+        td {
+            padding: 12px 16px;
+            border-bottom: 1px solid var(--border-color);
+            color: var(--text-primary);
+            font-size: 0.95rem;
+            white-space: nowrap;
+        }
+
+        tr:hover {
+            background-color: rgba(255, 255, 255, 0.02);
+        }
+
+        /* FOOTER */
+        .site-footer {
+            background-color: #0b1120;
+            border-top: 1px solid var(--border-color);
+            padding: 2rem;
+            margin-top: auto;
+        }
+
+        .footer-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .footer-info {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+
+        .footer-links {
+            list-style: none;
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        .footer-links a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 0.85rem;
+            transition: color 0.2s ease;
+        }
+
+        .footer-links a:hover {
+            color: var(--accent-color);
+        }
+
+        /* RESPONSIVE MOBILE MEDIA QUERIES */
+        @media screen and (max-width: 768px) {
+            .top-nav {
+                padding: 0 1rem;
+            }
+
+            .top-nav-links {
+                gap: 1rem;
+            }
+
+            .brand-header {
+                padding: 1rem;
+            }
+
+            .main-content {
+                padding: 0 0.5rem;
+                margin: 1rem auto;
+            }
+
+            .content-card {
+                padding: 1rem 0.75rem;
+            }
+
+            .controls-bar {
+                padding: 1rem;
+                flex-direction: column;
+                align-items: stretch;
+            }
+
+            .control-group {
+                flex-direction: column;
+                align-items: stretch;
+                width: 100%;
+            }
+
+            .control-group input[type="date"],
+            .control-group input[type="text"],
+            .btn-search {
+                width: 100%;
+            }
+
+            .control-group[style*="margin-left: auto"] {
+                margin-left: 0 !important;
+            }
+
+            .live-header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            /* FIX: Mobile table font and sizing */
+            th, td {
+                padding: 10px 12px;
+                font-size: 0.88rem;
+            }
+
+            th {
+                min-width: 110px; /* Prevents column header text from shrinking */
+            }
+
+            .table-wrapper {
+                max-height: 300vh;
+            }
+        }
+
+        @media screen and (max-width: 600px) {
+            .footer-container {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 0.8rem;
+            }
+
+            .footer-links {
+                gap: 1rem;
+                flex-wrap: wrap;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- TOP NAV -->
+    <nav class="top-nav">
+        <ul class="top-nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="live.html">Live</a></li>
+            <li><a href="history.html" class="active">History</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="terms.html">Terms</a></li>
+            <li><a href="support.html">Support</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+        </ul>
+    </nav>
+
+    <!-- BRAND HEADER -->
+    <header class="brand-header">
+        <div class="brand-container">
+            <div class="brand-left">
+                <div class="brand-logo">CW</div>
+                <div class="brand-title">
+                    <h1>Candle weight</h1>
+                    <p>History Search Engine</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main class="main-content">
+        <div class="content-card">
+            <div class="live-header">
+                <h2>Search History Files</h2>
+                <div class="header-meta">
+                    <span id="record-count" class="record-count">0 Records</span>
+                    <div class="status-badge">
+                        <span style="width:8px; height:8px; background:var(--live-green); border-radius:50%;"></span>
+                        <span id="sync-status">Ready</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SEARCH CONTROLS -->
+            <div class="controls-bar">
+                <div class="control-group">
+                    <label for="date-input">Select Date:</label>
+                    <input type="date" id="date-input">
+                </div>
+
+                <button class="btn-search" onclick="searchHistory()">Search Date</button>
+
+                <div class="control-group" style="margin-left: auto;">
+                    <input type="text" id="table-filter" placeholder="Filter rows..." onkeyup="filterRows()">
+                </div>
+            </div>
+
+            <!-- TABLE CONTAINER -->
+            <div class="table-wrapper">
+                <table id="history-table">
+                    <thead id="table-head">
+                        <tr><th>Status</th></tr>
+                    </thead>
+                    <tbody id="table-body">
+                        <tr><td style="color: var(--text-secondary);">Select a date from the calendar and click Search.</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+
+    <!-- FOOTER WITH LINKS -->
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-info">
+                &copy; 2025-2026 Candle weight Platform. All rights reserved.
+            </div>
+            <ul class="footer-links">
+                <li><a href="privacy.html">Privacy Policy</a></li>
+                <li><a href="terms.html">Terms of Service</a></li>
+                <li><a href="support.html">Help Center</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <!-- JAVASCRIPT: CALENDAR DATE PARSER, FALLBACK LOOKUP & COLUMN SORTING -->
+    <script>
+        let currentLoadedData = [];
+        let currentDisplayData = [];
+        let sortColumn = null;
+        let sortAscending = true;
+
+        function getCandidateFilenames() {
+            const dateVal = document.getElementById('date-input').value; // Returns yyyy-mm-dd
+
+            if (!dateVal) return [];
+
+            const parts = dateVal.split('-'); // [yyyy, mm, dd]
+            const year = parts[0].slice(-2);  // '26'
+            
+            const monthPadded = parts[1];      // '09'
+            const dayPadded = parts[2];        // '06'
+            
+            const monthUnpadded = String(parseInt(parts[1], 10)); // '9'
+            const dayUnpadded = String(parseInt(parts[2], 10));   // '6'
+
+            let candidates = [];
+
+            // Primary format: 06-09-26.json
+            candidates.push(`${dayPadded}-${monthPadded}-${year}.json`);
+
+            // Fallback format: 6-9-26.json
+            if (dayPadded !== dayUnpadded || monthPadded !== monthUnpadded) {
+                candidates.push(`${dayUnpadded}-${monthUnpadded}-${year}.json`);
+            }
+
+            return candidates;
+        }
+
+        async function searchHistory() {
+            const candidates = getCandidateFilenames();
+            const syncStatus = document.getElementById('sync-status');
+            const tableHead = document.getElementById('table-head');
+            const tableBody = document.getElementById('table-body');
+            const recordCount = document.getElementById('record-count');
+
+            if (candidates.length === 0) {
+                alert("Please select a date from the calendar.");
+                return;
+            }
+
+            syncStatus.innerText = `Searching...`;
+
+            let successResponse = null;
+            let loadedFilename = "";
+
+            for (const filename of candidates) {
+                try {
+                    const response = await fetch(`history-pages/${filename}?t=${new Date().getTime()}`);
+                    if (response.ok) {
+                        successResponse = response;
+                        loadedFilename = filename;
+                        break;
+                    }
+                } catch (e) {
+                    // Fail silently to try next candidate
+                }
+            }
+
+            if (!successResponse) {
+                tableHead.innerHTML = '<tr><th>Error</th></tr>';
+                tableBody.innerHTML = `<tr><td style="color: var(--live-red);">Could not find file for this date</td></tr>`;
+                recordCount.innerText = '0 Records';
+                syncStatus.innerText = 'File Not Found';
+                currentLoadedData = [];
+                currentDisplayData = [];
+                return;
+            }
+
+            try {
+                const data = await successResponse.json();
+
+                if (!Array.isArray(data) || data.length === 0) {
+                    tableHead.innerHTML = '<tr><th>Status</th></tr>';
+                    tableBody.innerHTML = `<tr><td>File <strong>${loadedFilename}</strong> exists, but has no records.</td></tr>`;
+                    recordCount.innerText = '0 Records';
+                    syncStatus.innerText = 'Empty JSON';
+                    currentLoadedData = [];
+                    currentDisplayData = [];
+                    return;
+                }
+
+                currentLoadedData = data;
+                currentDisplayData = [...data];
+                sortColumn = null;
+                sortAscending = true;
+
+                renderTable(currentDisplayData);
+
+                recordCount.innerText = `${data.length} Records Loaded`;
+                syncStatus.innerText = `Loaded`;
+
+            } catch (error) {
+                tableHead.innerHTML = '<tr><th>Error</th></tr>';
+                tableBody.innerHTML = `<tr><td style="color: var(--live-red);">Invalid JSON format.</td></tr>`;
+                recordCount.innerText = '0 Records';
+                syncStatus.innerText = 'Error';
+                currentLoadedData = [];
+                currentDisplayData = [];
+            }
+        }
+
+        function sortTableByColumn(columnKey) {
+            if (!currentDisplayData || currentDisplayData.length === 0) return;
+
+            if (sortColumn === columnKey) {
+                sortAscending = !sortAscending;
+            } else {
+                sortColumn = columnKey;
+                sortAscending = true;
+            }
+
+            currentDisplayData.sort((a, b) => {
+                let valA = a[columnKey] !== undefined && a[columnKey] !== null ? a[columnKey] : '';
+                let valB = b[columnKey] !== undefined && b[columnKey] !== null ? b[columnKey] : '';
+
+                // Numeric comparison if both values are valid numbers
+                const numA = Number(valA);
+                const numB = Number(valB);
+                if (!isNaN(numA) && !isNaN(numB) && valA !== '' && valB !== '') {
+                    return sortAscending ? numA - numB : numB - numA;
+                }
+
+                // String comparison fallback
+                return sortAscending 
+                    ? String(valA).localeCompare(String(valB)) 
+                    : String(valB).localeCompare(String(valA));
+            });
+
+            renderTable(currentDisplayData);
+        }
+
+        function renderTable(data) {
+            const tableHead = document.getElementById('table-head');
+            const tableBody = document.getElementById('table-body');
+
+            if (!data || data.length === 0) return;
+
+            const headers = Object.keys(data[0]);
+            
+            // Generate Headings with Clickable Sort Handlers
+            tableHead.innerHTML = '<tr>' + headers.map(h => {
+                let icon = '<span class="sort-icon">↕</span>';
+                if (sortColumn === h) {
+                    icon = sortAscending ? '<span class="sort-icon">▲</span>' : '<span class="sort-icon">▼</span>';
+                }
+                return `<th onclick="sortTableByColumn('${h}')" title="Click to sort by ${h}">${h} ${icon}</th>`;
+            }).join('') + '</tr>';
+
+            // Generate Body Rows
+            tableBody.innerHTML = data.map(row => {
+                return '<tr>' + headers.map(h => {
+                    const val = row[h];
+                    return `<td>${val !== undefined && val !== null ? val : '-'}</td>`;
+                }).join('') + '</tr>';
+            }).join('');
+        }
+
+        function filterRows() {
+            const query = document.getElementById('table-filter').value.toLowerCase();
+            if (!currentLoadedData || currentLoadedData.length === 0) return;
+
+            currentDisplayData = currentLoadedData.filter(row => {
+                return Object.values(row).some(val => String(val).toLowerCase().includes(query));
+            });
+
+            if (sortColumn) {
+                // Re-apply sorting on filtered results if a sort column is selected
+                sortAscending = !sortAscending;
+                sortTableByColumn(sortColumn);
+            } else {
+                renderTable(currentDisplayData);
+            }
+
+            document.getElementById('record-count').innerText = `${currentDisplayData.length} Records Showing`;
+        }
+    </script>
+
+</body>
+</html>

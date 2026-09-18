@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- PRIMARY SEO META TAGS -->
+    <title>Candle weight - Real-Time Market Analytics & Excel Live Streaming</title>
+<meta name="description" content="Candle weight delivers high-speed, real-time market depth analytics, automated Excel data streaming, and historical trend tracking for traders and analysts.">
+
+<!-- Browser Favicon -->
+<link rel="icon" type="image/png" href="/favicon.png">
+
+<!-- Vercel Analytics (already added) -->
+<script defer src="/_vercel/insights/script.js"></script>
+
+<!-- Open Graph / Facebook (Social Preview) -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://candleweight.com/">
+<meta property="og:title" content="Candle weight - Real-Time Market Analytics & Excel Live Streaming">
+<meta property="og:description" content="Access live data feeds, track market strength, and stream your Excel data online seamlessly with Candle weight.">
+<!-- Point this to your new file -->
+<meta property="og:image" content="https://candleweight.com/og-image.jpg">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Candle weight - Real-Time Market Analytics">
+<meta name="twitter:description" content="High-speed market analytics, order depth tracking, and direct Excel-to-web streaming.">
+<!-- Point this to your new file -->
+<meta name="twitter:image" content="https://candleweight.com/og-image.jpg">
+
+    <!-- Structured Schema Data (JSON-LD) for Search Engines -->
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Candle weight",
+  "operatingSystem": "Web",
+  "applicationCategory": "FinanceApplication",
+  "description": "Real-time stock market depth and Excel live data synchronization platform.",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  }
+}
+</script>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        :root {
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+            --border-color: #334155;
+            --text-primary: #f8fafc;
+            --text-secondary: #94a3b8;
+            --accent-color: #38bdf8;
+            --live-red: #ef4444;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-primary);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* TOP NAV */
+        .top-nav {
+            background-color: #0b1120;
+            border-bottom: 1px solid var(--border-color);
+            padding: 0 2rem;
+            height: 50px;
+            display: flex;
+            align-items: center;
+        }
+
+        .top-nav-links {
+            list-style: none;
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        .top-nav-links a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 500;
+            transition: color 0.2s ease;
+        }
+
+        .top-nav-links a:hover,
+        .top-nav-links a.active {
+            color: var(--accent-color);
+        }
+
+        .live-dot {
+            width: 8px;
+            height: 8px;
+            background-color: var(--live-red);
+            border-radius: 50%;
+            display: inline-block;
+            box-shadow: 0 0 8px var(--live-red);
+        }
+
+        /* BRAND HEADER */
+        .brand-header {
+            background-color: var(--card-bg);
+            border-bottom: 1px solid var(--border-color);
+            padding: 1.5rem 2rem;
+        }
+
+        .brand-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .brand-logo {
+            width: 48px;
+            height: 48px;
+            background: linear-gradient(135deg, #38bdf8, #818cf8);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 1.4rem;
+            color: #ffffff;
+            box-shadow: 0 4px 12px rgba(56, 189, 248, 0.25);
+        }
+
+        .brand-title h1 {
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+
+        .brand-title p {
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+        }
+
+        /* MAIN LAYOUT */
+        .main-content {
+            flex: 1;
+            max-width: 1000px;
+            width: 100%;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+        }
+
+        .content-card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 2rem;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3);
+        }
+
+        .content-card h2 {
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+            color: var(--accent-color);
+        }
+
+        .info-item {
+            margin-bottom: 1.2rem;
+        }
+
+        .info-item h3 {
+            font-size: 0.95rem;
+            color: var(--text-primary);
+            margin-bottom: 4px;
+        }
+
+        .info-item p {
+            font-size: 0.88rem;
+            color: var(--text-secondary);
+        }
+
+        /* FORM STYLING */
+        .form-group {
+            margin-bottom: 1.2rem;
+        }
+
+        .form-group label {
+            display: block;
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+            margin-bottom: 6px;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 10px 14px;
+            background-color: #0b1120;
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            color: var(--text-primary);
+            font-size: 0.9rem;
+            outline: none;
+            transition: border-color 0.2s ease;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus {
+            border-color: var(--accent-color);
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 100px;
+        }
+
+        .submit-btn {
+            width: 100%;
+            background-color: var(--accent-color);
+            color: #0b1120;
+            border: none;
+            padding: 12px;
+            font-weight: 600;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 0.95rem;
+            transition: opacity 0.2s ease;
+        }
+
+        .submit-btn:hover {
+            opacity: 0.9;
+        }
+
+        /* FOOTER */
+        .site-footer {
+            background-color: #0b1120;
+            border-top: 1px solid var(--border-color);
+            padding: 2rem;
+            margin-top: auto;
+        }
+
+        .footer-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .footer-info {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+
+        .footer-links {
+            list-style: none;
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        .footer-links a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 0.85rem;
+        }
+
+        .footer-links a:hover {
+            color: var(--accent-color);
+        }
+
+        /* MOBILE QUERY */
+        @media screen and (max-width: 768px) {
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .top-nav {
+                padding: 0 1rem;
+                height: auto;
+            }
+
+            .top-nav-links {
+                gap: 1rem;
+                flex-wrap: wrap;
+                padding: 8px 0;
+            }
+
+            .brand-header {
+                padding: 1rem;
+            }
+
+            .footer-container {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- TOP NAV -->
+    <nav class="top-nav" aria-label="Main Navigation">
+        <ul class="top-nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="live.html"><span class="live-dot"></span> Live</a></li>
+            <li><a href="history.html">History</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="terms.html">Terms</a></li>
+            <li><a href="support.html" class="active" aria-current="page">Support</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+        </ul>
+    </nav>
+
+    <!-- BRAND HEADER -->
+    <header class="brand-header">
+        <div class="brand-container">
+            <div class="brand-logo">CW</div>
+            <div class="brand-title">
+                <h1>Candle weight</h1>
+                <p>Official Platform & Contact Center</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main class="main-content">
+        <div class="contact-grid">
+            
+            <!-- CONTACT INFO -->
+            <section class="content-card">
+                <h2>Get in Touch</h2>
+                <div class="info-item">
+                    <h3>Email Support</h3>
+                    <p>weightcandle1@gmail.com</p>
+                </div>
+                <div class="info-item">
+                    <h3>Business Inquiries</h3>
+                    <p>weightcandle1@gmail.com</p>
+                </div>
+                <div class="info-item">
+                    <h3>Operating Hours</h3>
+                    <p>Monday – Friday: 9:00 AM – 6:00 PM IST</p>
+                </div>
+                <div class="info-item">
+                    <h3>Response Time</h3>
+                    <p>We typically respond to inquiries within 24 hours.</p>
+                </div>
+            </section>
+
+            <!-- CONTACT FORM -->
+            <section class="content-card">
+                <h2>Send Us a Message</h2>
+                <form id="contact-form" onsubmit="handleContactSubmit(event)">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" required placeholder="Enter your full name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Your Email</label>
+                        <input type="email" id="email" required placeholder="name@example.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" required placeholder="Data feed issue, integration query...">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" required placeholder="Write your message here..."></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </section>
+
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-info">
+                &copy; 2025-2026 Candle weight Platform. All rights reserved.
+            </div>
+            <ul class="footer-links">
+                <li><a href="privacy.html">Privacy Policy</a></li>
+                <li><a href="terms.html">Terms of Service</a></li>
+                <li><a href="support.html" class="active" aria-current="page">ContactSupport</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script>
+        function handleContactSubmit(event) {
+            event.preventDefault();
+            alert("Thank you! Your message has been submitted. Our support team will get back to you shortly.");
+            document.getElementById("contact-form").reset();
+        }
+    </script>
+</body>
+</html>

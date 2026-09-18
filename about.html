@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Primary SEO Meta Tags -->
+<title>Candle weight - Real-Time Market Analytics & Excel Live Streaming</title>
+<meta name="description" content="Learn about Candle weight, our high-speed market analytics platform, automated Excel streaming tools, and mission for traders.">
+
+<!-- Browser Favicon -->
+<link rel="icon" type="image/png" href="/favicon.png">
+
+<!-- Vercel Analytics (already added) -->
+<script defer src="/_vercel/insights/script.js"></script>
+
+<!-- Open Graph / Facebook (Social Preview) -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://candleweight.com/">
+<meta property="og:title" content="Candle weight - Real-Time Market Analytics & Excel Live Streaming">
+<meta property="og:description" content="Access live data feeds, track market strength, and stream your Excel data online seamlessly with Candle weight.">
+<!-- Point this to your new file -->
+<meta property="og:image" content="https://candleweight.com/og-image.jpg">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Candle weight - Real-Time Market Analytics">
+<meta name="twitter:description" content="High-speed market analytics, order depth tracking, and direct Excel-to-web streaming.">
+<!-- Point this to your new file -->
+<meta name="twitter:image" content="https://candleweight.com/og-image.jpg">
+
+    <!-- Structured Schema Data (JSON-LD) for Search Engines -->
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Candle weight",
+  "operatingSystem": "Web",
+  "applicationCategory": "FinanceApplication",
+  "description": "Real-time stock market depth and Excel live data synchronization platform.",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  }
+}
+</script>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        :root {
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+            --border-color: #334155;
+            --text-primary: #f8fafc;
+            --text-secondary: #94a3b8;
+            --accent-color: #38bdf8;
+            --live-red: #ef4444;
+            --purple-glow: #818cf8;
+            --green-accent: #22c55e;
+            --amber-accent: #f59e0b;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-primary);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* 1. TOP MENU NAVIGATION */
+        .top-nav {
+            background-color: #0b1120;
+            border-bottom: 1px solid var(--border-color);
+            padding: 0 2rem;
+            height: 50px;
+            display: flex;
+            align-items: center;
+        }
+
+        .top-nav-links {
+            list-style: none;
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        .top-nav-links a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 500;
+            transition: color 0.2s ease;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .top-nav-links a:hover,
+        .top-nav-links a.active {
+            color: var(--accent-color);
+        }
+
+        .live-dot {
+            width: 8px;
+            height: 8px;
+            background-color: var(--live-red);
+            border-radius: 50%;
+            display: inline-block;
+            box-shadow: 0 0 8px var(--live-red);
+            animation: pulse-red 2.5s infinite ease-in-out;
+        }
+
+        @keyframes pulse-red {
+            0% { box-shadow: 0 0 0 0 rgba(239, 68, 68, 0.7); }
+            70% { box-shadow: 0 0 0 8px rgba(239, 68, 68, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(239, 68, 68, 0); }
+        }
+
+        /* 2. BRAND & LOGO HEADER */
+        .brand-header {
+            background-color: var(--card-bg);
+            border-bottom: 1px solid var(--border-color);
+            padding: 2rem;
+        }
+
+        .brand-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 2rem;
+        }
+
+        .brand-left {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .brand-logo {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, var(--accent-color), var(--purple-glow));
+            border-radius: 14px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 1.6rem;
+            color: #ffffff;
+            box-shadow: 0 4px 12px rgba(56, 189, 248, 0.3);
+        }
+
+        .brand-title h1 {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            letter-spacing: -0.5px;
+        }
+
+        .brand-title p {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+        }
+
+        /* 3. MAIN CONTENT AREA */
+        .main-content {
+            flex: 1;
+            max-width: 1200px;
+            width: 100%;
+            margin: 2rem auto;
+            padding: 0 2rem;
+        }
+
+        /* HERO ABOUT SECTION */
+        .hero-card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 16px;
+            padding: 2.5rem;
+            margin-bottom: 2.5rem;
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.3);
+        }
+
+        .hero-card h2 {
+            font-size: 2.2rem;
+            color: var(--accent-color);
+            margin-bottom: 1rem;
+            line-height: 1.2;
+        }
+
+        .hero-card p {
+            color: var(--text-secondary);
+            font-size: 1.1rem;
+            line-height: 1.7;
+            max-width: 900px;
+        }
+
+        /* METRICS & STATS GRID */
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 2.5rem;
+        }
+
+        .stat-card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 14px;
+            padding: 1.5rem;
+            text-align: center;
+            transition: transform 0.2s ease, border-color 0.2s ease;
+        }
+
+        .stat-card:hover {
+            transform: translateY(-3px);
+            border-color: var(--accent-color);
+        }
+
+        .stat-number {
+            font-size: 2.2rem;
+            font-weight: 700;
+            color: var(--accent-color);
+            margin-bottom: 0.3rem;
+        }
+
+        .stat-label {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            font-weight: 500;
+        }
+
+        /* MISSION & VALUES SECTION */
+        .about-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2.5rem;
+        }
+
+        .info-card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 16px;
+            padding: 2rem;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .info-card h3 {
+            font-size: 1.4rem;
+            color: var(--text-primary);
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .info-card p {
+            color: var(--text-secondary);
+            line-height: 1.6;
+            font-size: 1rem;
+        }
+
+        .feature-list {
+            list-style: none;
+            margin-top: 1rem;
+            display: flex;
+            flex-direction: column;
+            gap: 0.8rem;
+        }
+
+        .feature-list li {
+            color: var(--text-secondary);
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+            font-size: 0.98rem;
+            line-height: 1.5;
+        }
+
+        .feature-list li::before {
+            content: "✓";
+            color: var(--green-accent);
+            font-weight: bold;
+        }
+
+        /* CTA SECTION */
+        .cta-card {
+            background: linear-gradient(135deg, rgba(30, 41, 59, 0.9), rgba(15, 23, 42, 0.95));
+            border: 1px solid var(--accent-color);
+            border-radius: 16px;
+            padding: 2.5rem;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(56, 189, 248, 0.15);
+            margin-bottom: 2.5rem;
+        }
+
+        .cta-card h3 {
+            font-size: 1.8rem;
+            color: var(--text-primary);
+            margin-bottom: 1rem;
+        }
+
+        .cta-card p {
+            color: var(--text-secondary);
+            margin-bottom: 1.5rem;
+            font-size: 1.05rem;
+        }
+
+        .cta-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: linear-gradient(135deg, var(--accent-color), #0284c7);
+            color: #0f172a;
+            padding: 12px 28px;
+            font-weight: 700;
+            border-radius: 8px;
+            text-decoration: none;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            box-shadow: 0 4px 14px rgba(56, 189, 248, 0.3);
+        }
+
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(56, 189, 248, 0.45);
+        }
+
+        /* 4. FOOTER */
+        .site-footer {
+            background-color: #0b1120;
+            border-top: 1px solid var(--border-color);
+            padding: 2rem;
+            margin-top: auto;
+        }
+
+        .footer-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .footer-info {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+
+        .footer-links {
+            list-style: none;
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        .footer-links a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 0.85rem;
+            transition: color 0.2s ease;
+        }
+
+        .footer-links a:hover {
+            color: var(--accent-color);
+        }
+
+        /* RESPONSIVE STYLES */
+        @media (max-width: 768px) {
+            .top-nav {
+                padding: 0 1rem;
+            }
+            .brand-header {
+                padding: 1.5rem 1rem;
+            }
+            .main-content {
+                padding: 0 1rem;
+                margin: 1.5rem auto;
+            }
+            .hero-card {
+                padding: 1.8rem;
+            }
+            .hero-card h2 {
+                font-size: 1.7rem;
+            }
+            .info-card {
+                padding: 1.5rem;
+            }
+            .cta-card {
+                padding: 1.8rem;
+            }
+            .footer-container {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- TOP MENU NAVIGATION -->
+    <nav class="top-nav" aria-label="Main Navigation">
+        <ul class="top-nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="live.html"><span class="live-dot"></span> Live</a></li>
+            <li><a href="history.html">History</a></li>
+            <li><a href="about.html" class="active" aria-current="page">About</a></li>
+            <li><a href="terms.html">Terms</a></li>
+            <li><a href="support.html">Support</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+        </ul>
+    </nav>
+
+    <!-- BRAND & LOGO HEADER -->
+    <header class="brand-header">
+        <div class="brand-container">
+            <div class="brand-left">
+                <div class="brand-logo" aria-label="Candle weight Logo">CW</div>
+                <div class="brand-title">
+                    <h1>Candle weight</h1>
+                    <p>Official Analytics Platform & Live Dashboard</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- MAIN CONTENT AREA -->
+    <main class="main-content">
+        
+        <!-- Hero Introduction -->
+        <section class="hero-card">
+            <h2>Building Next-Generation Market & Real-Time Analytics</h2>
+            <h4>About Candle weight</h4>
+                <p>Candle weight is a market-data and analytics platform built to help users explore what happens inside every candle.
+
+
+
+A price chart shows the movement of the market, but each candle contains much more information. Candle weight brings together detailed market data such as OHLC prices, candle range, body size, upper and lower wicks, percentage change, volume, traded quantity, market activity and other calculated statistics.
+</p>
+
+
+<h4>Go Deeper Into Every Candle</h4>
+    <p>Our purpose is to make 1-minute market data easier to study and compare. Instead of looking only at the visual shape of a candle, users can examine the numerical data behind it and understand how price, volume and activity changed during each minute.
+</p>
+
+
+<h4>Data, Calculations and Statistics</h4>
+    <p>Candle weight focuses on presenting market data in a clear and structured format. Historical comparisons, minute-by-minute statistics and calculated measurements can help users study how current market activity compares with previous periods.
+</p>
+
+
+<h4>Built for Data Analysis</h4>
+    <p>Candle weight does not provide trading recommendations, predictions or buy and sell signals. The platform is designed to provide data and analytical information so users can perform their own research and make their own decisions.
+</p>
+
+
+<h4>Explore the Data Behind Every Candle</h4>
+    <p>Every candle is a collection of measurable data points. Candle weight brings those details together in one place, making it easier to explore, compare and analyse market activity—one minute at a time. 
+    </p>
+
+
+        </section>
+
+        <!-- Metric Highlights -->
+        <section class="stats-grid" aria-label="Platform Highlights">
+            <div class="stat-card">
+                <div class="stat-number">&lt; 100ms</div>
+                <div class="stat-label">Live Sync Latency</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">99.9%</div>
+                <div class="stat-label">Data Pipeline Uptime</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">99.9%</div>
+                <div class="stat-label">Compatibility</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">Real-Time</div>
+                <div class="stat-label">Indicative Equilibrium Sync</div>
+            </div>
+        </section>
+
+        <!-- Main Details Grid -->
+        <section class="about-grid">
+            <article class="info-card">
+                <h3>🎯 Our Mission</h3>
+                <p>We aim to equip independent financial analysts, algorithmic quantitative traders, and institutional researchers with instantaneous order depth visibility and effortless streaming tools.</p>
+                <ul class="feature-list">
+                    <li>Eliminate manual re-uploads with direct local sheet streaming.</li>
+                    <li>Provide synchronized moving averages alongside candlestick metrics.</li>
+                    <li>Deliver reliable historical archives for post-market auditing.</li>
+                </ul>
+            </article>
+
+            <article class="info-card">
+                <h3>⚙️ Technology Stack</h3>
+                <p>Engineered for speed, stability, and zero external dependency friction. Candle weight relies on lightweight, high-throughput technologies built to perform under high market volatility.</p>
+                <ul class="feature-list">
+                    <li>Low-bandwidth WebSocket channels for instant data delivery.</li>
+                    <li>Canvas engines for zero-lag 60 FPS chart renders.</li>
+                    <li>Explore platform data integrations and export options.</li>
+                </ul>
+            </article>
+        </section>
+
+        <!-- Call to Action -->
+        <section class="cta-card">
+            <h3>Ready to Experience Live Market?</h3>
+            <p>Access our live streaming dashboard or explore historical candlestick data trends instantly.</p>
+            <a href="live.html" class="cta-button">Launch Live Dashboard &rarr;</a>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-info">
+                &copy; 2025-2026 Candle weight Platform. All rights reserved.
+            </div>
+            <ul class="footer-links">
+                <li><a href="privacy.html">Privacy Policy</a></li>
+                <li><a href="terms.html">Terms of Service</a></li>
+                <li><a href="support.html">Contact Support</a></li>
+            </ul>
+        </div>
+    </footer>
+
+</body>
+</html>

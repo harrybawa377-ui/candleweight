@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Primary SEO Meta Tags -->
+<title>Candle weight - Real-Time Market Analytics & Excel Live Streaming</title>
+<meta name="description" content="Read the Candle weight Terms of Service to understand platform usage rules, financial disclaimers, and service agreements.">
+
+<!-- Browser Favicon -->
+<link rel="icon" type="image/png" href="/favicon.png">
+
+<!-- Vercel Analytics (already added) -->
+<script defer src="/_vercel/insights/script.js"></script>
+
+<!-- Open Graph / Facebook (Social Preview) -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://candleweight.com/">
+<meta property="og:title" content="Candle weight - Real-Time Market Analytics & Excel Live Streaming">
+<meta property="og:description" content="Access live data feeds, track market strength, and stream your Excel data online seamlessly with Candle weight.">
+<!-- Point this to your new file -->
+<meta property="og:image" content="https://candleweight.com/og-image.jpg">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Candle weight - Real-Time Market Analytics">
+<meta name="twitter:description" content="High-speed market analytics, order depth tracking, and direct Excel-to-web streaming.">
+<!-- Point this to your new file -->
+<meta name="twitter:image" content="https://candleweight.com/og-image.jpg">
+
+    <!-- Structured Schema Data (JSON-LD) for Search Engines -->
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Candle weight",
+  "operatingSystem": "Web",
+  "applicationCategory": "FinanceApplication",
+  "description": "Real-time stock market depth and Excel live data synchronization platform.",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  }
+}
+</script>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        :root {
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+            --border-color: #334155;
+            --text-primary: #f8fafc;
+            --text-secondary: #94a3b8;
+            --accent-color: #38bdf8;
+            --live-red: #ef4444;
+            --purple-glow: #818cf8;
+            --amber-accent: #f59e0b;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-primary);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* 1. TOP MENU NAVIGATION */
+        .top-nav {
+            background-color: #0b1120;
+            border-bottom: 1px solid var(--border-color);
+            padding: 0 2rem;
+            height: 50px;
+            display: flex;
+            align-items: center;
+        }
+
+        .top-nav-links {
+            list-style: none;
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        .top-nav-links a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 500;
+            transition: color 0.2s ease;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .top-nav-links a:hover,
+        .top-nav-links a.active {
+            color: var(--accent-color);
+        }
+
+        .live-dot {
+            width: 8px;
+            height: 8px;
+            background-color: var(--live-red);
+            border-radius: 50%;
+            display: inline-block;
+            box-shadow: 0 0 8px var(--live-red);
+            animation: pulse-red 2.5s infinite ease-in-out;
+        }
+
+        @keyframes pulse-red {
+            0% { box-shadow: 0 0 0 0 rgba(239, 68, 68, 0.7); }
+            70% { box-shadow: 0 0 0 8px rgba(239, 68, 68, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(239, 68, 68, 0); }
+        }
+
+        /* 2. BRAND HEADER */
+        .brand-header {
+            background-color: var(--card-bg);
+            border-bottom: 1px solid var(--border-color);
+            padding: 2rem;
+        }
+
+        .brand-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 2rem;
+        }
+
+        .brand-left {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .brand-logo {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, var(--accent-color), var(--purple-glow));
+            border-radius: 14px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 1.6rem;
+            color: #ffffff;
+            box-shadow: 0 4px 12px rgba(56, 189, 248, 0.3);
+        }
+
+        .brand-title h1 {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            letter-spacing: -0.5px;
+        }
+
+        .brand-title p {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+        }
+
+        /* 3. MAIN CONTENT AREA */
+        .main-content {
+            flex: 1;
+            max-width: 1000px;
+            width: 100%;
+            margin: 2.5rem auto;
+            padding: 0 2rem;
+        }
+
+        .terms-card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 16px;
+            padding: 2.5rem;
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.3);
+        }
+
+        .terms-header {
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .terms-header h2 {
+            font-size: 2rem;
+            color: var(--accent-color);
+            margin-bottom: 0.5rem;
+        }
+
+        .last-updated {
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+        }
+
+        .disclaimer-box {
+            background-color: rgba(245, 158, 11, 0.1);
+            border: 1px solid var(--amber-accent);
+            border-radius: 10px;
+            padding: 1.2rem;
+            margin-bottom: 2rem;
+        }
+
+        .disclaimer-box h4 {
+            color: var(--amber-accent);
+            font-size: 1.05rem;
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .disclaimer-box p {
+            color: #fef08a;
+            font-size: 0.92rem;
+            line-height: 1.5;
+        }
+
+        .terms-section {
+            margin-bottom: 2rem;
+        }
+
+        .terms-section h3 {
+            font-size: 1.3rem;
+            color: var(--text-primary);
+            margin-bottom: 1rem;
+        }
+
+        .terms-section p {
+            color: var(--text-secondary);
+            line-height: 1.7;
+            font-size: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .terms-list {
+            list-style: none;
+            margin-bottom: 1rem;
+            padding-left: 0.5rem;
+        }
+
+        .terms-list li {
+            color: var(--text-secondary);
+            line-height: 1.6;
+            margin-bottom: 0.6rem;
+            position: relative;
+            padding-left: 1.5rem;
+        }
+
+        .terms-list li::before {
+            content: "•";
+            color: var(--accent-color);
+            font-weight: bold;
+            font-size: 1.2rem;
+            position: absolute;
+            left: 0;
+            top: -2px;
+        }
+
+        /* 4. FOOTER */
+        .site-footer {
+            background-color: #0b1120;
+            border-top: 1px solid var(--border-color);
+            padding: 2rem;
+            margin-top: auto;
+        }
+
+        .footer-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .footer-info {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+
+        .footer-links {
+            list-style: none;
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        .footer-links a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 0.85rem;
+            transition: color 0.2s ease;
+        }
+
+        .footer-links a:hover,
+        .footer-links a.active {
+            color: var(--accent-color);
+        }
+
+        /* RESPONSIVE STYLES */
+        @media (max-width: 768px) {
+            .top-nav {
+                padding: 0 1rem;
+            }
+            .brand-header {
+                padding: 1.5rem 1rem;
+            }
+            .main-content {
+                padding: 0 1rem;
+                margin: 1.5rem auto;
+            }
+            .terms-card {
+                padding: 1.5rem;
+            }
+            .terms-header h2 {
+                font-size: 1.6rem;
+            }
+            .footer-container {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- TOP MENU NAVIGATION -->
+    <nav class="top-nav" aria-label="Main Navigation">
+        <ul class="top-nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="live.html"><span class="live-dot"></span> Live</a></li>
+            <li><a href="history.html">History</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="terms.html" class="active" aria-current="page">Terms</a></li>
+            <li><a href="support.html">Support</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+        </ul>
+    </nav>
+
+    <!-- BRAND HEADER -->
+    <header class="brand-header">
+        <div class="brand-container">
+            <div class="brand-left">
+                <div class="brand-logo" aria-label="Candle weight Logo">CW</div>
+                <div class="brand-title">
+                    <h1>Candle weight</h1>
+                    <p>Official Analytics Platform & Live Dashboard</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- MAIN CONTENT AREA -->
+    <main class="main-content">
+        <article class="terms-card">
+            
+            <header class="terms-header">
+                <h2>Terms of Service</h2>
+                <p class="last-updated">Last Updated: September 1, 2025</p>
+            </header>
+
+            <!-- Financial Disclaimer Banner -->
+            <div class="disclaimer-box">
+                <h4>⚠️ Financial & Investment Disclaimer</h4>
+                <p>Candle weight is strictly an analytical software and data visualization interface. We do not provide financial advice, investment recommendations, or execution services. Market analysis involves substantial risk, and past analytics do not guarantee future results.</p>
+            </div>
+
+            <section class="terms-section">
+                <h3>1. Acceptance of Terms</h3>
+                <p>By accessing or using <strong>Candle weight</strong> (including our web interface,), you agree to be bound by these Terms of Service. If you do not agree with any part of these terms, you must discontinue using our services immediately.</p>
+            </section>
+
+            <section class="terms-section">
+                <h3>2. Platform Usage & License</h3>
+                <p>We grant you a non-exclusive, non-transferable, revocable license to access our platform for personal or internal analytical usage subject to the following restrictions:</p>
+                <ul class="terms-list">
+                    <li>You must not execute automated scraping or denial-of-service attacks against our  servers.</li>
+                    <li>You must not attempt to reverse engineer or re-sell the raw data streams without explicit authorization.</li>
+                    <li>You agree to comply with all applicable financial software usage regulations in your jurisdiction.</li>
+                </ul>
+            </section>
+
+            <section class="terms-section">
+                <h3>3. Service Availability & Latency</h3>
+                <p>While we strive for 99.9% uptime and low-latency delivery, Candle weight provides all services on an <strong>"AS IS"</strong> and <strong>"AS AVAILABLE"</strong> basis. Network outages, third-party API disruptions, or client-side connection issues may occasionally disrupt live feed updates.</p>
+            </section>
+
+            <section class="terms-section">
+                <h3>4. Limitation of Liability</h3>
+                <p>Under no circumstances shall Candle weight, its developers, or affiliates be liable for direct, indirect, incidental, or financial loss resulting from reliance on market depth indicators, calculations, or platform downtime.</p>
+            </section>
+
+            <section class="terms-section">
+                <h3>5. Modifications to Terms</h3>
+                <p>We reserve the right to update these terms at any time. Continued usage of the platform following updates constitutes full acceptance of the revised Terms of Service.</p>
+            </section>
+
+            <section class="terms-section">
+                <h3>6. Contact Information</h3>
+                <p>For legal inquiries or terms clarification, please contact our administrative team:</p>
+            </section>
+
+        </article>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-info">
+                &copy; 2025-2026 Candle weight Platform. All rights reserved.
+            </div>
+            <ul class="footer-links">
+                <li><a href="privacy.html">Privacy Policy</a></li>
+                <li><a href="terms.html" class="active">Terms of Service</a></li>
+                <li><a href="support.html">Contact Support</a></li>
+            </ul>
+        </div>
+    </footer>
+
+</body>
+</html>
