@@ -1,0 +1,1042 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Primary SEO Meta Tags -->
+<title>Candle weight - Real-Time Market Analytics & Excel Live Streaming</title>
+<meta name="description" content="Candle weight delivers high-speed, real-time market depth analytics, automated Excel data streaming, and historical trend tracking for traders and analysts.">
+
+<!-- Browser Favicon -->
+<link rel="icon" type="image/png" href="/favicon.png">
+
+<!-- Vercel Analytics (already added) -->
+<script>
+  window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+</script>
+<script defer src="/_vercel/insights/script.js"></script>
+
+<!-- Open Graph / Facebook (Social Preview) -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://candleweight.com/">
+<meta property="og:title" content="Candle weight - Real-Time Market Analytics & Excel Live Streaming">
+<meta property="og:description" content="Access live data feeds, track market strength, and stream your Excel data online seamlessly with Candle weight.">
+<!-- Point this to your new file -->
+<meta property="og:image" content="https://candleweight.com/og-image.jpg">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Candle weight - Real-Time Market Analytics">
+<meta name="twitter:description" content="High-speed market analytics, order depth tracking, and direct Excel-to-web streaming.">
+<!-- Point this to your new file -->
+<meta name="twitter:image" content="https://candleweight.com/og-image.jpg">
+
+    <!-- Structured Schema Data (JSON-LD) for Search Engines -->
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Candle weight",
+  "operatingSystem": "Web",
+  "applicationCategory": "FinanceApplication",
+  "description": "Real-time stock market depth and Excel live data synchronization platform.",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  }
+}
+</script>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        :root {
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+            --border-color: #334155;
+            --text-primary: #f8fafc;
+            --text-secondary: #94a3b8;
+            --accent-color: #38bdf8;
+            --live-red: #ef4444;
+            --purple-glow: #818cf8;
+            --green-accent: #22c55e;
+            --amber-accent: #f59e0b;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-primary);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* 1. TOP MENU NAVIGATION */
+        .top-nav {
+            background-color: #0b1120;
+            border-bottom: 1px solid var(--border-color);
+            padding: 0 2rem;
+            height: 50px;
+            display: flex;
+            align-items: center;
+        }
+
+        .top-nav-links {
+            list-style: none;
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        .top-nav-links a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 500;
+            transition: color 0.2s ease;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .top-nav-links a:hover,
+        .top-nav-links a.active {
+            color: var(--accent-color);
+        }
+
+        .live-dot {
+            width: 8px;
+            height: 8px;
+            background-color: var(--live-red);
+            border-radius: 50%;
+            display: inline-block;
+            box-shadow: 0 0 8px var(--live-red);
+            animation: pulse-red 2.5s infinite ease-in-out;
+        }
+
+        @keyframes pulse-red {
+            0% { box-shadow: 0 0 0 0 rgba(239, 68, 68, 0.7); }
+            70% { box-shadow: 0 0 0 8px rgba(239, 68, 68, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(239, 68, 68, 0); }
+        }
+
+        /* 2. BRAND & LOGO HEADER */
+        .brand-header {
+            background-color: var(--card-bg);
+            border-bottom: 1px solid var(--border-color);
+            padding: 2rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .brand-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 2rem;
+        }
+
+        .brand-left {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            flex-shrink: 0;
+        }
+
+        .brand-logo {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, var(--accent-color), var(--purple-glow));
+            border-radius: 14px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 1.6rem;
+            color: #ffffff;
+            box-shadow: 0 4px 12px rgba(56, 189, 248, 0.3);
+        }
+
+        .brand-title h1 {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            letter-spacing: -0.5px;
+            text-align: left;
+        }
+
+        .brand-title p {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            text-align: left;
+        }
+
+        /* HEADER CHART CANVAS CONTAINER */
+        .header-animated-graphic {
+            flex: 1;
+            max-width: 720px;
+            height: 110px;
+            background: linear-gradient(135deg, rgba(15, 23, 42, 0.95), rgba(30, 41, 59, 0.85));
+            border: 1px solid rgba(56, 189, 248, 0.25);
+            border-radius: 16px;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: inset 0 0 25px rgba(56, 189, 248, 0.08), 0 8px 25px rgba(0, 0, 0, 0.4);
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Chart Background Grid */
+        .chart-grid {
+            position: absolute;
+            inset: 0;
+            background-size: 20px 20px;
+            background-image: 
+                linear-gradient(to right, rgba(51, 65, 85, 0.2) 1px, transparent 1px),
+                linear-gradient(to bottom, rgba(51, 65, 85, 0.2) 1px, transparent 1px);
+            z-index: 0;
+        }
+
+        #syncedChart {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            z-index: 1;
+            display: block;
+        }
+
+        /* 3. MAIN CONTENT AREA */
+        .main-content {
+            flex: 1;
+            max-width: 1200px;
+            width: 100%;
+            margin: 2rem auto;
+            padding: 0 2rem;
+        }
+
+        .content-card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 16px;
+            padding: 2.5rem;
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.3);
+            margin-bottom: 2.5rem;
+            position: relative;
+        }
+
+        .content-card h2 {
+            font-size: 2rem;
+            color: var(--accent-color);
+            margin-bottom: 1rem;
+        }
+
+        .content-card p {
+            color: var(--text-secondary);
+            line-height: 1.7;
+            font-size: 1.05rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .cta-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: linear-gradient(135deg, var(--accent-color), #0284c7);
+            color: #0f172a;
+            padding: 12px 26px;
+            font-weight: 700;
+            border-radius: 8px;
+            text-decoration: none;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            box-shadow: 0 4px 14px rgba(56, 189, 248, 0.3);
+        }
+
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(56, 189, 248, 0.45);
+        }
+
+        /* FEATURE SECTION & FULL-WIDTH ALTERNATING ARTICLES */
+        .intro-section {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            width: 100%;
+            margin-bottom: 2.5rem;
+        }
+
+        .intro-card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 16px;
+            padding: 2.2rem 2.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 2.5rem;
+            width: 100%;
+            transition: border-color 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .intro-card:hover {
+            border-color: var(--accent-color);
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+        }
+
+        /* Default Layout: Animation Left, Text Right */
+        .intro-card {
+            flex-direction: row-reverse;
+        }
+
+        /* Alternating Even Articles: Animation Right, Text Left */
+        .intro-card:nth-child(even) {
+            flex-direction: row;
+        }
+
+        .intro-card .card-text {
+            flex: 1;
+        }
+
+        .intro-card h3 {
+            font-size: 1.45rem;
+            color: var(--text-primary);
+            margin-bottom: 0.8rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .intro-card p {
+            color: var(--text-secondary);
+            line-height: 1.6;
+            font-size: 1rem;
+        }
+
+        .anim-illustration {
+            width: 220px;
+            height: 140px;
+            flex-shrink: 0;
+            background: rgba(15, 23, 42, 0.6);
+            border-radius: 12px;
+            border: 1px dashed var(--border-color);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* --- ANIMATION 1: RADAR SWEEP --- */
+        .radar-screen {
+            width: 90px;
+            height: 90px;
+            border-radius: 50%;
+            border: 1px solid rgba(56, 189, 248, 0.4);
+            position: relative;
+            background: radial-gradient(circle, rgba(56, 189, 248, 0.05) 0%, rgba(15, 23, 42, 0.8) 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .radar-ring-inner {
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            border: 1px dashed rgba(56, 189, 248, 0.3);
+            position: absolute;
+        }
+
+        .radar-center-dot {
+            width: 6px;
+            height: 6px;
+            background-color: var(--accent-color);
+            border-radius: 50%;
+            position: absolute;
+            z-index: 2;
+            box-shadow: 0 0 6px var(--accent-color);
+        }
+
+        .radar-sweep-line {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: conic-gradient(from 0deg at 50% 50%, rgba(56, 189, 248, 0.4) 0deg, transparent 60deg, transparent 360deg);
+            animation: rotateRadar 5s linear infinite;
+        }
+
+        @keyframes rotateRadar {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        /* --- ANIMATION 2: FLOATING CANDLESTICKS --- */
+        .candlestick-group {
+            display: flex;
+            align-items: flex-end;
+            gap: 12px;
+            height: 80px;
+        }
+
+        .candle {
+            width: 14px;
+            border-radius: 3px;
+            position: relative;
+        }
+
+        .candle::before, .candle::after {
+            content: '';
+            position: absolute;
+            width: 2px;
+            background: currentColor;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .candle.green {
+            background-color: var(--green-accent);
+            color: var(--green-accent);
+            animation: floatCandle 4s ease-in-out infinite alternate;
+        }
+
+        .candle.red {
+            background-color: var(--live-red);
+            color: var(--live-red);
+            animation: floatCandle 4s ease-in-out infinite alternate-reverse;
+        }
+
+        .candle.green::before { top: -12px; height: 12px; }
+        .candle.green::after { bottom: -12px; height: 12px; }
+        .candle.red::before { top: -10px; height: 10px; }
+        .candle.red::after { bottom: -10px; height: 10px; }
+
+        @keyframes floatCandle {
+            0% { height: 35px; transform: translateY(0); }
+            100% { height: 55px; transform: translateY(-5px); }
+        }
+
+        /* --- ANIMATION 3: ORDER BOOK DEPTH STREAM --- */
+        .orderbook-stream {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            width: 80%;
+        }
+
+        .depth-row {
+            height: 12px;
+            border-radius: 4px;
+            position: relative;
+            overflow: hidden;
+            background: rgba(51, 65, 85, 0.4);
+        }
+
+        .depth-bar-bid {
+            height: 100%;
+            background: rgba(34, 197, 94, 0.7);
+            animation: expandBid 4s ease-in-out infinite alternate;
+        }
+
+        .depth-bar-ask {
+            height: 100%;
+            background: rgba(239, 68, 68, 0.7);
+            animation: expandAsk 4.5s ease-in-out infinite alternate;
+        }
+
+        @keyframes expandBid {
+            0% { width: 30%; }
+            100% { width: 90%; }
+        }
+
+        @keyframes expandAsk {
+            0% { width: 85%; }
+            100% { width: 40%; }
+        }
+
+        /* --- ANIMATION 4: DIGITAL SIGNAL MATRIX --- */
+        .matrix-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+        }
+
+        .matrix-node {
+            width: 18px;
+            height: 18px;
+            border-radius: 4px;
+            background: var(--border-color);
+            animation: pulseNode 3.5s infinite ease-in-out;
+        }
+
+        .matrix-node:nth-child(1) { animation-delay: 0s; }
+        .matrix-node:nth-child(2) { animation-delay: 0.6s; }
+        .matrix-node:nth-child(3) { animation-delay: 1.2s; }
+        .matrix-node:nth-child(4) { animation-delay: 1.8s; }
+
+        @keyframes pulseNode {
+            0%, 100% { background-color: var(--border-color); transform: scale(1); }
+            50% { background-color: var(--accent-color); box-shadow: 0 0 10px var(--accent-color); transform: scale(1.15); }
+        }
+
+        /* --- ANIMATION 5: ARCHIVE HISTORICAL TIMELINE --- */
+        .timeline-graph {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            width: 100%;
+            padding: 0 15px;
+        }
+
+        .timeline-bar {
+            width: 10px;
+            background: var(--purple-glow);
+            border-radius: 6px;
+            animation: waveBar 3.2s ease-in-out infinite alternate;
+        }
+
+        .timeline-bar:nth-child(1) { height: 25px; animation-delay: 0.2s; }
+        .timeline-bar:nth-child(2) { height: 50px; animation-delay: 0.6s; }
+        .timeline-bar:nth-child(3) { height: 75px; animation-delay: 1.0s; }
+        .timeline-bar:nth-child(4) { height: 40px; animation-delay: 0.4s; }
+        .timeline-bar:nth-child(5) { height: 60px; animation-delay: 0.8s; }
+
+        @keyframes waveBar {
+            0% { transform: scaleY(0.6); opacity: 0.5; }
+            100% { transform: scaleY(1.2); opacity: 1; box-shadow: 0 0 12px var(--purple-glow); }
+        }
+
+        /* 4. FOOTER */
+        .site-footer {
+            background-color: #0b1120;
+            border-top: 1px solid var(--border-color);
+            padding: 2rem;
+            margin-top: auto;
+        }
+
+        .footer-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .footer-info {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+
+        .footer-links {
+            list-style: none;
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        .footer-links a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 0.85rem;
+            transition: color 0.2s ease;
+        }
+
+        .footer-links a:hover {
+            color: var(--accent-color);
+        }
+
+        /* RESPONSIVE DESIGN */
+        @media (max-width: 820px) {
+            .intro-card, .intro-card:nth-child(even) {
+                flex-direction: column-reverse;
+                align-items: flex-start;
+            }
+            .anim-illustration {
+                width: 100%;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .brand-container {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .header-animated-graphic {
+                width: 100%;
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- TOP MENU NAVIGATION -->
+    <nav class="top-nav">
+        <ul class="top-nav-links">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="live.html"><span class="live-dot"></span> Live</a></li>
+            <li><a href="history.html">History</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="terms.html">Terms</a></li>
+            <li><a href="support.html">Support</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+        </ul>
+    </nav>
+
+    <!-- BRAND & LOGO HEADER -->
+    <header class="brand-header">
+        <div class="brand-container">
+            <!-- Brand Logo & Name Placed on Left -->
+            <div class="brand-left">
+                <div class="brand-logo" aria-label="Candle Strength Logo">CW</div>
+                <div class="brand-title">
+                    <h1>Candle Strength</h1>
+                    <p>Official Analytics Platform & Live Dashboard</p>
+                </div>
+            </div>
+
+            <!-- Synchronized Candle Formation & Moving Average Header Chart -->
+            <div class="header-animated-graphic" title="Synchronized Candle Formation & Moving Average">
+                <div class="chart-grid"></div>
+                <canvas id="syncedChart"></canvas>
+            </div>
+        </div>
+    </header>
+
+    <!-- MAIN CONTENT AREA -->
+    <main class="main-content">
+        <!-- Hero Section -->
+        <article class="content-card">
+            <h2>Welcome to Candle Strength Analytics</h2>
+            <h3>Disclaimer</h3>
+                <p>Candle Strength provides market data, calculations, statistics and analytical information for educational and informational purposes only. The information displayed on this website is intended to help users study and analyse market activity and should not be considered financial, investment or trading advice. Candle Strength does not provide recommendations, predictions, buy or sell signals, or instructions to enter or exit any trade. Users are solely responsible for their own trading and investment decisions. Market data may contain delays, inaccuracies or technical errors, and past data or analysis does not guarantee future results. Always conduct your own research and, where appropriate, consult a qualified financial professional before making financial decisions.</p>
+
+
+            <a href="live.html" class="cta-button">View Live Data Feed &rarr;</a>
+        </article>
+
+        <!-- Brand Features with Alternating Visual Alignments -->
+        <section class="intro-section" aria-label="Brand Features">
+            
+            <!-- Feature 1: Animation Left | Text Right -->
+            <article class="intro-card">
+                <div class="card-text">
+                    <h3>⚡ Explore the data behind every 1-minute</h3>
+                    <h4>Explore the Data Behind Every 1-Minute Candle</h4>
+                    <p>  Every 1-minute candle is more than a simple representation of price moving up or down. It is a compact record of market activity during a specific 60-second period. Within that single minute, the market creates an opening price, closing price, high, low, traded volume, price range, candle body, wicks, and several other measurable values.</p>
+                    <p>Candle Strength is designed to make these details easier to observe, compare, and analyse. The focus is on the data behind each candle rather than predictions or predefined trading instructions. By examining individual measurements and their relationships, users can explore how market activity changes from one minute to the next.</p>
+                    <h4>Every Candle Has a Time and Sequence</h4>
+                    <p> A 1-minute candle belongs to a specific point in the trading session. Its timestamp identifies exactly when the recorded activity occurred, while its position in the sequence connects it with the candles before and after it.</p>
+                    <p>This time-based structure makes every candle part of a larger dataset. A single minute can be studied independently, but consecutive minutes allow changes in price, volume, range, and other measurements to be tracked throughout the session.</p>
+                    <h4>OHLC: The Primary Candle Data</h4>
+                    <p>The four fundamental values of a candle are Open, High, Low, and Close, commonly referred to as OHLC.</p>
+                    <p>The Open represents the first recorded price of the minute, while the Close represents the final recorded price. High and Low identify the highest and lowest prices reached during that period.</p>
+                    <p>Together, these four values provide the basic numerical structure from which many other candle measurements can be calculated.</p>
+                    <h4>Measuring the Total Candle Range</h4>
+                    <p>The Candle range is calculated from the High and Low prices:</p>
+                    <p>Range = High − Low</p>
+                    <p>Range measures the complete price distance travelled within the minute. It can be small during relatively quiet periods and considerably larger during periods of increased price movement.</p>
+                    <p>Range also provides information that the Open-to-Close change alone cannot show. A candle may finish close to its opening price while still recording a large High-to-Low movement.</p>
+                    <h4>Examining the Candle Body</h4>
+                    <p>The candle body represents the distance between the Open and Close.</p>
+                    <p>Body Size = |Close − Open|</p>
+                    <p>Body size can be examined as an absolute price value or as a percentage of the total candle range. This creates a numerical way to compare the internal structure of different candles.</p>
+                    <p>Two candles with similar ranges can therefore have very different body sizes and consequently different structural characteristics.</p>
+                    <h4>Calculating Body-to-Range Ratio</h4>
+                    <p>The relationship between body size and total range provides another useful measurement.</p>
+                    <p>Body-to-Range Ratio = Body Size ÷ Range</p>
+                    <p>When the body occupies a large portion of the range, most of the candle's movement occurred between the opening and closing prices. When the ratio is small, a larger portion of the range exists outside the body.</p>
+                    <p>This converts a visual characteristic into a measurable statistic that can be compared across hundreds or thousands of candles.</p>
+                    <h4>Reading the Upper Wick</h4>
+                    <p>The upper wick represents the distance between the upper part of the candle body and the High.</p>
+                    <p>Its size indicates how far the price moved above the body during the minute. Recording upper-wick length allows users to compare how frequently candles reach higher price levels without focusing only on where the candle eventually closes.</p>
+                    <p>Upper-wick measurements can also be examined as a percentage of the total range.</p>
+                    <h4>Reading the Lower Wick</h4>
+                    <p>The lower wick provides the corresponding measurement below the candle body. It represents the distance between the Low and the lower part of the body.</p>
+                    <p>A candle can therefore be described using three structural components: body, upper wick, and lower wick.</p>
+                    <p>Tracking these measurements across consecutive candles provides a numerical record of how candle structure changes over time.</p>
+                    <h4>Closing Position Within the Range<h4>
+                    <p>The closing price can also be measured according to its position between the High and Low.</p>
+                    <p>One way to express this is:</p>
+                    <p>Closing Position = (Close − Low) ÷ (High − Low)</p>
+                    <p>This measurement places the Close within the candle's total range. Instead of simply recording whether the candle closed above or below its Open, it provides additional information about where the Close was located relative to the entire price movement of that minute.</p>
+                    <h4>Price Change and Percentage Change</h4>
+                    <p>Absolute price change and percentage change describe the movement between two prices.</p>
+                    <p>For a candle:</p>
+                    <p>Price Change = Close − Open</p>
+                    <p>Percentage change can then be calculated relative to the opening price.</p>
+                    <p>These values make candles with different price levels easier to compare because percentage movement provides a normalized measurement rather than relying only on the absolute price difference.</p>
+                    <h4>Volume Adds Another Dimension</h4>
+                    <p>Price structure is only one part of a 1-minute dataset. Volume records the quantity of trading activity associated with the candle.</p>
+                    <p>A candle's range, body, and volume can be examined together. For example, users can compare candles with similar price ranges but different traded volumes, or observe how volume changes as candle ranges expand or contract.</p>
+                    <p>This creates a broader numerical view of market activity.</p>
+                    <h4>Relative Volume and Historical Context</h4>
+                    <p>The volume of one candle becomes more informative when compared with other candles.</p>
+                    <p>Relative volume can compare current activity with a selected historical reference, such as previous candles or the average volume for comparable periods.</p>
+                    <p>This allows users to distinguish between an absolute volume value and its position relative to the surrounding dataset.</p>
+                    <h4>Comparing Candle Structure Across Minutes<h4>
+                    <p>The real depth of 1-minute data appears when individual candles are compared as a sequence.</p>
+                    <p>Range may expand or contract. Body size may increase or decrease. Upper and lower wicks may change substantially. Volume may move from relatively low levels to considerably higher levels.</p>
+                    <p>Instead of examining each candle independently, these changes can be recorded as a continuous series of measurements.</p>
+                    <h4>Identifying Changes in Market Activity<h4>
+                    <p>Market activity is not constant throughout an entire trading session. Different periods can contain different levels of price movement and trading volume.</p>
+                    <p>A dataset containing every minute makes it possible to examine these changes numerically. Users can study when ranges become larger, when volume changes, and how candle structures vary between different parts of the session.</p>
+                    <p>The objective is measurement rather than prediction.</p>
+                    <h4>From Individual Candles to a Dataset<h4>
+                    <p>One candle contains a limited number of observations. Hundreds or thousands of candles create a much larger dataset.</p>
+                    <p>Each row can contain the timestamp, OHLC values, range, body, wick measurements, percentage change, volume, relative volume, closing position, and other calculated fields.</p>
+                    <p>This structured approach makes it possible to sort, filter, compare, calculate averages, identify distributions, and study historical patterns in the data.</p>
+                    <h4>Current Candle Versus Previous Candle<h4>
+                    <p>Comparing the current candle with the immediately preceding candle can reveal how individual measurements have changed.</p>
+                    <p>For example, users can calculate the difference in range, body size, volume, or percentage movement between two consecutive minutes.</p>
+                    <p>These changes can be represented numerically rather than relying only on the visual appearance of a chart.</p>
+                    <h4>Current Data Versus Historical Data<h4>
+                    <p>A current candle can also be compared with historical candles from the same time period.</p>
+                    <p>For example, the current 1-minute volume or range can be compared with the corresponding measurements from previous trading sessions. Historical averages, medians, minimums, maximums, and distributions can provide additional context around the current observation.</p>
+                    <p>This transforms isolated market data into a comparative dataset.</p>
+                    <h4>Understanding Candle Strength as a Measurement<h4>
+                    <p>The term Candle Strength can represent a collection of measurable candle characteristics rather than a simple up-or-down classification.</p>
+                    <p>Depending on the methodology, measurements such as range, body size, body-to-range ratio, volume, relative volume, price change, wick proportions, and closing position can be analysed together.</p>
+                    <p>The underlying values remain important because they show exactly what contributes to any calculated measurement.</p>
+                    <h4>Data Transparency Matters<h4>
+                    <p>A calculated number is more useful when users can understand the data behind it.</p>
+                    <p>Candle Strength focuses on presenting measurable information clearly so that users can examine individual values as well as the calculations derived from them.</p>
+                    <p>Rather than hiding the underlying data behind a single label, the platform can provide the measurements needed to understand how each candle is represented.</p>
+                    <h4>One Minute at a Time</h4>
+                    <p>The value of 1-minute data comes from its level of detail. Larger timeframes combine multiple minutes into a single candle, while 1-minute records preserve each individual period.</p>
+                    <p>That allows users to examine how price, volume, range, candle structure, and other measurements developed throughout the session.</p>
+                    <p>A single candle is one observation. A continuous sequence of 1-minute candles becomes a detailed record of market activity.</p>
+                    <h4>Explore the Details, Not Just the Shape</h4>
+                    <p>A chart provides a visual representation of market movement, but numerical data allows that movement to be measured.</p>
+                    <p>Open, High, Low, Close, range, body, upper wick, lower wick, volume, percentage change, relative volume, and closing position each describe a different part of the same minute.</p>
+                    <p>When these measurements are viewed together and compared over time, every candle becomes a richer dataset for analysis.</p>
+                    <h4>Built for Data Analysis</h4>
+                    <p>Candle Strength is built around market data, calculations, statistics, and historical comparisons. It does not turn individual candle measurements into predetermined trading instructions.</p>
+                    <p>The purpose is to provide information that users can observe, compare, and analyse according to their own methods.</p>
+                    <p>Every minute creates new data. Every candle contains measurable details. And when those details are collected consistently, they create a deeper view of market activity.</p>
+                    <p>Explore the data behind every 1-minute candle. </p>
+                </div>
+               <div class="anim-illustration" title="Candlestick Analytics Animation">
+                    <div class="candlestick-group">
+                        <div class="candle green" style="animation-delay: 0s;"></div>
+                        <div class="candle red" style="animation-delay: 0.4s;"></div>
+                        <div class="candle green" style="animation-delay: 0.8s;"></div>
+                        <div class="candle red" style="animation-delay: 1.2s;"></div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Feature 2: Text Left | Animation Right -->
+            <article class="intro-card">
+                <div class="card-text">
+                     <h3>📈 Discover the data behind every candle</h3>
+                     <h4>Discover the data behind every candle</h4>
+                     <p>   Every 1-minute candle contains a detailed record of market activity. It is more than simply a candle moving up or down. Open, high, low, close, range, body, wick and volume all contain useful information. Candle Strength brings this information together so that every minute can be observed, measured and compared.</p>
+                     <h4>What Is a 1-Minute Candle?</h4>
+                     <p>A 1-minute candle represents the price activity recorded during one minute of trading. It contains the opening price, highest price, lowest price and closing price. These four values provide the basic structure from which other candle measurements can be calculated and compared.</p>
+                     <h4>Understanding Candle Strength</h4>
+                     <p>Candle strength is a way of describing the characteristics of a candle using measurable data. Body size, total range, wick size, price movement and volume can all contribute to understanding how a particular candle behaved. It is a measurement of the candle's data, not a prediction or trading signal.</p>
+                     <h4>Candle Range</h4>
+                     <p>Candle range is the difference between the highest and lowest price reached during a minute. It shows the total amount of price movement inside that candle. Comparing the current range with previous candles provides useful information about how the size of market movement is changing.</p>
+                     <h4>Candle Body</h4>
+                     <p>The candle body represents the difference between the opening and closing prices. Body size can be compared with the total range to understand the structure of a candle. Measuring the body numerically makes it easier to compare different candles objectively.</p>
+                     <h4>Upper and Lower Wicks</h4>
+                     <p>The upper and lower wicks show the portions of price movement outside the candle body. Their lengths provide additional information about the price levels reached during the minute. Studying both wicks together with the body gives a more complete picture of candle structure.</p>
+                     <h4>Volume Behind Every Candle</h4>
+                     <p>Volume adds another important measurement to candle data. It shows the amount of trading activity recorded during the minute. Comparing volume between consecutive candles can help users observe changes in market activity alongside changes in price and candle structure.</p>
+                     <h4>Comparing Consecutive Candles</h4>
+                     <p>One candle shows what happened during a single minute, but consecutive candles show how the data is changing. Range, body size, wick proportions and volume can all be compared from one minute to the next. This creates a more detailed view of short-term market activity.</p>
+                     <h4>Candle Strength Over Time</h4>
+                     <p>Candle strength can change continuously throughout a trading session. Some periods may contain smaller candles, while others may contain larger ranges and greater activity. Tracking strength minute by minute allows these changes to be recorded rather than viewed only as isolated events.</p>
+                     <h4>Price Movement Inside a Candle</h4>
+                     <p>The closing price does not tell the complete story of a minute. During that minute, price may have reached both a significantly higher and lower level before finally closing. The open, high, low and close together provide a much more complete description of the movement.</p>
+                     <h4>Small Candles and Large Candles</h4>
+                     <p>The size of a candle can vary considerably from one minute to another. A small-range candle records limited price movement, while a large-range candle records considerably more movement. Measuring these differences helps users compare market activity objectively.</p>
+                     <h4>Current Candle vs Previous Candle</h4>
+                     <p>Comparing the current candle with recent candles provides context to the latest data. Users can compare range, body, volume, wicks and other measurements to see how the current minute differs from previous periods.</p>
+                     <h4>Historical Candle Data</h4>
+                     <p>Historical 1-minute data allows individual candles to be compared with candles from previous trading sessions. This creates an opportunity to study recurring characteristics, average measurements and changes in candle behaviour over different periods.</p>
+                     <h4>Understanding Market Activity Through Data</h4>
+                     <p>Market activity can be studied through many individual measurements. Price, range, body, wicks and volume each describe a different part of the candle. When these measurements are viewed together, they provide a richer dataset than simply looking at whether a candle is positive or negative.</p>
+                     <h4>Data Behind Every Candle</h4>
+                     <p>Every candle is a visual representation of numerical market data. Behind the shape of each candle are actual prices, volume and calculated measurements. Candle Strength focuses on this underlying information and presents it in a way that can be explored and compared.</p>
+                     <h4>Explore Every Minute</h4>
+                     <p>Every 1-minute candle adds another piece of information to the market's timeline. By examining candle structure, range, volume and strength minute by minute, users can explore the details behind market movement. Candle Strength is built around one simple idea: Explore the data behind every 1-minute candl</p>
+                </div>
+                <div class="anim-illustration" title="Real-Time Data Radar Animation">
+                    <div class="radar-screen">
+                        <div class="radar-ring-inner"></div>
+                        <div class="radar-center-dot"></div>
+                        <div class="radar-sweep-line"></div>
+                    </div>
+                </div>
+                </div>
+            </article>
+
+            <!-- Feature 3: Animation Left | Text Right -->
+            <article class="intro-card">
+                <div class="card-text">
+                    <h3>📊 Every candle tells a story. Explore the data</h3>
+                    <h4>Every Candle Tells a Story. Explore the Data.</h4>
+                        <p>A candle may look like a simple shape on a chart, but it represents a complete period of market activity. Within that small space are thousands of individual transactions, changing prices, traded quantities and constantly shifting interactions between participants. The final shape is only a summary of everything that happened during that period. Exploring the data behind a candle allows us to move beyond its appearance and examine the details that created it. Instead of viewing candles simply as green or red shapes, they can be treated as individual records containing measurable information. This approach turns a chart into a stream of data, where every new candle adds another observation to the history of the market.</p>
+                        <h4>A Candle Is More Than Four Prices</h4>
+                        <p>Open, high, low and close are the familiar numbers associated with a candle, but they are only the starting point. The distance between these prices, their relationship with one another and the way they are distributed across the candle can reveal much more about the period being observed. A candle that finishes close to its opening price may have experienced considerable movement before returning near the starting point. Another candle may travel a similar total distance but finish much closer to one extreme. Looking at the underlying measurements helps distinguish these situations rather than treating them as identical.</p>
+                        <h4>The Shape Contains Measurements</h4>
+                        <p>The visual shape of a candle is created by several measurable components. The body describes the difference between the opening and closing prices, while the upper and lower portions describe movement beyond the body. Their individual lengths can be measured and compared with the complete candle range. This creates a numerical description of the candle's shape. Once the shape becomes data, it can be compared across hundreds or thousands of observations without depending entirely on visual judgment.</p>
+                        <h4>Time Adds Another Dimension</h4>
+                        <p>A candle becomes more interesting when it is placed in its exact position within the trading timeline. Market activity changes continuously, so the characteristics of one period may be very different from those of another. Recording candles in chronological order allows changes to be followed as they develop. A sequence can show expanding movement, shrinking ranges, changing volume and shifts in candle structure. The value is not necessarily in one individual observation, but in seeing how the measurements evolve from one period to the next.</p>
+                        <h4>Numbers Reveal Differences</h4>
+                        <p>Two candles can look almost identical while having noticeably different numerical characteristics. Likewise, candles that look very different may share certain measurements. Numerical data makes these differences easier to identify. Range, body percentage, wick proportions, price change and volume can be recorded separately and then examined together. This allows the user to discover relationships that may not be obvious from the chart alone.</p>
+                        <h4>Volume Gives the Candle Context</h4>
+                        <p>Price tells us where the market moved, while volume provides information about the amount of trading activity associated with that movement. Looking at volume alongside candle structure adds another layer to the data. A period with a particular range can be compared with the amount of activity recorded during the same period. Changes in volume can also be tracked from candle to candle, creating a broader picture of how activity varies through time.</p>
+                        <h4>Patterns Can Be Found in Data</h4>
+                        <p>When a large collection of candles is available, individual measurements can be compared to identify recurring characteristics. Similar ranges, body structures, volume levels or combinations of measurements can be grouped and studied. This does not require assigning a prediction to the pattern. The objective is simply to observe what the historical data contains. By keeping the measurements available, users can investigate their own questions and determine which relationships are meaningful to them.</p>
+                        <h4>The Market Leaves a Record</h4>
+                        <p>Every completed candle becomes part of the market's historical record. Minute after minute, these records accumulate into a detailed dataset. Looking back through this information makes it possible to compare different periods, examine changes in activity and understand how candle characteristics have varied. Historical candle data can therefore serve as more than something displayed on a chart; it can become a source for measurement, comparison and research.</p>
+                        <h4>Explore What Each Candle Contains</h4>
+                        <p>The purpose of exploring candle data is not to reduce a complex market into a single number or a simple instruction. It is to preserve the information contained within every period and make that information easier to examine. Every candle has its own combination of price movement, structure, range and activity. When these details are recorded consistently, the market becomes a continuously growing collection of measurable observations. Every candle tells a story. Explore the data. </p>
+                 </div>
+                <div class="anim-illustration" title="Order Flow Depth Animation">
+                    <div class="orderbook-stream">
+                        <div class="depth-row"><div class="depth-bar-bid"></div></div>
+                        <div class="depth-row"><div class="depth-bar-ask"></div></div>
+                        <div class="depth-row"><div class="depth-bar-bid" style="animation-delay: 0.6s;"></div></div>
+                        <div class="depth-row"><div class="depth-bar-ask" style="animation-delay: 0.8s;"></div></div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Feature 4: Text Left | Animation Right -->
+            <article class="intro-card">
+                <div class="card-text">
+                    <h3>🚀 Understand every candle through data</h3>
+                    <h4> Understand every candle through data</h4>
+                    <p>Every 1-minute candle is a compact set of market data containing much more than a simple positive or negative price movement. The four primary OHLC values—Open, High, Low and Close—define the basic structure of the candle, while additional calculations reveal how price behaved within that one-minute period. Candle Strength focuses on these measurable values, including candle range, body size, upper wick, lower wick, percentage change, volume and the relationship between each component. By presenting these measurements together, every candle can be examined as a separate data point and compared with previous candles. The objective is to provide detailed information about what occurred during each minute, allowing users to explore the numbers behind the visual candle.</p>
+                    <h4>OHLC: The Four Primary Data Points</h4>
+                    <p>Open, High, Low and Close form the foundation of every candle. The Open records the first traded price of the period, while the Close records the final traded price. High represents the highest traded price and Low represents the lowest traded price during that minute. These four values define the complete price boundaries of the candle. From them, several additional measurements can be calculated, including absolute price change, percentage change and total range. Keeping these values visible makes it possible to understand exactly how each candle was formed.</p>
+                    <h4>Total Range: High Minus Low</h4>
+                    <p>Total candle range is calculated as High minus Low. It measures the complete distance travelled between the highest and lowest traded prices during the minute. Range is independent of whether the candle closes above or below its Open. A candle can therefore have a large range even when its Open and Close are relatively close together. Comparing the current range with previous candle ranges provides a numerical way to observe whether the size of price movement is expanding or contracting.</p>
+                    <h4>Body Size and Body Percentage</h4>
+                    <p>Candle body size is calculated from the difference between Close and Open. The absolute body size shows the magnitude of the movement between the beginning and end of the candle, while the body-to-range ratio shows how large the body is relative to the candle's complete range. For example, a body occupying most of the total range represents a different candle structure from a body occupying only a small percentage of the range. These measurements allow candle structure to be compared numerically rather than judged only from its appearance.</p>
+                    <h4>Upper Wick and Lower Wick</h4>
+                    <p>The distance between the High and the upper edge of the body forms the upper wick, while the distance between the Low and the lower edge of the body forms the lower wick. Measuring each wick separately provides information about how much price movement occurred beyond the Open-Close body. Wick-to-range percentages can also be calculated to compare the relative size of the upper and lower portions across different candles.</p>
+                    <h4>Closing Position Within the Range</h4>
+                    <p>The Close can be measured against the candle's High-Low range to determine where the candle finished within its total price movement. A close near the High represents a different closing position from a close near the Low, even when two candles have similar ranges. This measurement can be expressed as a percentage of the total range, providing a consistent numerical value that can be compared across consecutive candles.</p>
+                    <h4>Price Change and Percentage Change</h4>
+                    <p>The difference between the current Close and the previous reference price provides the absolute price change, while percentage change expresses that movement relative to the reference price. These values allow candles from different price levels to be compared more consistently. A movement of the same number of points can represent very different percentages at different price levels, which is why both absolute and percentage measurements can be useful when examining candle data.</p>
+                    <h4>Volume and Relative Volume</h4>
+                    <p>Volume records the quantity traded during the candle's one-minute period. Looking at the current volume alone provides one measurement, while comparing it with previous candles creates additional context. Relative volume can show how the current candle's activity compares with a selected historical or recent average. Combining volume with range and body measurements allows users to examine whether changes in price movement occurred alongside changes in trading activity.</p>
+                    <h4>Comparing One-Minute Candles</h4>
+                    <p>The data becomes more informative when individual candles are compared with their neighbouring candles. Current range can be compared with previous ranges, current volume with previous volume, and current body percentage with earlier body percentages. Changes in these measurements can be tracked sequentially, creating a numerical timeline of candle characteristics. Instead of looking at isolated candles, users can examine how each measurement changes from minute to minute.</p>
+                    <h4>Building a Complete Candle Dataset</h4>
+                    <p>When OHLC, range, body size, wick measurements, percentage change and volume are recorded for every 1-minute candle, each trading session becomes a structured dataset. This makes it possible to study individual candles as well as sequences of candles. Historical observations can be sorted, compared and measured using the same definitions throughout the dataset. Candle Strength is designed around this data-first approach: preserve the numbers, expose the measurements and allow users to explore what every candle actually contains. Every candle tells a story. Explore the data. </p>
+
+                     </div>
+                <div class="anim-illustration" title="Data Matrix Pulse Animation">
+                    <div class="matrix-grid">
+                        <div class="matrix-node"></div>
+                        <div class="matrix-node"></div>
+                        <div class="matrix-node"></div>
+                        <div class="matrix-node"></div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Feature 5: Animation Left | Text Right -->
+            <article class="intro-card">
+                <div class="card-text">
+                    <h3>🏛️ Go deeper into every 1-minute candle</h3> 
+                    <h4>Go Deeper Into Every 1-Minute Candle<h4>
+                    <p>A 1-minute candle is not just a point on a chart. It is a time-stamped snapshot of continuously changing market data. Going deeper means examining how the information is distributed across the minute and how different measurements relate to one another. Instead of treating every candle as an isolated shape, the data can be organized into a detailed record containing price levels, traded quantity, transaction activity and calculated statistics. This deeper view helps turn a sequence of candles into a structured dataset that can be examined from multiple angles.</p>
+                    <h4>Time and Sequence Matter<h4>
+                    <p>Every candle has a precise position within the trading session. The same candle characteristics can have different context depending on when they occur. Recording the exact minute allows observations to be grouped by time and compared across sessions. Minute-by-minute data can therefore be studied as a sequence rather than as unrelated observations. This creates a timeline in which changes in individual measurements can be tracked throughout the session.</p>
+                    <h4>Price Levels Within the Minute<h4>
+                    <p>The High and Low establish the boundaries reached during the minute, but the sequence of price levels between those boundaries is also part of the underlying activity. Tick-by-tick observations can show how frequently prices changed and how long different price levels remained active. While an OHLC candle compresses this information into four values, underlying tick data provides a much deeper layer for examining the formation of the candle.</p>
+                    <h4>Tick Activity and Trade Count<h4>
+                    <p>Two candles with similar OHLC values can be created through very different trading activity. One may contain a relatively small number of trades, while another may contain substantially more transactions. Trade count and tick frequency can therefore provide additional measurements alongside price and volume. These values help describe how actively the market was updating during a particular minute without converting the information into a trading recommendation.</p>
+                    <h4>Traded Quantity Distribution<h4>
+                    <p>Total volume gives the quantity traded during a minute, but the distribution of that quantity can also be examined when detailed trade data is available. Large individual trades and smaller repeated trades contribute differently to the total. Looking at traded quantity at a finer level can therefore provide additional detail about how the minute's total volume was formed.</p>
+                    <h4>Bid and Ask Depth<h4>
+                    <p>Market depth provides another layer of information beyond executed trades. Bid prices and quantities represent resting demand at different price levels, while ask prices and quantities represent resting supply. Tracking multiple depth levels can show how displayed quantities change during the minute. Because orders can be added, modified or removed, depth data is dynamic and can complement executed-price and volume information.</p>
+                    <h4>Spread and Depth Changes<h4>
+                    <p>The difference between the best available ask and best available bid forms the bid-ask spread. Monitoring this spread through time provides a separate measurement of the displayed market. Changes in the spread can be recorded alongside changes in top-level quantities and deeper order-book levels. This creates a more detailed dataset around the candle than price information alone can provide.</p>
+                    <h4>Data Frequency Changes<h4>
+                    <p>Market data does not always arrive at a uniform rate. Some minutes may contain many updates while others contain fewer observable changes. Measuring the number of price, trade or depth updates can provide information about the frequency of market-data activity. This is different from measuring price movement or total volume and can add another dimension to the study of individual minutes.</p>
+                    <h4>Turning Minutes Into a Dataset<h4>
+                    <p>Once each minute contains multiple fields—timestamp, OHLC, volume, trade activity, spread and depth measurements—the result is more than a conventional candlestick chart. It becomes a structured dataset that can be filtered, compared and analysed at different levels of detail. Users can examine individual minutes, sequences of minutes, selected time periods or historical sessions. The deeper the dataset, the more dimensions are available for understanding what actually occurred. Candle Strength is about making those layers of 1-minute market data accessible, measurable and easy to explore. </p>
+                </div>
+                <div class="anim-illustration" title="Historical Wave Graph Animation">
+                    <div class="timeline-graph">
+                        <div class="timeline-bar"></div>
+                        <div class="timeline-bar"></div>
+                        <div class="timeline-bar"></div>
+                        <div class="timeline-bar"></div>
+                        <div class="timeline-bar"></div>
+                    </div>
+                </div>
+            </article>
+
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-info">
+                &copy; 2025-2026 Candle Strength Platform. All rights reserved.
+            </div>
+            <ul class="footer-links">
+                <li><a href="privacy.html">Privacy Policy</a></li>
+                <li><a href="terms.html">Terms of Service</a></li>
+                <li><a href="support.html">Contact Support</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <!-- REAL-TIME SYNCHRONIZED CANDLESTICK & MOVING AVERAGE ENGINE -->
+    <script>
+        const canvas = document.getElementById('syncedChart');
+        const ctx = canvas.getContext('2d');
+
+        // Dynamically match internal canvas resolution with parent DOM container
+        function resizeCanvas() {
+            const rect = canvas.getBoundingClientRect();
+            canvas.width = rect.width;
+            canvas.height = rect.height;
+        }
+        window.addEventListener('resize', resizeCanvas);
+        resizeCanvas();
+
+        // OHLC Data Dataset
+        const rawOHLC = [
+            { o: 50, h: 79, l: 63, c: 75 },
+            { o: 72, h: 83, l: 70, c: 81 },
+            { o: 76, h: 80, l: 57, c: 59 },
+            { o: 59, h: 75, l: 55, c: 72 },
+            { o: 72, h: 89, l: 70, c: 87 },
+            { o: 87, h: 93, l: 78, c: 82 },
+            { o: 80, h: 82, l: 60, c: 63 },
+            { o: 63, h: 78, l: 60, c: 75 },
+            { o: 75, h: 85, l: 72, c: 84 },
+            { o: 84, h: 86, l: 70, c: 73 },
+            { o: 73, h: 88, l: 71, c: 85 },
+            { o: 85, h: 97, l: 82, c: 95 },
+            { o: 93, h: 94, l: 69, c: 72 },
+            { o: 75, h: 90, l: 75, c: 88 }
+        ];
+
+        const periodMA = 10; // 5-Period Moving Average
+        let progressIndex = 0;
+        let candleGrowth = 0;
+
+        function animateChart() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+            const totalVisible = Math.min(Math.floor(progressIndex) + 1, rawOHLC.length);
+            
+            // Dynamic Spacing Calculation to distribute candles evenly across canvas
+            const paddingHorizontal = 15;
+            const availableWidth = canvas.width - (paddingHorizontal * 2);
+            const stepWidth = availableWidth / rawOHLC.length;
+            const candleWidth = Math.max(stepWidth * 0.55, 4); 
+
+            const maPoints = [];
+
+            // 1. Draw Candlesticks & Collect Close Prices for Moving Average
+            for (let i = 0; i < totalVisible; i++) {
+                const data = rawOHLC[i];
+                // Center each candle dynamically in its assigned horizontal slot
+                const x = paddingHorizontal + (i * stepWidth) + (stepWidth - candleWidth) / 2;
+                const isCurrent = (i === Math.floor(progressIndex));
+                const growth = isCurrent ? candleGrowth : 1;
+
+                // Increased Vertical Scale (40px -> 45px Range) to generate taller candles & wicks
+                const scaleY = (val) => canvas.height - 4 - ((val - 53) / 42) * (canvas.height - 8);
+
+                const openY = scaleY(data.o);
+                let closeY = scaleY(data.c);
+                const highY = scaleY(data.h);
+                const lowY = scaleY(data.l);
+
+                // Interpolate Current Active Candle
+                if (isCurrent) {
+                    closeY = openY + (closeY - openY) * growth;
+                }
+
+                const isGreen = data.c >= data.o;
+                const color = isGreen ? '#22c55e' : '#ef4444';
+
+                // Draw Wicks
+                ctx.strokeStyle = color;
+                ctx.lineWidth = 1.8;
+                ctx.beginPath();
+                ctx.moveTo(x + candleWidth / 2, highY);
+                ctx.lineTo(x + candleWidth / 2, lowY);
+                ctx.stroke();
+
+                // Draw Real Body (Min height set to 3px to maintain visibility)
+                ctx.fillStyle = color;
+                const bodyY = Math.min(openY, closeY);
+                const bodyHeight = Math.max(Math.abs(closeY - openY), 3);
+                ctx.fillRect(x, bodyY, candleWidth, bodyHeight);
+
+                // Store Exact Canvas Pixel Center and Target Value for MA
+                maPoints.push({ x: x + candleWidth / 2, priceY: closeY });
+            }
+
+            // 2. Calculate and Draw Synchronized Moving Average Line
+            if (maPoints.length > 0) {
+                ctx.strokeStyle = '#f59e0b';
+                ctx.lineWidth = 2.5;
+                ctx.shadowColor = 'rgba(245, 158, 11, 0.6)';
+                ctx.shadowBlur = 8;
+                ctx.beginPath();
+
+                for (let i = 0; i < maPoints.length; i++) {
+                    // Calculate Moving Average based on exact rendered Y-coordinates
+                    const startIdx = Math.max(0, i - periodMA + 1);
+                    const slice = maPoints.slice(startIdx, i + 1);
+                    const avgY = slice.reduce((sum, p) => sum + p.priceY, 0) / slice.length;
+
+                    if (i === 0) {
+                        ctx.moveTo(maPoints[i].x, avgY);
+                    } else {
+                        ctx.lineTo(maPoints[i].x, avgY);
+                    }
+                }
+                ctx.stroke();
+                ctx.shadowBlur = 0; // Reset Shadow
+            }
+
+            // 3. Rhythm Progression Logic
+            candleGrowth += 0.04;
+            if (candleGrowth >= 1) {
+                candleGrowth = 0;
+                progressIndex++;
+                if (progressIndex >= rawOHLC.length) {
+                    progressIndex = 0; // Reset Loop
+                }
+            }
+
+            requestAnimationFrame(animateChart);
+        }
+
+        // Start Animation Loop
+        animateChart();
+    </script>
+</body>
+</html>
