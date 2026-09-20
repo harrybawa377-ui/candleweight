@@ -16,7 +16,7 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://candleweight.com/terms</loc>
+    <loc>https://candleweight.com/about</loc>
     <lastmod>2026-09-19</lastmod>
     <priority>0.6</priority>
   </url>
@@ -31,7 +31,7 @@
     <priority>0.4</priority>
   </url>
   <url>
-    <loc>https://candleweight.com/about</loc>
+    <loc>https://candleweight.com/terms</loc>
     <lastmod>2026-09-19</lastmod>
     <priority>0.3</priority>
   </url>
