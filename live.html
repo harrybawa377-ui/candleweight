@@ -2,58 +2,62 @@
 <html lang="en">
 <head>
     <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-W2BQ3LC26J"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-W2BQ3LC26J"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
 
-  gtag('config', 'G-W2BQ3LC26J');
-</script>
+      gtag('config', 'G-W2BQ3LC26J');
+    </script>
+    <!-- Vercel Analytics -->
+    <script defer src="/_vercel/insights/script.js"></script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
     <!-- Primary SEO Meta Tags -->
-<title>Candle weight - Real-Time Market Analytics & Excel Live Streaming</title>
-<meta name="description" content="Watch real-time market analytics, live order depth tracking, and automated Excel data sync in action on Candle weight.">
+    <title>candleWeight | Live Nifty 50 & Bank Nifty Order Flow Analytics</title>
+    <meta name="description" content="Stream real-time order flow delta, 1-minute candle weight scores, and live market depth for Nifty 50, Bank Nifty, Reliance, and HDFC Bank.">
+    <!-- Browser Favicon -->
+    <link rel="icon" type="image/png" href="/favicon.png">
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://candleweight.com/">
+    <meta property="og:title" content="candleWeight | Live Nifty 50 & Bank Nifty Order Flow Analytics">
+    <meta property="og:description" content="Stream real-time order flow delta, 1-minute candle weight scores, and live market depth for Nifty 50, Bank Nifty, Reliance, and HDFC Bank.">
+    <meta property="og:image" content="https://candleweight.com/og-image.jpg">
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="candleWeight | Live Nifty 50 & Bank Nifty Order Flow Analytics">
+    <meta name="twitter:description" content="Stream real-time order flow delta, 1-minute candle weight scores, and live market depth for Nifty 50, Bank Nifty, Reliance, and HDFC Bank.">
+    <meta name="twitter:image" content="https://candleweight.com/og-image.jpg">
 
-<!-- Browser Favicon -->
-<link rel="icon" type="image/png" href="/favicon.png">
-
-<!-- Vercel Analytics (already added) -->
-<script defer src="/_vercel/insights/script.js"></script>
-
-<!-- Open Graph / Facebook (Social Preview) -->
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://candleweight.com/">
-<meta property="og:title" content="Candle weight - Real-Time Market Analytics & Excel Live Streaming">
-<meta property="og:description" content="Watch real-time market analytics, live order depth tracking, and automated Excel data sync in action on Candle weight.">
-<!-- Point this to your new file -->
-<meta property="og:image" content="https://candleweight.com/og-image.jpg">
-
-<!-- Twitter Card -->
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Candle weight - Real-Time Market Analytics">
-<meta name="twitter:description" content="Watch real-time market analytics, live order depth tracking, and automated Excel data sync in action on Candle weight.">
-<!-- Point this to your new file -->
-<meta name="twitter:image" content="https://candleweight.com/og-image.jpg">
-
-    <!-- Structured Schema Data (JSON-LD) for Search Engines -->
+    <!-- Schema Markup / JSON-LD -->
     <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "SoftwareApplication",
-  "name": "Candle weight",
-  "operatingSystem": "Web",
-  "applicationCategory": "FinanceApplication",
-  "description": "Real-time stock market depth and Excel live data synchronization platform.",
-  "offers": {
-    "@type": "Offer",
-    "price": "0",
-    "priceCurrency": "USD"
-  }
-}
-</script>
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "CandleWeight Live Market Analytics",
+      "url": "https://candleweight.com/live.html",
+      "description": "Stream real-time order flow delta, 1-minute candle weight scores, and live market depth for Nifty 50, Bank Nifty, Reliance, and HDFC Bank.",
+      "isPartOf": {
+        "@type": "WebApplication",
+        "name": "CandleWeight",
+        "url": "https://candleweight.com"
+      },
+      "about": [
+        { "@type": "Thing", "name": "Live Order Flow" },
+        { "@type": "Thing", "name": "Real-Time Market Depth" },
+        { "@type": "Thing", "name": "Nifty 50 Live Streaming" },
+        { "@type": "Thing", "name": "Bank Nifty Live Analytics" },
+        { "@type": "Thing", "name": "HDFC Bank" },
+        { "@type": "Thing", "name": "ICICI Bank" },
+        { "@type": "Thing", "name": "Reliance Industries" },
+        { "@type": "Thing", "name": "Infosys" },
+        { "@type": "Thing", "name": "Bharti Airtel" }
+      ]
+    }
+    </script>
 
     <style>
         * {
@@ -192,6 +196,7 @@
             box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3);
             width: 100%;
             min-width: 0;
+            margin-bottom: 1.5rem;
         }
 
         .live-header {
@@ -239,7 +244,6 @@
             box-shadow: 0 6px 20px rgba(56, 189, 248, 0.4);
         }
 
-        /* BACK TO TOP BUTTON (HIDDEN BY DEFAULT) */
         #back-to-top-btn {
             display: none;
             padding: 10px 14px;
@@ -254,7 +258,7 @@
         .table-wrapper {
             width: 100%;
             max-width: 100%;
-            max-height: 500vh; /* Dynamically caps height for phone screens */
+            max-height: 500vh;
             overflow-x: auto;
             overflow-y: auto;
             display: block;
@@ -264,9 +268,8 @@
             -webkit-overflow-scrolling: touch;
         }
 
-        /* CUSTOM SCROLLBAR STYLING */
         .table-wrapper::-webkit-scrollbar {
-            height: 8px; /* Fixed high height bug on mobile */
+            height: 8px;
             width: 8px;
         }
         
@@ -301,8 +304,6 @@
             text-transform: uppercase;
             border-bottom: 2px solid var(--border-color);
             border-right: 1px solid var(--border-color);
-            
-            /* STICKY TABLE HEADER AT THE TOP */
             position: sticky;
             top: 0;
             z-index: 10;
@@ -318,6 +319,22 @@
 
         tr:hover {
             background-color: rgba(255, 255, 255, 0.03);
+        }
+
+        #live-table-guide h2, #live-table-guide h3 {
+            margin-top: 1.2rem;
+            margin-bottom: 0.5rem;
+            color: var(--accent-color);
+        }
+
+        #live-table-guide p, #live-table-guide ul {
+            margin-bottom: 1rem;
+            line-height: 1.6;
+            color: var(--text-secondary);
+        }
+
+        #live-table-guide ul {
+            padding-left: 1.2rem;
         }
 
         /* 4. FOOTER */
@@ -362,62 +379,18 @@
 
         /* 5. MOBILE RESPONSIVE MEDIA QUERIES */
         @media screen and (max-width: 600px) {
-            .top-nav {
-                padding: 0 1rem;
-            }
-
-            .brand-header {
-                padding: 1rem;
-            }
-
-            .brand-title h1 {
-                font-size: 1.15rem;
-            }
-
-            .brand-title p {
-                font-size: 0.75rem;
-            }
-
-            .main-content {
-                margin: 0.8rem auto;
-                padding: 0 0.5rem;
-            }
-
-            .content-card {
-                padding: 0.75rem;
-            }
-
-            th, td {
-                padding: 8px 10px;
-                font-size: 0.8rem;
-            }
-
-            .floating-controls {
-                bottom: 15px;
-                right: 15px;
-                flex-direction: column;
-                align-items: flex-end;
-            }
-
-            .floating-btn {
-                padding: 8px 12px;
-                font-size: 0.75rem;
-            }
-
-            #back-to-top-btn {
-                padding: 8px 10px;
-            }
-
-            .footer-container {
-                flex-direction: column;
-                align-items: flex-start;
-                gap: 0.8rem;
-            }
-
-            .footer-links {
-                gap: 1rem;
-                flex-wrap: wrap;
-            }
+            .top-nav { padding: 0 1rem; }
+            .brand-header { padding: 1rem; }
+            .brand-title h1 { font-size: 1.15rem; }
+            .brand-title p { font-size: 0.75rem; }
+            .main-content { margin: 0.8rem auto; padding: 0 0.5rem; }
+            .content-card { padding: 0.75rem; }
+            th, td { padding: 8px 10px; font-size: 0.8rem; }
+            .floating-controls { bottom: 15px; right: 15px; flex-direction: column; align-items: flex-end; }
+            .floating-btn { padding: 8px 12px; font-size: 0.75rem; }
+            #back-to-top-btn { padding: 8px 10px; }
+            .footer-container { flex-direction: column; align-items: flex-start; gap: 0.8rem; }
+            .footer-links { gap: 1rem; flex-wrap: wrap; }
         }
     </style>
 </head>
@@ -464,9 +437,51 @@
                 </table>
             </div>
         </div>
+
+        <section id="live-table-guide" class="content-card">
+            <h2>Understanding the Live Nifty 50 Weightage Table</h2>
+            <p>
+                The <strong>CandleWeight Live Terminal</strong> provides a real-time breakdown of Nifty 50 stock weightage momentum. By tracking short-term order flow fluctuations against historical baselines, this table highlights institutional buy and sell pressure across all Nifty 50 constituents as it happens.
+            </p>
+
+            <h3>Column Breakdown & Calculation Logic</h3>
+            <ul>
+                <li>
+                    <strong>Column 1: Last 5 Minutes Nifty Weight Contribution</strong><br>
+                    Measures the cumulative weight contribution of each stock over the rolling 5-minute window.
+                </li>
+                <li>
+                    <strong>Column 2: Last 1 Minute Nifty Weight Contribution</strong><br>
+                    Displays the instant 1-minute weight score generated by the latest tick data.
+                </li>
+                <li>
+                    <strong>Column 3: Today's Running 1-Minute Average Weight</strong><br>
+                    Calculates the cumulative moving average of all 1-minute weight scores logged since market open today.
+                </li>
+                <li>
+                    <strong>Column 4: 5-Day Historical Same-Minute Average (Comparison Baseline)</strong><br>
+                    Computes the 5-day historical average weight score for the exact same minute of the trading day.
+                </li>
+                <li>
+                    <strong>Column 5: Cumulative Time Stamp (Till Now)</strong><br>
+                    Logs the exact elapsed time and timestamp for the session.
+                </li>
+            </ul>
+
+            <h2>Real-Time Order Flow Delta & Live Market Depth Streaming</h2>
+            <p>
+            The <strong>CandleWeight Live Analytics Terminal</strong> delivers continuous, high-speed order flow updates across the <strong>NSE Nifty 50</strong>, <strong>Bank Nifty</strong>, and major sectoral constituents. Built for active intraday momentum traders and quantitative analysts, our engine streams tick-level execution data to track real-time volume delta, volume absorption, and market depth imbalance as it unfolds during live market hours.
+            </p>
+            <p>
+            Unlike conventional technical indicators that rely solely on lagging price action, CandleWeight evaluates <strong>one-minute candle weight scores</strong> in real time. By analyzing institutional buy and sell aggressive order flows, the platform measures true volume pressure across benchmark stock heavyweights, including <strong>Reliance Industries, HDFC Bank, ICICI Bank, State Bank of India (SBIN), Infosys, and TCS</strong>. Evaluating running order flow delta across top index weights allows traders to identify early institutional accumulation, spot liquidity sweeps, and anticipate high-probability breakout setups before they reflect on standard candlestick charts.
+           </p>
+           <p>
+            The live terminal updates dynamically without requiring manual page refreshes, providing instant access to bid-ask imbalance shifts and high-volume transaction alerts. Cross-reference live <strong>Nifty Bank</strong> delta signals with individual stock order flow to gauge overall market regime, track smart money positioning, and validate intraday risk execution with institutional precision.
+           </p>
+        </section>
     </main>
 
-    <!-- FLOATING ACTION BUTTONS (REFRESH + BACK TO TOP) -->
+    <!-- FLOATING CONTROLS -->
     <div class="floating-controls">
         <button id="back-to-top-btn" class="floating-btn" onclick="scrollToTop()">
             <span class="btn-icon">↑</span> Top
@@ -475,7 +490,7 @@
             <span class="btn-icon">↻</span> Refresh
         </button>
     </div>
-
+    
     <!-- FOOTER -->
     <footer class="site-footer">
         <div class="footer-container">
@@ -494,7 +509,6 @@
     <script>
         const BLOB_DATA_URL = "https://gist.githubusercontent.com/harrybawa377-ui/54741cb067b06d568c4c8b30a7602f8e/raw/data.json";
 
-        // Real-time listener for table container scrolling
         const wrapper = document.getElementById("table-wrapper");
         if (wrapper) {
             wrapper.addEventListener("scroll", () => {
@@ -503,7 +517,6 @@
             });
         }
 
-        // Global Window Scroll Listener
         window.addEventListener("scroll", () => {
             sessionStorage.setItem("scrollPositionX", window.scrollX);
             sessionStorage.setItem("scrollPositionY", window.scrollY);
@@ -535,7 +548,6 @@
             location.reload();
         }
 
-        // Restore window scroll position (if page reloads)
         window.addEventListener("DOMContentLoaded", () => {
             const scrollY = sessionStorage.getItem("scrollPositionY");
             const scrollX = sessionStorage.getItem("scrollPositionX");
@@ -555,7 +567,6 @@
                 return;
             }
 
-            // 1. Capture exact scroll positions before modifying the DOM
             const currentTableTop = wrapper ? wrapper.scrollTop : 0;
             const currentTableLeft = wrapper ? wrapper.scrollLeft : 0;
 
@@ -565,12 +576,10 @@
             const finalY = storedTableY !== null ? parseInt(storedTableY, 10) : currentTableTop;
             const finalX = storedTableX !== null ? parseInt(storedTableX, 10) : currentTableLeft;
 
-            // 2. Build headers dynamically
             const headers = Array.from(
                 new Set(data.flatMap(row => Object.keys(row)))
             );
 
-            // 3. Update DOM
             tableHead.innerHTML = "<tr>" + headers.map(h => `<th>${h}</th>`).join("") + "</tr>";
 
             tableBody.innerHTML = data.map(row => {
@@ -580,7 +589,6 @@
                 }).join("") + "</tr>";
             }).join("");
 
-            // 4. Force browser to restore scroll position immediately on render frame
             if (wrapper) {
                 requestAnimationFrame(() => {
                     wrapper.scrollTop = finalY;
@@ -591,7 +599,7 @@
 
         async function loadData() {
             try {
-                const response = await fetch(`${BLOB_DATA_URL}?t=${new Date().getTime()}`);
+                const response = await fetch(`${BLOB_DATA_URL}?t=${new Date().getTime()}`, { cache: 'no-store' });
                 if (!response.ok) throw new Error(`HTTP Error: ${response.status}`);
                 
                 const data = await response.json();
@@ -601,10 +609,8 @@
             }
         }
 
-        // Initial Load and Polling Loop (30 Seconds)
         loadData();
         setInterval(loadData, 30000);
     </script>
-
 </body>
 </html>
