@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-W2BQ3LC26J"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-W2BQ3LC26J');
-</script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-W2BQ3LC26J"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-W2BQ3LC26J');
+    </script>
     
     <!-- Primary SEO Meta Tags -->
     <title>CandleWeight | Nifty 50 Historical 1-Minute Candle Data & Logs</title>
@@ -25,7 +26,7 @@
 
     <!-- Open Graph / Facebook (Social Preview) -->
     <meta property="og:type" content="website">
-   <meta property="og:url" content="https://candleweight.com/history.html">
+    <meta property="og:url" content="https://candleweight.com/history.html">
     <meta property="og:title" content="CandleWeight | Nifty 50 Historical 1-Minute Candle Data & Logs">
     <meta property="og:description" content="Access historical 1-minute candle weight logs, volume delta archives, and running averages for Nifty 50 and Bank Nifty stocks.">
     <meta property="og:image" content="https://candleweight.com/og-image.jpg">
@@ -39,33 +40,33 @@
     <!-- Schema Markup / JSON-LD for History Page -->
     <script type="application/ld+json">
     {
-    "@context": "https://schema.org",
-    "@type": "WebPage",
-    "name": "CandleWeight Historical Data & Logs",
-    "url": "https://candleweight.com/history.html",
-    "description": "Historical order flow data, volume delta logs, and candle weight archives for NSE India equities and crypto assets.",
-    "isPartOf": {
-      "@type": "WebApplication",
-      "name": "CandleWeight",
-      "url": "https://candleweight.com"
-    },
-    "about": [
-      { "@type": "Thing", "name": "Historical Order Flow" },
-      { "@type": "Thing", "name": "Nifty 50 Historical Data" },
-      { "@type": "Thing", "name": "Bank Nifty Candle Logs" },
-      { "@type": "Thing", "name": "Volume Delta Archive" }
-      { "@type": "Thing", "name": "HDFC Bank" },
-      { "@type": "Thing", "name": "ICICI Bank" },
-      { "@type": "Thing", "name": "Reliance Industries" },
-      { "@type": "Thing", "name": "Infosys" },
-      { "@type": "Thing", "name": "Bharti Airtel" },
-      { "@type": "Thing", "name": "NSE India" },
-      { "@type": "Thing", "name": "Nifty 50" },
-      { "@type": "Thing", "name": "Sensex" },
-      { "@type": "Thing", "name": "Bank Nifty" }
-    ]
-  }
-  </script>
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "Nifty 50 Historical 1-Minute Candle Data & Logs",
+      "url": "https://candleweight.com/history.html",
+      "description": "Access historical 1-minute candle weight logs, volume delta archives, and running averages for Nifty 50 and Bank Nifty stocks.",
+      "isPartOf": {
+        "@type": "WebApplication",
+        "name": "CandleWeight",
+        "url": "https://candleweight.com"
+      },
+      "about": [
+        { "@type": "Thing", "name": "Historical Order Flow" },
+        { "@type": "Thing", "name": "Nifty 50 Historical Data" },
+        { "@type": "Thing", "name": "Bank Nifty Candle Logs" },
+        { "@type": "Thing", "name": "Volume Delta Archive" },
+        { "@type": "Thing", "name": "HDFC Bank" },
+        { "@type": "Thing", "name": "ICICI Bank" },
+        { "@type": "Thing", "name": "Reliance Industries" },
+        { "@type": "Thing", "name": "Infosys" },
+        { "@type": "Thing", "name": "Bharti Airtel" },
+        { "@type": "Thing", "name": "NSE India" },
+        { "@type": "Thing", "name": "Nifty 50" },
+        { "@type": "Thing", "name": "Sensex" },
+        { "@type": "Thing", "name": "Bank Nifty" }
+      ]
+    }
+    </script>
     
     <style>
         * {
@@ -187,6 +188,7 @@
             border-radius: 12px;
             padding: 2rem;
             box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3);
+            margin-bottom: 2rem;
         }
 
         .live-header {
@@ -284,7 +286,7 @@
         /* DATA TABLE STYLING */
         .table-wrapper {
             overflow-x: auto;
-            max-height: 500vh;
+            max-height: 400vh;
             overflow-y: auto;
             border-radius: 6px;
             border: 1px solid var(--border-color);
@@ -383,6 +385,8 @@
 
             .top-nav-links {
                 gap: 1rem;
+                overflow-x: auto;
+                white-space: nowrap;
             }
 
             .brand-header {
@@ -425,18 +429,17 @@
                 align-items: flex-start;
             }
 
-            /* FIX: Mobile table font and sizing */
             th, td {
                 padding: 10px 12px;
                 font-size: 0.88rem;
             }
 
             th {
-                min-width: 110px; /* Prevents column header text from shrinking */
+                min-width: 110px;
             }
 
             .table-wrapper {
-                max-height: 300vh;
+                max-height: 60vh;
             }
         }
 
@@ -451,6 +454,20 @@
                 gap: 1rem;
                 flex-wrap: wrap;
             }
+        }
+        /* FIXED: Matched selector with <section id="historical-analytics-info"> */
+        #historical-analytics-info p, 
+        #historical-analytics-info ul {
+            color: var(--text-secondary);
+            line-height: 1.6;
+            margin-bottom: 1rem;
+        }
+
+        #historical-analytics-info h2, 
+        #historical-analytics-info h3 {
+            color: var(--accent-color);
+            margin-top: 1.5rem;
+            margin-bottom: 0.5rem;
         }
     </style>
 </head>
@@ -522,16 +539,17 @@
                 </table>
             </div>
         </div>
+
         <section id="historical-analytics-info">
-         <h2>Historical Order Flow & Candle Weight Logs</h2>
-         <h3>Understanding Historical Average Weight Calculations</h3>
-         <p>The historical log table displays real-time order flow progression row by row.The <strong>3rd column (Calculated Weight)</strong> represents the raw, instantaneous Candle Weight score generated for a specific time interval, while the <strong>2nd column (Average Weight)</strong> displays the running average of those weight values up to that specific timestamp. For example, at <strong>Row 10</strong>, the Average Weight column calculates the mean score of the Calculated Weight values across the first 10 rows (Rows 1 through 10). This running average smooths out temporary market noise and brief volatility spikes recorded in the <strong>4th column (Time)</strong>, helping traders easily identify sustained institutional accumulation or distribution trends over time.</p>  
-         <p>The <strong>CandleWeight Historical Archive</strong> provides traders and quantitative analysts with access to past order flow delta, market depth recordings, and candle weight calculations. Reviewing historical volume absorption helps identify recurring institutional accumulation zones across major NSE India assets and cryptocurrency markets.</p>
-         <h3>Nifty 50 & Bank Nifty Historical Trends</h3>
-         <p>Analyze historical 1-minute, 5-minute, and hourly candle weight logs for top Nifty 50 constituents including <strong>Reliance Industries, HDFC Bank, ICICI Bank, TCS, and Infosys</strong>. Cross-reference past <strong>Bank Nifty</strong> order flow signals with intraday price action to backtest momentum setups and evaluate historical FII trade flow impacts.</p>
-         <h3>Crypto & Market Depth Archives</h3>
-         <p>Track historical trade execution logs and volume delta spikes for major cryptocurrency pairs, including BTCUSDT and ETHUSDT. Filter past candle logs by custom volume thresholds to analyze whale transaction clusters and historic liquidity sweeps.</p>
-       </section>
+            <h2>Historical Order Flow & Candle Weight Logs</h2>
+            <h3>Understanding Historical Average Weight Calculations</h3>
+            <p>The historical log table displays real-time order flow progression row by row. The <strong>3rd column (Calculated Weight)</strong> represents the raw, instantaneous Candle Weight score generated for a specific time interval, while the <strong>2nd column (Average Weight)</strong> displays the running average of those weight values up to that specific timestamp. For example, at <strong>Row 10</strong>, the Average Weight column calculates the mean score of the Calculated Weight values across the first 10 rows (Rows 1 through 10). This running average smooths out temporary market noise and brief volatility spikes recorded in the <strong>4th column (Time)</strong>, helping traders easily identify sustained institutional accumulation or distribution trends over time.</p>  
+            <p>The <strong>CandleWeight Historical Archive</strong> provides traders and quantitative analysts with access to past order flow delta, market depth recordings, and candle weight calculations. Reviewing historical volume absorption helps identify recurring institutional accumulation zones across major NSE India assets and cryptocurrency markets.</p>
+            <h3>Nifty 50 & Bank Nifty Historical Trends</h3>
+            <p>Analyze historical 1-minute, 5-minute, and hourly candle weight logs for top Nifty 50 constituents including <strong>Reliance Industries, HDFC Bank, ICICI Bank, TCS, and Infosys</strong>. Cross-reference past <strong>Bank Nifty</strong> order flow signals with intraday price action to backtest momentum setups and evaluate historical FII trade flow impacts.</p>
+            <h3>Crypto & Market Depth Archives</h3>
+            <p>Track historical trade execution logs and volume delta spikes for major cryptocurrency pairs, including BTCUSDT and ETHUSDT. Filter past candle logs by custom volume thresholds to analyze whale transaction clusters and historic liquidity sweeps.</p>
+        </section>
     </main>
 
     <!-- FOOTER WITH LINKS -->
@@ -548,7 +566,7 @@
         </div>
     </footer>
 
-    <!-- JAVASCRIPT: CALENDAR DATE PARSER, FALLBACK LOOKUP & COLUMN SORTING -->
+    <!-- JAVASCRIPT -->
     <script>
         let currentLoadedData = [];
         let currentDisplayData = [];
@@ -561,7 +579,8 @@
             if (!dateVal) return [];
 
             const parts = dateVal.split('-'); // [yyyy, mm, dd]
-            const year = parts[0].slice(-2);  // '26'
+            const fullYear = parts[0];        // '2026'
+            const shortYear = parts[0].slice(-2); // '26'
             
             const monthPadded = parts[1];      // '09'
             const dayPadded = parts[2];        // '06'
@@ -572,12 +591,15 @@
             let candidates = [];
 
             // Primary format: 06-09-26.json
-            candidates.push(`${dayPadded}-${monthPadded}-${year}.json`);
+            candidates.push(`${dayPadded}-${monthPadded}-${shortYear}.json`);
 
             // Fallback format: 6-9-26.json
             if (dayPadded !== dayUnpadded || monthPadded !== monthUnpadded) {
-                candidates.push(`${dayUnpadded}-${monthUnpadded}-${year}.json`);
+                candidates.push(`${dayUnpadded}-${monthUnpadded}-${shortYear}.json`);
             }
+
+            // 4-digit year fallback: 06-09-2026.json
+            candidates.push(`${dayPadded}-${monthPadded}-${fullYear}.json`);
 
             return candidates;
         }
@@ -669,14 +691,12 @@
                 let valA = a[columnKey] !== undefined && a[columnKey] !== null ? a[columnKey] : '';
                 let valB = b[columnKey] !== undefined && b[columnKey] !== null ? b[columnKey] : '';
 
-                // Numeric comparison if both values are valid numbers
                 const numA = Number(valA);
                 const numB = Number(valB);
                 if (!isNaN(numA) && !isNaN(numB) && valA !== '' && valB !== '') {
                     return sortAscending ? numA - numB : numB - numA;
                 }
 
-                // String comparison fallback
                 return sortAscending 
                     ? String(valA).localeCompare(String(valB)) 
                     : String(valB).localeCompare(String(valA));
@@ -693,7 +713,6 @@
 
             const headers = Object.keys(data[0]);
             
-            // Generate Headings with Clickable Sort Handlers
             tableHead.innerHTML = '<tr>' + headers.map(h => {
                 let icon = '<span class="sort-icon">↕</span>';
                 if (sortColumn === h) {
@@ -702,7 +721,6 @@
                 return `<th onclick="sortTableByColumn('${h}')" title="Click to sort by ${h}">${h} ${icon}</th>`;
             }).join('') + '</tr>';
 
-            // Generate Body Rows
             tableBody.innerHTML = data.map(row => {
                 return '<tr>' + headers.map(h => {
                     const val = row[h];
@@ -720,7 +738,6 @@
             });
 
             if (sortColumn) {
-                // Re-apply sorting on filtered results if a sort column is selected
                 sortAscending = !sortAscending;
                 sortTableByColumn(sortColumn);
             } else {
