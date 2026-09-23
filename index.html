@@ -12,16 +12,7 @@
 </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!-- Primary SEO Meta Tags -->
-<title>Candle weight - Bank Nifty & Nifty 50 Order Flow Analytics</title>
-<meta name="description" content="Track real-time order flow, market depth, and candle weight analytics for Nifty 50, Reliance, HDFC Bank, ICICI Bank, and crypto pairs on CandleWeight.">
-
-<!-- Browser Favicon -->
-<link rel="icon" type="image/png" href="/favicon.png">
-<link rel="canonical" href="https://candleweight.com/">
-
-<!-- Vercel Analytics (already added) -->
+    <!-- Vercel Analytics (already added) -->
 <script>
   window.va = window.va || function () { (window.vaq = window.7vaq || []).push(arguments); };
 </script>
@@ -31,44 +22,59 @@
   window.si = window.si || function () { (window.siq = window.siq || []).push(arguments); };
 </script>
 <script defer src="/_vercel/speed-insights/script.js"></script>
-
+    
+    <!-- Primary SEO Meta Tags -->
+<title>Candle weight - Bank Nifty & Nifty 50 Order Flow Analytics</title>
+<meta name="description" content="Track real-time order flow, market depth, and candle weight analytics for Nifty 50, Reliance, HDFC Bank, ICICI Bank, and crypto pairs on CandleWeight.">
+<!-- Browser Favicon -->
+<link rel="icon" type="image/png" href="/favicon.png">
+<link rel="canonical" href="https://candleweight.com/">
 
 <!-- Open Graph / Facebook (Social Preview) -->
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://candleweight.com/">
-<meta property="og:title" content="Candle weight - Real-Time Market Analytics &  Live Streaming">
-<meta property="og:description" content="Access live data feeds, track market strength, and stream your  data online seamlessly with Candle weight.">
+<meta property="og:title" content="Candle weight - Bank Nifty & Nifty 50 Order Flow Analytics">
+<meta property="og:description" content="Track real-time order flow, market depth, and candle weight analytics for Nifty 50, Reliance, HDFC Bank, ICICI Bank, and crypto pairs on CandleWeight.">
 <!-- Point this to your new file -->
 <meta property="og:image" content="https://candleweight.com/og-image.jpg">
 
 <!-- Twitter Card -->
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Candle weight - Real-Time Market Analytics">
-<meta name="twitter:description" content="High-speed market analytics, order depth tracking, and direct -to-web streaming.">
+<meta name="twitter:title" content="Candle weight - Bank Nifty & Nifty 50 Order Flow Analytics">
+<meta name="twitter:description" content="Track real-time order flow, market depth, and candle weight analytics for Nifty 50, Reliance, HDFC Bank, ICICI Bank, and crypto pairs on CandleWeight.">
 <!-- Point this to your new file -->
 <meta name="twitter:image" content="https://candleweight.com/og-image.jpg">
 
-    <!-- Structured Schema Data (JSON-LD) for Search Engines -->
- <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "WebApplication",
-  "name": "CandleWeight",
-  "url": "https://candleweight.com",
-  "applicationCategory": "FinanceApplication",
-  "about": [
-    { "@type": "Thing", "name": "NSE India" },
-    { "@type": "Thing", "name": "Nifty 50" },
-    { "@type": "Thing", "name": "Sensex" },
-    { "@type": "Thing", "name": "Bank Nifty" },
-    { "@type": "Thing", "name": "HDFC Bank" },
-    { "@type": "Thing", "name": "ICICI Bank" },
-    { "@type": "Thing", "name": "Reliance Industries" },
-    { "@type": "Thing", "name": "Infosys" },
-    { "@type": "Thing", "name": "Bharti Airtel" }
-  ]
-}
-</script>
+     <!-- Schema Markup / JSON-LD for History Page -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "Candle weight - Bank Nifty & Nifty 50 Order Flow Analytics",
+      "url": "https://candleweight.com/index.html",
+      "description": "Track real-time order flow, market depth, and candle weight analytics for Nifty 50, Reliance, HDFC Bank, ICICI Bank, and crypto pairs on CandleWeight.",
+      "isPartOf": {
+        "@type": "WebApplication",
+        "name": "CandleWeight",
+        "url": "https://candleweight.com"
+      },
+      "about": [
+        { "@type": "Thing", "name": "Historical Order Flow" },
+        { "@type": "Thing", "name": "Nifty 50 Historical Data" },
+        { "@type": "Thing", "name": "Bank Nifty Candle Logs" },
+        { "@type": "Thing", "name": "Volume Delta Archive" },
+        { "@type": "Thing", "name": "HDFC Bank" },
+        { "@type": "Thing", "name": "ICICI Bank" },
+        { "@type": "Thing", "name": "Reliance Industries" },
+        { "@type": "Thing", "name": "Infosys" },
+        { "@type": "Thing", "name": "Bharti Airtel" },
+        { "@type": "Thing", "name": "NSE India" },
+        { "@type": "Thing", "name": "Nifty 50" },
+        { "@type": "Thing", "name": "Sensex" },
+        { "@type": "Thing", "name": "Bank Nifty" }
+      ]
+    }
+    </script>
 
     <style>
         * {
@@ -89,6 +95,7 @@
             --purple-glow: #818cf8;
             --green-accent: #22c55e;
             --amber-accent: #f59e0b;
+        
         }
 
         body {
@@ -97,6 +104,11 @@
             min-height: 100vh;
             display: flex;
             flex-direction: column;
+        }
+
+        /* Global Heading Defaults */
+        h3 {
+            color: var(--purple-glow);
         }
 
         /* 1. TOP MENU NAVIGATION */
@@ -217,7 +229,6 @@
             overflow: hidden;
         }
 
-        /* Chart Background Grid */
         .chart-grid {
             position: absolute;
             inset: 0;
@@ -256,16 +267,25 @@
         }
 
         .content-card h2 {
-            font-size: 2rem;
-            color: var(--accent-color);
+            font-size: 1.85rem;
+            color: #7498eb;
             margin-bottom: 1rem;
+            font-weight: 700;
+        }
+
+        .content-card h3 {
+            font-size: 1.5rem;
+            color: #e79fc3;
+            margin-top: 1.5rem;
+            margin-bottom: 0.75rem;
+            font-weight: 600;
         }
 
         .content-card p {
             color: var(--text-secondary);
             line-height: 1.7;
             font-size: 1.05rem;
-            margin-bottom: 1.5rem;
+            margin-bottom: 1.25rem;
         }
 
         .cta-button {
@@ -287,7 +307,7 @@
             box-shadow: 0 6px 20px rgba(56, 189, 248, 0.45);
         }
 
-        /* FEATURE SECTION & FULL-WIDTH ALTERNATING ARTICLES */
+        /* FEATURE SECTION */
         .intro-section {
             display: flex;
             flex-direction: column;
@@ -307,21 +327,16 @@
             gap: 2.5rem;
             width: 100%;
             transition: border-color 0.3s ease, box-shadow 0.3s ease;
+            flex-direction: row-reverse;
+        }
+
+        .intro-card:nth-child(even) {
+            flex-direction: row;
         }
 
         .intro-card:hover {
             border-color: var(--accent-color);
             box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
-        }
-
-        /* Default Layout: Animation Left, Text Right */
-        .intro-card {
-            flex-direction: row-reverse;
-        }
-
-        /* Alternating Even Articles: Animation Right, Text Left */
-        .intro-card:nth-child(even) {
-            flex-direction: row;
         }
 
         .intro-card .card-text {
@@ -330,17 +345,26 @@
 
         .intro-card h3 {
             font-size: 1.45rem;
-            color: var(--text-primary);
+           color: #a5aee5; /* FIXED: Changed from var(--text-primary) to var(--purple-glow) */
             margin-bottom: 0.8rem;
+            margin-top: 0;
             display: flex;
             align-items: center;
             gap: 10px;
+        }
+
+        .intro-card h4 {
+            font-size: 1.15rem;
+            color: #5fa9d1;
+            margin-top: 1rem;
+            margin-bottom: 0.5rem;
         }
 
         .intro-card p {
             color: var(--text-secondary);
             line-height: 1.6;
             font-size: 1rem;
+            margin-bottom: 0.8rem;
         }
 
         .anim-illustration {
@@ -357,7 +381,7 @@
             overflow: hidden;
         }
 
-        /* --- ANIMATION 1: RADAR SWEEP --- */
+        /* CSS ANIMATIONS */
         .radar-screen {
             width: 90px;
             height: 90px;
@@ -404,7 +428,6 @@
             100% { transform: rotate(360deg); }
         }
 
-        /* --- ANIMATION 2: FLOATING CANDLESTICKS --- */
         .candlestick-group {
             display: flex;
             align-items: flex-end;
@@ -449,7 +472,6 @@
             100% { height: 55px; transform: translateY(-5px); }
         }
 
-        /* --- ANIMATION 3: ORDER BOOK DEPTH STREAM --- */
         .orderbook-stream {
             display: flex;
             flex-direction: column;
@@ -487,7 +509,6 @@
             100% { width: 40%; }
         }
 
-        /* --- ANIMATION 4: DIGITAL SIGNAL MATRIX --- */
         .matrix-grid {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
@@ -512,7 +533,6 @@
             50% { background-color: var(--accent-color); box-shadow: 0 0 10px var(--accent-color); transform: scale(1.15); }
         }
 
-        /* --- ANIMATION 5: ARCHIVE HISTORICAL TIMELINE --- */
         .timeline-graph {
             display: flex;
             align-items: center;
@@ -621,16 +641,14 @@
     <!-- BRAND & LOGO HEADER -->
     <header class="brand-header">
         <div class="brand-container">
-            <!-- Brand Logo & Name Placed on Left -->
             <div class="brand-left">
-                <div class="brand-logo" aria-label="Candle Strength Logo">CW</div>
+                <div class="brand-logo" aria-label="Candle Weight Logo">CW</div>
                 <div class="brand-title">
                     <h1>Candle weight</h1>
                     <p>Official Analytics Platform & Live Dashboard</p>
                 </div>
             </div>
 
-            <!-- Synchronized Candle Formation & Moving Average Header Chart -->
             <div class="header-animated-graphic" title="Synchronized Candle Formation & Moving Average">
                 <div class="chart-grid"></div>
                 <canvas id="syncedChart"></canvas>
@@ -644,12 +662,10 @@
         <article class="content-card">
             <h2>Welcome to Candle weight Analytics</h2>
             <h3>Disclaimer</h3>
-                <p>Candle weight provides market data, calculations, statistics and analytical information for educational and informational purposes only. The information displayed on this website is intended to help users study and analyse market activity and should not be considered financial, investment or trading advice. Candle weight does not provide recommendations, predictions, buy or sell signals, or instructions to enter or exit any trade. Users are solely responsible for their own trading and investment decisions. Market data may contain delays, inaccuracies or technical errors, and past data or analysis does not guarantee future results. Always conduct your own research and, where appropriate, consult a qualified financial professional before making financial decisions.</p>
-
+            <p>Candle weight provides market data, calculations, statistics and analytical information for educational and informational purposes only. The information displayed on this website is intended to help users study and analyse market activity and should not be considered financial, investment or trading advice. Candle weight does not provide recommendations, predictions, buy or sell signals, or instructions to enter or exit any trade. Users are solely responsible for their own trading and investment decisions. Market data may contain delays, inaccuracies or technical errors, and past data or analysis does not guarantee future results. Always conduct your own research and, where appropriate, consult a qualified financial professional before making financial decisions.</p>
 
             <a href="live.html" class="cta-button">View Live Data Feed &rarr;</a>
         </article>
-
         <!-- Brand Features with Alternating Visual Alignments -->
         <section class="intro-section" aria-label="Brand Features">
             
@@ -925,6 +941,9 @@
             </article>
 
         </section>
+        
+
+        
     </main>
 
     <!-- FOOTER -->
