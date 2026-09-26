@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <!-- Google tag (gtag.js) -->
@@ -439,7 +439,7 @@
             }
 
             .table-wrapper {
-                max-height: 60vh;
+                max-height: 400vh;
             }
         }
 
@@ -455,7 +455,7 @@
                 flex-wrap: wrap;
             }
         }
-        /* FIXED: Matched selector with <section id="historical-analytics-info"> */
+
         #historical-analytics-info p, 
         #historical-analytics-info ul {
             color: var(--text-secondary);
@@ -520,7 +520,7 @@
                     <input type="date" id="date-input">
                 </div>
 
-                <button class="btn-search" onclick="searchHistory()">Search Date</button>
+                <button class="btn-search" onclick="navigateToDate()">Search Date</button>
 
                 <div class="control-group" style="margin-left: auto;">
                     <input type="text" id="table-filter" placeholder="Filter rows..." onkeyup="filterRows()">
@@ -573,13 +573,37 @@
         let sortColumn = null;
         let sortAscending = true;
 
+        // Auto-initialize on page load with URL Parameter check
+        document.addEventListener("DOMContentLoaded", () => {
+            const urlParams = new URLSearchParams(window.location.search);
+            let dateParam = urlParams.get('date');
+
+            // Fallback: Default to current date if no date parameter exists in URL
+            if (!dateParam) {
+                dateParam = new Date().toISOString().split('T')[0];
+            }
+
+            document.getElementById('date-input').value = dateParam;
+            searchHistory();
+        });
+
+        // Navigates to page with URL parameter for distinct date URLs
+        function navigateToDate() {
+            const dateVal = document.getElementById('date-input').value;
+            if (dateVal) {
+                window.location.href = `history.html?date=${encodeURIComponent(dateVal)}`;
+            } else {
+                alert("Please select a date from the calendar.");
+            }
+        }
+
         function getCandidateFilenames() {
             const dateVal = document.getElementById('date-input').value; // Returns yyyy-mm-dd
 
             if (!dateVal) return [];
 
             const parts = dateVal.split('-'); // [yyyy, mm, dd]
-            const fullYear = parts[0];        // '2026'
+            const fullYear = parts[0];         // '2026'
             const shortYear = parts[0].slice(-2); // '26'
             
             const monthPadded = parts[1];      // '09'
