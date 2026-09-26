@@ -542,7 +542,6 @@
 
         <section id="historical-analytics-info">
             <h2>Historical Order Flow & Candle Weight Logs</h2>
-             
             <h3>Understanding Historical Average Weight Calculations</h3>
             <h3><strong>Column 1: Symbols</strong></h3>
             <p>Identifies the specific stock, index, or cryptocurrency pair being tracked (e.g., NSE:NIFTY50-INDEX or BTCUSDT). It ensures every data row is clearly tied to its parent asset.</p>
@@ -560,7 +559,8 @@
             <p>The lowest price the asset reached during that 1-minute interval.</p>
             <h3><strong>Column 8: Close</strong></h3>
             <p>The final price of the asset at the end of that 1-minute interval.</p>
-            How They Work Together
+            <h3>Understanding Historical Average Weight Calculations</h3>
+            <h4>How They Work Together</h4>
             <p>Columns 5 through 8 give you standard OHLC price action, while Column 4 timestamps the progression minute by minute. Columns 2 and 3 overlay your order flow analytics: Column 3 gives you the instant impact of that 1-minute candle, and Column 2 tells you whether institutional accumulation or distribution is building up across the entire trading session.</p>
             <p>The historical log table displays real-time order flow progression row by row. The <strong>3rd column (Calculated Weight)</strong> represents the raw, instantaneous Candle Weight score generated for a specific time interval, while the <strong>2nd column (Average Weight)</strong> displays the running average of those weight values up to that specific timestamp. For example, at <strong>Row 10</strong>, the Average Weight column calculates the mean score of the Calculated Weight values across the first 10 rows (Rows 1 through 10). This running average smooths out temporary market noise and brief volatility spikes recorded in the <strong>4th column (Time)</strong>, helping traders easily identify sustained institutional accumulation or distribution trends over time.</p>  
             <p>The <strong>CandleWeight Historical Archive</strong> provides traders and quantitative analysts with access to past order flow delta, market depth recordings, and candle weight calculations. Reviewing historical volume absorption helps identify recurring institutional accumulation zones across major NSE India assets and cryptocurrency markets.</p>
