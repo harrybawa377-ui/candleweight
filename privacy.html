@@ -82,10 +82,10 @@
         :root {
             --bg-color: #0f172a;
             --card-bg: #1e293b;
-            --border-color: #334155;
+            --border-color: #413728;
             --text-primary: #f8fafc;
             --text-secondary: #94a3b8;
-            --accent-color: #38bdf8;
+            --accent-color: #b78a18;
             --live-red: #ef4444;
             --purple-glow: #818cf8;
         }
@@ -100,35 +100,38 @@
 
         /* 1. TOP MENU NAVIGATION */
         .top-nav {
-            background-color: #0b1120;
-            border-bottom: 1px solid var(--border-color);
-            padding: 0 2rem;
-            height: 50px;
-            display: flex;
-            align-items: center;
-        }
+    background-color: #0b1120;
+    border-bottom: 1px solid var(--border-color);
+    padding: 0 1.5rem;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    overflow-x: auto;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+}
 
-        .top-nav-links {
-            list-style: none;
-            display: flex;
-            gap: 1.5rem;
-        }
+.top-nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
 
-        .top-nav-links a {
-            color: var(--text-secondary);
-            text-decoration: none;
-            font-size: 0.9rem;
-            font-weight: 500;
-            transition: color 0.2s ease;
-            display: flex;
-            align-items: center;
-            gap: 6px;
-        }
+.top-nav-links a {
+    color: var(--text-secondary);
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: color 0.2s ease;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
 
-        .top-nav-links a:hover,
-        .top-nav-links a.active {
-            color: var(--accent-color);
-        }
+.top-nav-links a:hover,
+.top-nav-links a.active {
+    color: var(--accent-color);
+}
 
         .live-dot {
             width: 8px;
@@ -150,50 +153,46 @@
         .brand-header {
             background-color: var(--card-bg);
             border-bottom: 1px solid var(--border-color);
-            padding: 2rem;
+            padding: 1.25rem 1.5rem;
         }
 
         .brand-container {
-            max-width: 1200px;
-            margin: 0 auto;
+            max-width: 3000px;
+            margin: -15px auto;
             display: flex;
             align-items: center;
             justify-content: space-between;
             gap: 2rem;
         }
-
         .brand-left {
             display: flex;
             align-items: center;
-            gap: 1rem;
+            gap: .50rem;
         }
 
         .brand-logo {
-            width: 60px;
-            height: 60px;
-            background: linear-gradient(135deg, var(--accent-color), var(--purple-glow));
-            border-radius: 14px;
+            width: 70px;
+            border-radius: 12px;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-weight: bold;
-            font-size: 1.6rem;
-            color: #ffffff;
-            box-shadow: 0 4px 12px rgba(56, 189, 248, 0.3);
         }
 
         .brand-title h1 {
             font-size: 1.8rem;
             font-weight: 700;
-            color: var(--text-primary);
-            letter-spacing: -0.5px;
+            color: #f4b822;
         }
 
         .brand-title p {
-            font-size: 0.9rem;
+            font-size: 0.85rem;
             color: var(--text-secondary);
         }
-
+        .brand-logo img {
+         height: 70px; /* Controls how tall the logo appears */
+          width: auto;  /* Maintains proper proportions */
+          display: block;
+        }
         /* 3. MAIN CONTENT AREA */
         .main-content {
             flex: 1;
@@ -234,7 +233,7 @@
 
         .policy-section h3 {
             font-size: 1.3rem;
-            color: var(--text-primary);
+            color: var(--accent-color);
             margin-bottom: 1rem;
         }
 
@@ -312,12 +311,8 @@
 
         /* RESPONSIVE STYLES */
         @media (max-width: 768px) {
-            .top-nav {
-                padding: 0 1rem;
-            }
-            .brand-header {
-                padding: 1.5rem 1rem;
-            }
+            .top-nav-links {justify-content: flex-start; }
+            .brand-header {padding: .90rem 1rem; }
             .main-content {
                 padding: 0 1rem;
                 margin: 1.5rem auto;
@@ -354,7 +349,7 @@
     <header class="brand-header">
         <div class="brand-container">
             <div class="brand-left">
-                <div class="brand-logo" aria-label="Candle weight Logo">CW</div>
+                <div class="brand-logo"><img src="favicon.png" alt="Candle Weight Logo"></div>
                 <div class="brand-title">
                     <h1>Candle weight</h1>
                     <p>Official Analytics Platform & Live Dashboard</p>
@@ -369,7 +364,7 @@
             
             <header class="policy-header">
                 <h2>Privacy Policy</h2>
-                <p class="last-updated">Last Updated: September 1, 2025</p>
+                <p class="last-updated">Last Updated: October 2, 2026 </p>
             </header>
 
             <section class="policy-section">
@@ -412,7 +407,7 @@
     <footer class="site-footer">
         <div class="footer-container">
             <div class="footer-info">
-                &copy; 2025-2026 Candle weight Platform. All rights reserved.
+                &copy; 2026 Candle weight Platform. All rights reserved.
             </div>
             <ul class="footer-links">
                 <li><a href="privacy.html" class="active">Privacy Policy</a></li>
