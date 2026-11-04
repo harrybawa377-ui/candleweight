@@ -1,0 +1,3752 @@
+[
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":1337,
+    "current Weight":1337,
+    "Time":"09:15",
+    "Open":22964.5,
+    "High":22976.6,
+    "Low":22932.6,
+    "Close":22966.25
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":1070,
+    "current Weight":803,
+    "Time":"09:16",
+    "Open":22963.9,
+    "High":22971.3,
+    "Low":22952.7,
+    "Close":22954.25
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":898,
+    "current Weight":553,
+    "Time":"09:17",
+    "Open":22952.6,
+    "High":22959.8,
+    "Low":22945.7,
+    "Close":22945.9
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":802,
+    "current Weight":516,
+    "Time":"09:18",
+    "Open":22944.9,
+    "High":22944.9,
+    "Low":22923.8,
+    "Close":22936.3
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":727,
+    "current Weight":424,
+    "Time":"09:19",
+    "Open":22936.0,
+    "High":22944.4,
+    "Low":22930.7,
+    "Close":22938.85
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":685,
+    "current Weight":477,
+    "Time":"09:20",
+    "Open":22937.2,
+    "High":22946.5,
+    "Low":22936.0,
+    "Close":22944.9
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":631,
+    "current Weight":305,
+    "Time":"09:21",
+    "Open":22944.3,
+    "High":22958.7,
+    "Low":22939.3,
+    "Close":22953.6
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":601,
+    "current Weight":395,
+    "Time":"09:22",
+    "Open":22953.2,
+    "High":22967.3,
+    "Low":22952.0,
+    "Close":22962.5
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":571,
+    "current Weight":325,
+    "Time":"09:23",
+    "Open":22962.0,
+    "High":22962.7,
+    "Low":22941.7,
+    "Close":22941.9
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":546,
+    "current Weight":326,
+    "Time":"09:24",
+    "Open":22941.5,
+    "High":22947.5,
+    "Low":22935.6,
+    "Close":22936.45
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":526,
+    "current Weight":325,
+    "Time":"09:25",
+    "Open":22935.5,
+    "High":22937.0,
+    "Low":22919.8,
+    "Close":22930.85
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":502,
+    "current Weight":241,
+    "Time":"09:26",
+    "Open":22928.3,
+    "High":22932.5,
+    "Low":22922.7,
+    "Close":22925.3
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":489,
+    "current Weight":330,
+    "Time":"09:27",
+    "Open":22924.2,
+    "High":22939.3,
+    "Low":22924.0,
+    "Close":22937.9
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":488,
+    "current Weight":474,
+    "Time":"09:28",
+    "Open":22938.2,
+    "High":22965.0,
+    "Low":22937.0,
+    "Close":22964.95
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":491,
+    "current Weight":531,
+    "Time":"09:29",
+    "Open":22965.0,
+    "High":22980.3,
+    "Low":22963.5,
+    "Close":22963.5
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":485,
+    "current Weight":397,
+    "Time":"09:30",
+    "Open":22963.9,
+    "High":22976.3,
+    "Low":22955.9,
+    "Close":22974.7
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":476,
+    "current Weight":335,
+    "Time":"09:31",
+    "Open":22973.7,
+    "High":22982.7,
+    "Low":22970.5,
+    "Close":22981.8
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":466,
+    "current Weight":289,
+    "Time":"09:32",
+    "Open":22981.2,
+    "High":22981.9,
+    "Low":22964.6,
+    "Close":22965.75
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":451,
+    "current Weight":192,
+    "Time":"09:33",
+    "Open":22965.6,
+    "High":22973.8,
+    "Low":22963.1,
+    "Close":22972.5
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":440,
+    "current Weight":225,
+    "Time":"09:34",
+    "Open":22972.0,
+    "High":22991.7,
+    "Low":22971.7,
+    "Close":22990.25
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":433,
+    "current Weight":285,
+    "Time":"09:35",
+    "Open":22989.2,
+    "High":22993.0,
+    "Low":22984.2,
+    "Close":22987.35
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":421,
+    "current Weight":186,
+    "Time":"09:36",
+    "Open":22987.5,
+    "High":22994.7,
+    "Low":22984.3,
+    "Close":22986.05
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":412,
+    "current Weight":213,
+    "Time":"09:37",
+    "Open":22985.3,
+    "High":22993.3,
+    "Low":22978.4,
+    "Close":22986.2
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":403,
+    "current Weight":179,
+    "Time":"09:38",
+    "Open":22985.5,
+    "High":22989.2,
+    "Low":22975.0,
+    "Close":22974.95
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":394,
+    "current Weight":180,
+    "Time":"09:39",
+    "Open":22975.1,
+    "High":22976.5,
+    "Low":22971.8,
+    "Close":22973.7
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":388,
+    "current Weight":249,
+    "Time":"09:40",
+    "Open":22972.8,
+    "High":22989.0,
+    "Low":22972.8,
+    "Close":22988.85
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":383,
+    "current Weight":241,
+    "Time":"09:41",
+    "Open":22988.3,
+    "High":22989.4,
+    "Low":22979.7,
+    "Close":22981.55
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":375,
+    "current Weight":170,
+    "Time":"09:42",
+    "Open":22980.8,
+    "High":22985.1,
+    "Low":22977.7,
+    "Close":22979.15
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":376,
+    "current Weight":407,
+    "Time":"09:43",
+    "Open":22979.5,
+    "High":22980.2,
+    "Low":22963.1,
+    "Close":22964.1
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":375,
+    "current Weight":336,
+    "Time":"09:44",
+    "Open":22963.1,
+    "High":22967.3,
+    "Low":22961.5,
+    "Close":22961.6
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":370,
+    "current Weight":228,
+    "Time":"09:45",
+    "Open":22961.5,
+    "High":22979.9,
+    "Low":22960.7,
+    "Close":22971.0
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":369,
+    "current Weight":335,
+    "Time":"09:46",
+    "Open":22970.7,
+    "High":22971.2,
+    "Low":22958.8,
+    "Close":22961.1
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":365,
+    "current Weight":231,
+    "Time":"09:47",
+    "Open":22960.7,
+    "High":22968.5,
+    "Low":22957.7,
+    "Close":22961.3
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":359,
+    "current Weight":169,
+    "Time":"09:48",
+    "Open":22959.4,
+    "High":22968.2,
+    "Low":22955.1,
+    "Close":22968.25
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":353,
+    "current Weight":148,
+    "Time":"09:49",
+    "Open":22967.7,
+    "High":22980.5,
+    "Low":22966.8,
+    "Close":22980.45
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":352,
+    "current Weight":304,
+    "Time":"09:50",
+    "Open":22979.8,
+    "High":23002.1,
+    "Low":22979.8,
+    "Close":22995.4
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":348,
+    "current Weight":215,
+    "Time":"09:51",
+    "Open":22995.5,
+    "High":23016.8,
+    "Low":22985.5,
+    "Close":23016.65
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":344,
+    "current Weight":183,
+    "Time":"09:52",
+    "Open":23016.6,
+    "High":23019.2,
+    "Low":22993.0,
+    "Close":22994.55
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":338,
+    "current Weight":145,
+    "Time":"09:53",
+    "Open":22993.3,
+    "High":22997.7,
+    "Low":22986.2,
+    "Close":22986.15
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":335,
+    "current Weight":207,
+    "Time":"09:54",
+    "Open":22985.5,
+    "High":22990.3,
+    "Low":22975.0,
+    "Close":22975.1
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":330,
+    "current Weight":130,
+    "Time":"09:55",
+    "Open":22974.9,
+    "High":22984.2,
+    "Low":22974.7,
+    "Close":22984.25
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":328,
+    "current Weight":235,
+    "Time":"09:56",
+    "Open":22984.0,
+    "High":22987.5,
+    "Low":22971.6,
+    "Close":22972.85
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":326,
+    "current Weight":257,
+    "Time":"09:57",
+    "Open":22972.8,
+    "High":22976.3,
+    "Low":22966.5,
+    "Close":22975.45
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":324,
+    "current Weight":223,
+    "Time":"09:58",
+    "Open":22975.3,
+    "High":22985.2,
+    "Low":22972.8,
+    "Close":22983.75
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":320,
+    "current Weight":147,
+    "Time":"09:59",
+    "Open":22984.0,
+    "High":22985.6,
+    "Low":22978.6,
+    "Close":22979.1
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":317,
+    "current Weight":203,
+    "Time":"10:00",
+    "Open":22979.4,
+    "High":22982.2,
+    "Low":22963.5,
+    "Close":22965.5
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":314,
+    "current Weight":158,
+    "Time":"10:01",
+    "Open":22964.6,
+    "High":22981.8,
+    "Low":22964.3,
+    "Close":22980.9
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":312,
+    "current Weight":211,
+    "Time":"10:02",
+    "Open":22980.5,
+    "High":22989.2,
+    "Low":22967.3,
+    "Close":22968.95
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":309,
+    "current Weight":160,
+    "Time":"10:03",
+    "Open":22968.5,
+    "High":22974.0,
+    "Low":22966.3,
+    "Close":22966.3
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":307,
+    "current Weight":195,
+    "Time":"10:04",
+    "Open":22966.0,
+    "High":22968.0,
+    "Low":22960.0,
+    "Close":22961.45
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":304,
+    "current Weight":194,
+    "Time":"10:05",
+    "Open":22961.3,
+    "High":22964.7,
+    "Low":22957.1,
+    "Close":22957.3
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":301,
+    "current Weight":135,
+    "Time":"10:06",
+    "Open":22957.4,
+    "High":22962.2,
+    "Low":22956.7,
+    "Close":22959.3
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":298,
+    "current Weight":152,
+    "Time":"10:07",
+    "Open":22959.0,
+    "High":22960.2,
+    "Low":22944.0,
+    "Close":22945.1
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":296,
+    "current Weight":180,
+    "Time":"10:08",
+    "Open":22944.7,
+    "High":22947.9,
+    "Low":22939.7,
+    "Close":22945.4
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":293,
+    "current Weight":152,
+    "Time":"10:09",
+    "Open":22945.0,
+    "High":22947.0,
+    "Low":22936.8,
+    "Close":22940.5
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":293,
+    "current Weight":282,
+    "Time":"10:10",
+    "Open":22940.2,
+    "High":22941.7,
+    "Low":22926.2,
+    "Close":22927.6
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":291,
+    "current Weight":181,
+    "Time":"10:11",
+    "Open":22926.8,
+    "High":22938.3,
+    "Low":22926.7,
+    "Close":22937.3
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":290,
+    "current Weight":193,
+    "Time":"10:12",
+    "Open":22936.7,
+    "High":22940.4,
+    "Low":22925.0,
+    "Close":22927.55
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":287,
+    "current Weight":143,
+    "Time":"10:13",
+    "Open":22926.8,
+    "High":22937.6,
+    "Low":22926.7,
+    "Close":22934.15
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":285,
+    "current Weight":142,
+    "Time":"10:14",
+    "Open":22934.5,
+    "High":22947.7,
+    "Low":22934.3,
+    "Close":22938.6
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":283,
+    "current Weight":154,
+    "Time":"10:15",
+    "Open":22938.2,
+    "High":22938.5,
+    "Low":22922.1,
+    "Close":22928.35
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":281,
+    "current Weight":191,
+    "Time":"10:16",
+    "Open":22927.4,
+    "High":22930.3,
+    "Low":22905.1,
+    "Close":22906.5
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":279,
+    "current Weight":132,
+    "Time":"10:17",
+    "Open":22905.8,
+    "High":22911.5,
+    "Low":22905.3,
+    "Close":22911.45
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":277,
+    "current Weight":147,
+    "Time":"10:18",
+    "Open":22910.2,
+    "High":22914.1,
+    "Low":22907.0,
+    "Close":22908.5
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":275,
+    "current Weight":162,
+    "Time":"10:19",
+    "Open":22907.8,
+    "High":22928.4,
+    "Low":22906.5,
+    "Close":22925.6
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":273,
+    "current Weight":175,
+    "Time":"10:20",
+    "Open":22925.7,
+    "High":22933.5,
+    "Low":22919.5,
+    "Close":22933.5
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":272,
+    "current Weight":162,
+    "Time":"10:21",
+    "Open":22933.8,
+    "High":22949.1,
+    "Low":22933.8,
+    "Close":22940.6
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":270,
+    "current Weight":136,
+    "Time":"10:22",
+    "Open":22940.4,
+    "High":22940.5,
+    "Low":22928.2,
+    "Close":22931.4
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":268,
+    "current Weight":179,
+    "Time":"10:23",
+    "Open":22931.7,
+    "High":22932.8,
+    "Low":22925.7,
+    "Close":22925.8
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":266,
+    "current Weight":132,
+    "Time":"10:24",
+    "Open":22925.9,
+    "High":22926.8,
+    "Low":22918.8,
+    "Close":22923.6
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":265,
+    "current Weight":189,
+    "Time":"10:25",
+    "Open":22924.0,
+    "High":22925.2,
+    "Low":22912.1,
+    "Close":22917.1
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":263,
+    "current Weight":95,
+    "Time":"10:26",
+    "Open":22916.8,
+    "High":22920.8,
+    "Low":22915.0,
+    "Close":22915.65
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":262,
+    "current Weight":217,
+    "Time":"10:27",
+    "Open":22915.2,
+    "High":22917.8,
+    "Low":22911.8,
+    "Close":22915.25
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":260,
+    "current Weight":113,
+    "Time":"10:28",
+    "Open":22915.0,
+    "High":22930.3,
+    "Low":22914.3,
+    "Close":22930.35
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":259,
+    "current Weight":139,
+    "Time":"10:29",
+    "Open":22930.2,
+    "High":22935.0,
+    "Low":22924.9,
+    "Close":22927.7
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":258,
+    "current Weight":212,
+    "Time":"10:30",
+    "Open":22926.8,
+    "High":22934.9,
+    "Low":22925.8,
+    "Close":22930.4
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":257,
+    "current Weight":140,
+    "Time":"10:31",
+    "Open":22929.8,
+    "High":22935.7,
+    "Low":22926.8,
+    "Close":22926.85
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":255,
+    "current Weight":130,
+    "Time":"10:32",
+    "Open":22926.5,
+    "High":22926.5,
+    "Low":22914.4,
+    "Close":22915.95
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":253,
+    "current Weight":128,
+    "Time":"10:33",
+    "Open":22917.0,
+    "High":22922.8,
+    "Low":22916.8,
+    "Close":22920.6
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":251,
+    "current Weight":100,
+    "Time":"10:34",
+    "Open":22920.7,
+    "High":22923.1,
+    "Low":22914.2,
+    "Close":22915.35
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":250,
+    "current Weight":153,
+    "Time":"10:35",
+    "Open":22914.8,
+    "High":22938.4,
+    "Low":22913.7,
+    "Close":22937.5
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":249,
+    "current Weight":149,
+    "Time":"10:36",
+    "Open":22937.3,
+    "High":22940.5,
+    "Low":22934.2,
+    "Close":22938.6
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":248,
+    "current Weight":149,
+    "Time":"10:37",
+    "Open":22938.9,
+    "High":22947.0,
+    "Low":22938.9,
+    "Close":22945.2
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":246,
+    "current Weight":107,
+    "Time":"10:38",
+    "Open":22945.3,
+    "High":22949.3,
+    "Low":22939.0,
+    "Close":22941.2
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":245,
+    "current Weight":126,
+    "Time":"10:39",
+    "Open":22940.2,
+    "High":22941.0,
+    "Low":22931.7,
+    "Close":22934.95
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":243,
+    "current Weight":97,
+    "Time":"10:40",
+    "Open":22934.5,
+    "High":22944.3,
+    "Low":22933.7,
+    "Close":22942.95
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":241,
+    "current Weight":82,
+    "Time":"10:41",
+    "Open":22942.8,
+    "High":22947.0,
+    "Low":22940.7,
+    "Close":22941.85
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":239,
+    "current Weight":97,
+    "Time":"10:42",
+    "Open":22942.3,
+    "High":22950.8,
+    "Low":22940.7,
+    "Close":22949.4
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":238,
+    "current Weight":112,
+    "Time":"10:43",
+    "Open":22949.8,
+    "High":22959.8,
+    "Low":22949.7,
+    "Close":22957.35
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":236,
+    "current Weight":73,
+    "Time":"10:44",
+    "Open":22957.3,
+    "High":22961.2,
+    "Low":22953.3,
+    "Close":22955.7
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":235,
+    "current Weight":91,
+    "Time":"10:45",
+    "Open":22955.7,
+    "High":22957.9,
+    "Low":22949.7,
+    "Close":22952.45
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":233,
+    "current Weight":102,
+    "Time":"10:46",
+    "Open":22951.8,
+    "High":22952.2,
+    "Low":22940.2,
+    "Close":22943.4
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":231,
+    "current Weight":74,
+    "Time":"10:47",
+    "Open":22943.2,
+    "High":22945.9,
+    "Low":22938.7,
+    "Close":22940.0
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":230,
+    "current Weight":115,
+    "Time":"10:48",
+    "Open":22939.4,
+    "High":22943.7,
+    "Low":22929.4,
+    "Close":22930.75
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":229,
+    "current Weight":85,
+    "Time":"10:49",
+    "Open":22930.3,
+    "High":22932.7,
+    "Low":22925.8,
+    "Close":22928.1
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":227,
+    "current Weight":71,
+    "Time":"10:50",
+    "Open":22927.6,
+    "High":22935.5,
+    "Low":22927.6,
+    "Close":22934.9
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":225,
+    "current Weight":73,
+    "Time":"10:51",
+    "Open":22935.2,
+    "High":22948.2,
+    "Low":22934.9,
+    "Close":22945.65
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":224,
+    "current Weight":82,
+    "Time":"10:52",
+    "Open":22945.5,
+    "High":22948.9,
+    "Low":22943.7,
+    "Close":22945.7
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":223,
+    "current Weight":112,
+    "Time":"10:53",
+    "Open":22945.8,
+    "High":22947.8,
+    "Low":22944.0,
+    "Close":22945.4
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":222,
+    "current Weight":134,
+    "Time":"10:54",
+    "Open":22945.5,
+    "High":22963.8,
+    "Low":22945.5,
+    "Close":22962.45
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":222,
+    "current Weight":195,
+    "Time":"10:55",
+    "Open":22962.3,
+    "High":22965.2,
+    "Low":22956.8,
+    "Close":22965.2
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":221,
+    "current Weight":196,
+    "Time":"10:56",
+    "Open":22964.9,
+    "High":22976.6,
+    "Low":22964.9,
+    "Close":22976.6
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":221,
+    "current Weight":172,
+    "Time":"10:57",
+    "Open":22975.7,
+    "High":22980.8,
+    "Low":22970.8,
+    "Close":22974.9
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":221,
+    "current Weight":208,
+    "Time":"10:58",
+    "Open":22975.1,
+    "High":22979.8,
+    "Low":22970.5,
+    "Close":22971.8
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":220,
+    "current Weight":174,
+    "Time":"10:59",
+    "Open":22970.2,
+    "High":22977.3,
+    "Low":22970.2,
+    "Close":22971.65
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":220,
+    "current Weight":195,
+    "Time":"11:00",
+    "Open":22972.5,
+    "High":22975.5,
+    "Low":22964.5,
+    "Close":22964.5
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":220,
+    "current Weight":253,
+    "Time":"11:01",
+    "Open":22966.0,
+    "High":22981.0,
+    "Low":22964.2,
+    "Close":22980.05
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":221,
+    "current Weight":239,
+    "Time":"11:02",
+    "Open":22982.5,
+    "High":22993.0,
+    "Low":22980.1,
+    "Close":22981.0
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":222,
+    "current Weight":356,
+    "Time":"11:03",
+    "Open":22982.0,
+    "High":22984.8,
+    "Low":22975.6,
+    "Close":22984.75
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":221,
+    "current Weight":127,
+    "Time":"11:04",
+    "Open":22986.2,
+    "High":22992.4,
+    "Low":22986.0,
+    "Close":22988.8
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":220,
+    "current Weight":154,
+    "Time":"11:05",
+    "Open":22990.3,
+    "High":22990.3,
+    "Low":22979.8,
+    "Close":22981.15
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":220,
+    "current Weight":122,
+    "Time":"11:06",
+    "Open":22982.8,
+    "High":22986.3,
+    "Low":22980.2,
+    "Close":22984.95
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":219,
+    "current Weight":157,
+    "Time":"11:07",
+    "Open":22987.1,
+    "High":22997.5,
+    "Low":22984.5,
+    "Close":22997.55
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":220,
+    "current Weight":291,
+    "Time":"11:08",
+    "Open":22999.8,
+    "High":23007.5,
+    "Low":22997.5,
+    "Close":23004.85
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":219,
+    "current Weight":189,
+    "Time":"11:09",
+    "Open":23007.7,
+    "High":23008.5,
+    "Low":22997.0,
+    "Close":23001.65
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":219,
+    "current Weight":168,
+    "Time":"11:10",
+    "Open":23004.2,
+    "High":23006.2,
+    "Low":23001.0,
+    "Close":23004.45
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":218,
+    "current Weight":111,
+    "Time":"11:11",
+    "Open":23006.7,
+    "High":23007.6,
+    "Low":23000.5,
+    "Close":23002.4
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":219,
+    "current Weight":322,
+    "Time":"11:12",
+    "Open":23003.3,
+    "High":23013.2,
+    "Low":23001.6,
+    "Close":23011.15
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":222,
+    "current Weight":602,
+    "Time":"11:13",
+    "Open":23013.9,
+    "High":23021.4,
+    "Low":23010.6,
+    "Close":23011.3
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":222,
+    "current Weight":267,
+    "Time":"11:14",
+    "Open":23013.5,
+    "High":23016.3,
+    "Low":23006.0,
+    "Close":23006.25
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":222,
+    "current Weight":137,
+    "Time":"11:15",
+    "Open":23009.8,
+    "High":23011.3,
+    "Low":23004.8,
+    "Close":23008.55
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":222,
+    "current Weight":205,
+    "Time":"11:16",
+    "Open":23012.1,
+    "High":23014.2,
+    "Low":23007.3,
+    "Close":23008.6
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":221,
+    "current Weight":144,
+    "Time":"11:17",
+    "Open":23010.2,
+    "High":23018.6,
+    "Low":23007.2,
+    "Close":23015.1
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":220,
+    "current Weight":138,
+    "Time":"11:18",
+    "Open":23017.3,
+    "High":23021.0,
+    "Low":23010.1,
+    "Close":23012.65
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":220,
+    "current Weight":174,
+    "Time":"11:19",
+    "Open":23016.0,
+    "High":23022.9,
+    "Low":23012.5,
+    "Close":23022.9
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":221,
+    "current Weight":293,
+    "Time":"11:20",
+    "Open":23025.5,
+    "High":23036.5,
+    "Low":23025.2,
+    "Close":23031.55
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":220,
+    "current Weight":165,
+    "Time":"11:21",
+    "Open":23033.3,
+    "High":23035.4,
+    "Low":23026.8,
+    "Close":23027.4
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":220,
+    "current Weight":194,
+    "Time":"11:22",
+    "Open":23030.3,
+    "High":23038.5,
+    "Low":23028.0,
+    "Close":23036.8
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":220,
+    "current Weight":231,
+    "Time":"11:23",
+    "Open":23038.5,
+    "High":23042.2,
+    "Low":23031.5,
+    "Close":23031.8
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":219,
+    "current Weight":117,
+    "Time":"11:24",
+    "Open":23033.4,
+    "High":23033.4,
+    "Low":23019.7,
+    "Close":23020.45
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":218,
+    "current Weight":128,
+    "Time":"11:25",
+    "Open":23023.0,
+    "High":23023.8,
+    "Low":23019.0,
+    "Close":23021.6
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":218,
+    "current Weight":120,
+    "Time":"11:26",
+    "Open":23024.0,
+    "High":23030.3,
+    "Low":23022.0,
+    "Close":23029.05
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":217,
+    "current Weight":134,
+    "Time":"11:27",
+    "Open":23032.3,
+    "High":23037.3,
+    "Low":23030.1,
+    "Close":23032.0
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":216,
+    "current Weight":118,
+    "Time":"11:28",
+    "Open":23036.0,
+    "High":23036.5,
+    "Low":23026.0,
+    "Close":23027.2
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":216,
+    "current Weight":157,
+    "Time":"11:29",
+    "Open":23029.2,
+    "High":23040.0,
+    "Low":23024.2,
+    "Close":23038.8
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":216,
+    "current Weight":213,
+    "Time":"11:30",
+    "Open":23040.5,
+    "High":23043.1,
+    "Low":23030.5,
+    "Close":23032.3
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":216,
+    "current Weight":205,
+    "Time":"11:31",
+    "Open":23035.5,
+    "High":23036.5,
+    "Low":23029.7,
+    "Close":23032.2
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":216,
+    "current Weight":236,
+    "Time":"11:32",
+    "Open":23036.4,
+    "High":23040.7,
+    "Low":23034.7,
+    "Close":23040.3
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":215,
+    "current Weight":151,
+    "Time":"11:33",
+    "Open":23042.8,
+    "High":23046.7,
+    "Low":23038.5,
+    "Close":23042.5
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":215,
+    "current Weight":190,
+    "Time":"11:34",
+    "Open":23044.7,
+    "High":23048.8,
+    "Low":23041.9,
+    "Close":23047.0
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":215,
+    "current Weight":151,
+    "Time":"11:35",
+    "Open":23048.1,
+    "High":23050.0,
+    "Low":23043.0,
+    "Close":23045.1
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":214,
+    "current Weight":147,
+    "Time":"11:36",
+    "Open":23048.1,
+    "High":23048.1,
+    "Low":23042.4,
+    "Close":23044.95
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":214,
+    "current Weight":201,
+    "Time":"11:37",
+    "Open":23047.2,
+    "High":23054.3,
+    "Low":23044.7,
+    "Close":23052.7
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":215,
+    "current Weight":300,
+    "Time":"11:38",
+    "Open":23055.1,
+    "High":23065.3,
+    "Low":23053.4,
+    "Close":23058.9
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":214,
+    "current Weight":139,
+    "Time":"11:39",
+    "Open":23062.1,
+    "High":23062.1,
+    "Low":23052.0,
+    "Close":23052.7
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":214,
+    "current Weight":170,
+    "Time":"11:40",
+    "Open":23054.7,
+    "High":23055.2,
+    "Low":23046.5,
+    "Close":23048.25
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":214,
+    "current Weight":162,
+    "Time":"11:41",
+    "Open":23049.8,
+    "High":23053.7,
+    "Low":23047.5,
+    "Close":23051.65
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":213,
+    "current Weight":135,
+    "Time":"11:42",
+    "Open":23053.5,
+    "High":23054.2,
+    "Low":23043.4,
+    "Close":23043.5
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":212,
+    "current Weight":106,
+    "Time":"11:43",
+    "Open":23045.4,
+    "High":23047.0,
+    "Low":23041.0,
+    "Close":23042.8
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":212,
+    "current Weight":182,
+    "Time":"11:44",
+    "Open":23046.2,
+    "High":23049.9,
+    "Low":23043.8,
+    "Close":23044.45
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":212,
+    "current Weight":157,
+    "Time":"11:45",
+    "Open":23047.5,
+    "High":23048.1,
+    "Low":23043.4,
+    "Close":23044.0
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":212,
+    "current Weight":166,
+    "Time":"11:46",
+    "Open":23046.4,
+    "High":23052.0,
+    "Low":23045.0,
+    "Close":23051.35
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":211,
+    "current Weight":192,
+    "Time":"11:47",
+    "Open":23053.8,
+    "High":23059.1,
+    "Low":23050.3,
+    "Close":23054.4
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":212,
+    "current Weight":266,
+    "Time":"11:48",
+    "Open":23057.6,
+    "High":23068.5,
+    "Low":23053.3,
+    "Close":23067.2
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":212,
+    "current Weight":200,
+    "Time":"11:49",
+    "Open":23068.6,
+    "High":23073.3,
+    "Low":23065.5,
+    "Close":23071.85
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":213,
+    "current Weight":356,
+    "Time":"11:50",
+    "Open":23073.1,
+    "High":23080.9,
+    "Low":23069.2,
+    "Close":23078.65
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":214,
+    "current Weight":376,
+    "Time":"11:51",
+    "Open":23082.5,
+    "High":23082.8,
+    "Low":23073.8,
+    "Close":23074.0
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":214,
+    "current Weight":221,
+    "Time":"11:52",
+    "Open":23075.7,
+    "High":23075.7,
+    "Low":23068.0,
+    "Close":23068.75
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":214,
+    "current Weight":279,
+    "Time":"11:53",
+    "Open":23069.9,
+    "High":23069.9,
+    "Low":23062.3,
+    "Close":23065.5
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":214,
+    "current Weight":269,
+    "Time":"11:54",
+    "Open":23067.3,
+    "High":23070.4,
+    "Low":23065.7,
+    "Close":23068.8
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":215,
+    "current Weight":296,
+    "Time":"11:55",
+    "Open":23070.5,
+    "High":23078.7,
+    "Low":23067.8,
+    "Close":23078.4
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":215,
+    "current Weight":276,
+    "Time":"11:56",
+    "Open":23080.4,
+    "High":23091.2,
+    "Low":23077.0,
+    "Close":23089.8
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":216,
+    "current Weight":270,
+    "Time":"11:57",
+    "Open":23091.7,
+    "High":23092.3,
+    "Low":23084.8,
+    "Close":23088.85
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":217,
+    "current Weight":453,
+    "Time":"11:58",
+    "Open":23091.3,
+    "High":23110.5,
+    "Low":23086.6,
+    "Close":23104.15
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":219,
+    "current Weight":468,
+    "Time":"11:59",
+    "Open":23106.2,
+    "High":23106.2,
+    "Low":23096.3,
+    "Close":23097.65
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":220,
+    "current Weight":396,
+    "Time":"12:00",
+    "Open":23098.1,
+    "High":23103.5,
+    "Low":23091.5,
+    "Close":23093.35
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":221,
+    "current Weight":436,
+    "Time":"12:01",
+    "Open":23093.1,
+    "High":23100.7,
+    "Low":23092.2,
+    "Close":23096.1
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":221,
+    "current Weight":144,
+    "Time":"12:02",
+    "Open":23096.0,
+    "High":23096.4,
+    "Low":23088.9,
+    "Close":23090.0
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":220,
+    "current Weight":143,
+    "Time":"12:03",
+    "Open":23089.7,
+    "High":23094.7,
+    "Low":23088.2,
+    "Close":23093.55
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":220,
+    "current Weight":225,
+    "Time":"12:04",
+    "Open":23093.5,
+    "High":23101.3,
+    "Low":23091.3,
+    "Close":23101.25
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":220,
+    "current Weight":167,
+    "Time":"12:05",
+    "Open":23100.5,
+    "High":23102.1,
+    "Low":23095.8,
+    "Close":23097.3
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":220,
+    "current Weight":182,
+    "Time":"12:06",
+    "Open":23097.4,
+    "High":23100.5,
+    "Low":23093.8,
+    "Close":23096.95
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":219,
+    "current Weight":144,
+    "Time":"12:07",
+    "Open":23097.4,
+    "High":23100.2,
+    "Low":23091.8,
+    "Close":23092.2
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":219,
+    "current Weight":136,
+    "Time":"12:08",
+    "Open":23092.2,
+    "High":23096.5,
+    "Low":23090.8,
+    "Close":23091.85
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":218,
+    "current Weight":147,
+    "Time":"12:09",
+    "Open":23091.8,
+    "High":23097.0,
+    "Low":23091.2,
+    "Close":23095.95
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":218,
+    "current Weight":134,
+    "Time":"12:10",
+    "Open":23095.8,
+    "High":23099.5,
+    "Low":23095.2,
+    "Close":23096.3
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":218,
+    "current Weight":176,
+    "Time":"12:11",
+    "Open":23096.2,
+    "High":23100.2,
+    "Low":23092.9,
+    "Close":23092.9
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":218,
+    "current Weight":304,
+    "Time":"12:12",
+    "Open":23093.1,
+    "High":23095.8,
+    "Low":23079.3,
+    "Close":23079.3
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":218,
+    "current Weight":147,
+    "Time":"12:13",
+    "Open":23079.1,
+    "High":23081.0,
+    "Low":23076.7,
+    "Close":23077.3
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":217,
+    "current Weight":142,
+    "Time":"12:14",
+    "Open":23077.6,
+    "High":23081.0,
+    "Low":23074.1,
+    "Close":23075.1
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":217,
+    "current Weight":149,
+    "Time":"12:15",
+    "Open":23075.2,
+    "High":23083.8,
+    "Low":23072.3,
+    "Close":23081.2
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":217,
+    "current Weight":172,
+    "Time":"12:16",
+    "Open":23081.5,
+    "High":23085.7,
+    "Low":23081.5,
+    "Close":23083.05
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":216,
+    "current Weight":135,
+    "Time":"12:17",
+    "Open":23083.3,
+    "High":23084.0,
+    "Low":23078.2,
+    "Close":23083.35
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":216,
+    "current Weight":176,
+    "Time":"12:18",
+    "Open":23083.2,
+    "High":23090.8,
+    "Low":23082.4,
+    "Close":23089.55
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":216,
+    "current Weight":158,
+    "Time":"12:19",
+    "Open":23089.7,
+    "High":23097.2,
+    "Low":23089.3,
+    "Close":23096.8
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":215,
+    "current Weight":154,
+    "Time":"12:20",
+    "Open":23097.0,
+    "High":23098.8,
+    "Low":23094.0,
+    "Close":23095.85
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":215,
+    "current Weight":160,
+    "Time":"12:21",
+    "Open":23096.2,
+    "High":23103.7,
+    "Low":23095.8,
+    "Close":23098.7
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":215,
+    "current Weight":176,
+    "Time":"12:22",
+    "Open":23098.7,
+    "High":23101.6,
+    "Low":23096.8,
+    "Close":23096.75
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":215,
+    "current Weight":157,
+    "Time":"12:23",
+    "Open":23096.9,
+    "High":23099.2,
+    "Low":23089.2,
+    "Close":23090.6
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":214,
+    "current Weight":156,
+    "Time":"12:24",
+    "Open":23089.9,
+    "High":23094.2,
+    "Low":23089.7,
+    "Close":23090.45
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":214,
+    "current Weight":159,
+    "Time":"12:25",
+    "Open":23091.0,
+    "High":23094.7,
+    "Low":23090.0,
+    "Close":23093.75
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":214,
+    "current Weight":167,
+    "Time":"12:26",
+    "Open":23093.5,
+    "High":23096.4,
+    "Low":23091.9,
+    "Close":23095.85
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":213,
+    "current Weight":137,
+    "Time":"12:27",
+    "Open":23095.8,
+    "High":23097.7,
+    "Low":23093.9,
+    "Close":23095.15
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":213,
+    "current Weight":119,
+    "Time":"12:28",
+    "Open":23094.9,
+    "High":23098.5,
+    "Low":23092.0,
+    "Close":23092.75
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":213,
+    "current Weight":176,
+    "Time":"12:29",
+    "Open":23093.0,
+    "High":23093.0,
+    "Low":23085.2,
+    "Close":23086.4
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":212,
+    "current Weight":124,
+    "Time":"12:30",
+    "Open":23086.5,
+    "High":23091.8,
+    "Low":23085.1,
+    "Close":23086.55
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":212,
+    "current Weight":191,
+    "Time":"12:31",
+    "Open":23087.0,
+    "High":23088.2,
+    "Low":23077.2,
+    "Close":23078.2
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":212,
+    "current Weight":250,
+    "Time":"12:32",
+    "Open":23079.0,
+    "High":23084.5,
+    "Low":23077.6,
+    "Close":23078.95
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":212,
+    "current Weight":131,
+    "Time":"12:33",
+    "Open":23079.9,
+    "High":23090.2,
+    "Low":23078.4,
+    "Close":23089.65
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":211,
+    "current Weight":131,
+    "Time":"12:34",
+    "Open":23090.0,
+    "High":23094.9,
+    "Low":23089.0,
+    "Close":23093.7
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":211,
+    "current Weight":132,
+    "Time":"12:35",
+    "Open":23094.2,
+    "High":23100.0,
+    "Low":23093.7,
+    "Close":23098.9
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":211,
+    "current Weight":154,
+    "Time":"12:36",
+    "Open":23099.5,
+    "High":23101.2,
+    "Low":23096.9,
+    "Close":23099.1
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":210,
+    "current Weight":109,
+    "Time":"12:37",
+    "Open":23099.0,
+    "High":23100.8,
+    "Low":23093.2,
+    "Close":23094.15
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":210,
+    "current Weight":151,
+    "Time":"12:38",
+    "Open":23094.5,
+    "High":23095.0,
+    "Low":23086.2,
+    "Close":23086.75
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":209,
+    "current Weight":111,
+    "Time":"12:39",
+    "Open":23086.5,
+    "High":23088.5,
+    "Low":23084.4,
+    "Close":23085.8
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":209,
+    "current Weight":131,
+    "Time":"12:40",
+    "Open":23086.0,
+    "High":23091.5,
+    "Low":23085.5,
+    "Close":23089.65
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":209,
+    "current Weight":124,
+    "Time":"12:41",
+    "Open":23089.9,
+    "High":23096.7,
+    "Low":23089.8,
+    "Close":23093.65
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":208,
+    "current Weight":93,
+    "Time":"12:42",
+    "Open":23093.2,
+    "High":23096.0,
+    "Low":23091.0,
+    "Close":23093.8
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":208,
+    "current Weight":109,
+    "Time":"12:43",
+    "Open":23094.3,
+    "High":23098.0,
+    "Low":23093.5,
+    "Close":23095.85
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":207,
+    "current Weight":175,
+    "Time":"12:44",
+    "Open":23096.0,
+    "High":23103.8,
+    "Low":23095.1,
+    "Close":23102.8
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":207,
+    "current Weight":140,
+    "Time":"12:45",
+    "Open":23102.8,
+    "High":23107.5,
+    "Low":23098.3,
+    "Close":23098.55
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":207,
+    "current Weight":91,
+    "Time":"12:46",
+    "Open":23098.7,
+    "High":23103.6,
+    "Low":23096.1,
+    "Close":23102.0
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":206,
+    "current Weight":144,
+    "Time":"12:47",
+    "Open":23102.1,
+    "High":23106.5,
+    "Low":23100.6,
+    "Close":23100.6
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":206,
+    "current Weight":136,
+    "Time":"12:48",
+    "Open":23100.7,
+    "High":23102.6,
+    "Low":23089.8,
+    "Close":23090.5
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":206,
+    "current Weight":123,
+    "Time":"12:49",
+    "Open":23090.7,
+    "High":23099.5,
+    "Low":23089.8,
+    "Close":23097.15
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":205,
+    "current Weight":101,
+    "Time":"12:50",
+    "Open":23097.0,
+    "High":23099.1,
+    "Low":23093.8,
+    "Close":23095.75
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":205,
+    "current Weight":96,
+    "Time":"12:51",
+    "Open":23096.0,
+    "High":23101.2,
+    "Low":23095.0,
+    "Close":23099.1
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":204,
+    "current Weight":94,
+    "Time":"12:52",
+    "Open":23099.2,
+    "High":23103.8,
+    "Low":23098.2,
+    "Close":23102.2
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":204,
+    "current Weight":134,
+    "Time":"12:53",
+    "Open":23102.5,
+    "High":23109.5,
+    "Low":23102.1,
+    "Close":23108.95
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":203,
+    "current Weight":103,
+    "Time":"12:54",
+    "Open":23109.7,
+    "High":23111.2,
+    "Low":23103.2,
+    "Close":23104.4
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":204,
+    "current Weight":350,
+    "Time":"12:55",
+    "Open":23104.2,
+    "High":23110.8,
+    "Low":23103.5,
+    "Close":23110.85
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":204,
+    "current Weight":120,
+    "Time":"12:56",
+    "Open":23109.5,
+    "High":23110.5,
+    "Low":23104.7,
+    "Close":23106.9
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":203,
+    "current Weight":174,
+    "Time":"12:57",
+    "Open":23107.7,
+    "High":23118.1,
+    "Low":23104.8,
+    "Close":23108.4
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":203,
+    "current Weight":190,
+    "Time":"12:58",
+    "Open":23108.5,
+    "High":23112.2,
+    "Low":23105.9,
+    "Close":23108.35
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":203,
+    "current Weight":164,
+    "Time":"12:59",
+    "Open":23109.0,
+    "High":23111.6,
+    "Low":23107.0,
+    "Close":23109.05
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":203,
+    "current Weight":222,
+    "Time":"13:00",
+    "Open":23108.5,
+    "High":23109.5,
+    "Low":23100.5,
+    "Close":23106.9
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":203,
+    "current Weight":172,
+    "Time":"13:01",
+    "Open":23107.3,
+    "High":23110.2,
+    "Low":23104.8,
+    "Close":23106.45
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":203,
+    "current Weight":155,
+    "Time":"13:02",
+    "Open":23106.4,
+    "High":23109.7,
+    "Low":23105.7,
+    "Close":23107.25
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":203,
+    "current Weight":117,
+    "Time":"13:03",
+    "Open":23107.4,
+    "High":23112.2,
+    "Low":23106.2,
+    "Close":23109.6
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":203,
+    "current Weight":191,
+    "Time":"13:04",
+    "Open":23110.0,
+    "High":23110.5,
+    "Low":23091.3,
+    "Close":23097.2
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":203,
+    "current Weight":223,
+    "Time":"13:05",
+    "Open":23097.5,
+    "High":23098.1,
+    "Low":23083.6,
+    "Close":23085.3
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":203,
+    "current Weight":246,
+    "Time":"13:06",
+    "Open":23084.8,
+    "High":23088.3,
+    "Low":23078.5,
+    "Close":23085.4
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":203,
+    "current Weight":149,
+    "Time":"13:07",
+    "Open":23085.5,
+    "High":23086.3,
+    "Low":23077.5,
+    "Close":23080.75
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":202,
+    "current Weight":122,
+    "Time":"13:08",
+    "Open":23080.7,
+    "High":23097.3,
+    "Low":23080.7,
+    "Close":23097.35
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":202,
+    "current Weight":204,
+    "Time":"13:09",
+    "Open":23097.5,
+    "High":23101.1,
+    "Low":23093.2,
+    "Close":23098.5
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":202,
+    "current Weight":107,
+    "Time":"13:10",
+    "Open":23098.4,
+    "High":23098.5,
+    "Low":23092.0,
+    "Close":23093.75
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":202,
+    "current Weight":196,
+    "Time":"13:11",
+    "Open":23094.0,
+    "High":23096.4,
+    "Low":23086.9,
+    "Close":23093.8
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":202,
+    "current Weight":145,
+    "Time":"13:12",
+    "Open":23093.5,
+    "High":23101.6,
+    "Low":23093.0,
+    "Close":23099.55
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":202,
+    "current Weight":253,
+    "Time":"13:13",
+    "Open":23099.8,
+    "High":23102.0,
+    "Low":23095.0,
+    "Close":23097.35
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":202,
+    "current Weight":171,
+    "Time":"13:14",
+    "Open":23097.1,
+    "High":23098.2,
+    "Low":23094.2,
+    "Close":23096.8
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":201,
+    "current Weight":122,
+    "Time":"13:15",
+    "Open":23096.7,
+    "High":23099.1,
+    "Low":23092.3,
+    "Close":23092.35
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":201,
+    "current Weight":215,
+    "Time":"13:16",
+    "Open":23092.6,
+    "High":23095.3,
+    "Low":23086.5,
+    "Close":23094.95
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":201,
+    "current Weight":115,
+    "Time":"13:17",
+    "Open":23095.2,
+    "High":23099.2,
+    "Low":23093.7,
+    "Close":23094.6
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":201,
+    "current Weight":155,
+    "Time":"13:18",
+    "Open":23094.4,
+    "High":23094.8,
+    "Low":23087.8,
+    "Close":23089.75
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":201,
+    "current Weight":190,
+    "Time":"13:19",
+    "Open":23090.3,
+    "High":23092.0,
+    "Low":23078.9,
+    "Close":23079.25
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":201,
+    "current Weight":156,
+    "Time":"13:20",
+    "Open":23079.0,
+    "High":23086.1,
+    "Low":23079.0,
+    "Close":23083.55
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":200,
+    "current Weight":127,
+    "Time":"13:21",
+    "Open":23083.2,
+    "High":23087.5,
+    "Low":23082.9,
+    "Close":23085.15
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":200,
+    "current Weight":235,
+    "Time":"13:22",
+    "Open":23084.8,
+    "High":23094.5,
+    "Low":23082.7,
+    "Close":23083.8
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":200,
+    "current Weight":131,
+    "Time":"13:23",
+    "Open":23083.5,
+    "High":23089.8,
+    "Low":23083.5,
+    "Close":23086.15
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":200,
+    "current Weight":111,
+    "Time":"13:24",
+    "Open":23085.8,
+    "High":23088.8,
+    "Low":23083.8,
+    "Close":23084.75
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":200,
+    "current Weight":249,
+    "Time":"13:25",
+    "Open":23084.9,
+    "High":23087.8,
+    "Low":23070.8,
+    "Close":23071.95
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":200,
+    "current Weight":233,
+    "Time":"13:26",
+    "Open":23072.0,
+    "High":23077.8,
+    "Low":23070.2,
+    "Close":23076.45
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":200,
+    "current Weight":148,
+    "Time":"13:27",
+    "Open":23076.4,
+    "High":23081.6,
+    "Low":23070.9,
+    "Close":23072.05
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":200,
+    "current Weight":165,
+    "Time":"13:28",
+    "Open":23072.3,
+    "High":23073.5,
+    "Low":23061.7,
+    "Close":23062.3
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":200,
+    "current Weight":199,
+    "Time":"13:29",
+    "Open":23062.5,
+    "High":23063.1,
+    "Low":23050.6,
+    "Close":23053.4
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":200,
+    "current Weight":219,
+    "Time":"13:30",
+    "Open":23053.5,
+    "High":23066.1,
+    "Low":23046.5,
+    "Close":23046.95
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":200,
+    "current Weight":232,
+    "Time":"13:31",
+    "Open":23046.8,
+    "High":23047.2,
+    "Low":23039.8,
+    "Close":23046.0
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":200,
+    "current Weight":286,
+    "Time":"13:32",
+    "Open":23046.0,
+    "High":23068.4,
+    "Low":23046.0,
+    "Close":23065.9
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":200,
+    "current Weight":224,
+    "Time":"13:33",
+    "Open":23065.8,
+    "High":23071.2,
+    "Low":23051.0,
+    "Close":23052.5
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":201,
+    "current Weight":218,
+    "Time":"13:34",
+    "Open":23052.2,
+    "High":23056.0,
+    "Low":23049.3,
+    "Close":23054.25
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":200,
+    "current Weight":134,
+    "Time":"13:35",
+    "Open":23054.5,
+    "High":23060.2,
+    "Low":23052.5,
+    "Close":23057.7
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":200,
+    "current Weight":226,
+    "Time":"13:36",
+    "Open":23057.6,
+    "High":23061.0,
+    "Low":23051.6,
+    "Close":23052.6
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":201,
+    "current Weight":312,
+    "Time":"13:37",
+    "Open":23053.2,
+    "High":23056.0,
+    "Low":23047.6,
+    "Close":23048.35
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":201,
+    "current Weight":315,
+    "Time":"13:38",
+    "Open":23048.6,
+    "High":23050.8,
+    "Low":23043.2,
+    "Close":23049.1
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":201,
+    "current Weight":195,
+    "Time":"13:39",
+    "Open":23049.2,
+    "High":23051.5,
+    "Low":23046.0,
+    "Close":23047.2
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":201,
+    "current Weight":168,
+    "Time":"13:40",
+    "Open":23047.0,
+    "High":23048.2,
+    "Low":23037.3,
+    "Close":23038.7
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":201,
+    "current Weight":120,
+    "Time":"13:41",
+    "Open":23038.6,
+    "High":23040.0,
+    "Low":23034.0,
+    "Close":23038.4
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":201,
+    "current Weight":161,
+    "Time":"13:42",
+    "Open":23038.5,
+    "High":23039.9,
+    "Low":23030.2,
+    "Close":23030.2
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":201,
+    "current Weight":171,
+    "Time":"13:43",
+    "Open":23030.5,
+    "High":23048.6,
+    "Low":23029.2,
+    "Close":23047.1
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":200,
+    "current Weight":114,
+    "Time":"13:44",
+    "Open":23046.9,
+    "High":23050.2,
+    "Low":23044.2,
+    "Close":23044.3
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":200,
+    "current Weight":260,
+    "Time":"13:45",
+    "Open":23044.3,
+    "High":23045.5,
+    "Low":23030.3,
+    "Close":23031.8
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":201,
+    "current Weight":327,
+    "Time":"13:46",
+    "Open":23032.2,
+    "High":23041.9,
+    "Low":23021.8,
+    "Close":23041.1
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":201,
+    "current Weight":178,
+    "Time":"13:47",
+    "Open":23041.0,
+    "High":23042.6,
+    "Low":23027.8,
+    "Close":23027.85
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":201,
+    "current Weight":250,
+    "Time":"13:48",
+    "Open":23027.5,
+    "High":23036.8,
+    "Low":23027.2,
+    "Close":23036.3
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":201,
+    "current Weight":123,
+    "Time":"13:49",
+    "Open":23036.5,
+    "High":23048.6,
+    "Low":23036.5,
+    "Close":23046.55
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":200,
+    "current Weight":136,
+    "Time":"13:50",
+    "Open":23046.2,
+    "High":23048.8,
+    "Low":23041.2,
+    "Close":23044.15
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":200,
+    "current Weight":204,
+    "Time":"13:51",
+    "Open":23044.1,
+    "High":23056.5,
+    "Low":23043.0,
+    "Close":23056.55
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":200,
+    "current Weight":144,
+    "Time":"13:52",
+    "Open":23055.8,
+    "High":23060.7,
+    "Low":23051.3,
+    "Close":23052.55
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":200,
+    "current Weight":126,
+    "Time":"13:53",
+    "Open":23051.7,
+    "High":23052.8,
+    "Low":23044.1,
+    "Close":23046.4
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":200,
+    "current Weight":129,
+    "Time":"13:54",
+    "Open":23046.6,
+    "High":23047.4,
+    "Low":23037.8,
+    "Close":23038.4
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":200,
+    "current Weight":151,
+    "Time":"13:55",
+    "Open":23036.9,
+    "High":23040.3,
+    "Low":23032.0,
+    "Close":23033.95
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":199,
+    "current Weight":159,
+    "Time":"13:56",
+    "Open":23034.2,
+    "High":23035.3,
+    "Low":23027.2,
+    "Close":23027.75
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":199,
+    "current Weight":145,
+    "Time":"13:57",
+    "Open":23027.7,
+    "High":23030.8,
+    "Low":23025.1,
+    "Close":23028.25
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":199,
+    "current Weight":149,
+    "Time":"13:58",
+    "Open":23028.3,
+    "High":23028.8,
+    "Low":23015.2,
+    "Close":23016.6
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":199,
+    "current Weight":264,
+    "Time":"13:59",
+    "Open":23016.7,
+    "High":23018.8,
+    "Low":23010.7,
+    "Close":23011.75
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":199,
+    "current Weight":232,
+    "Time":"14:00",
+    "Open":23011.3,
+    "High":23014.8,
+    "Low":23001.4,
+    "Close":23006.1
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":199,
+    "current Weight":129,
+    "Time":"14:01",
+    "Open":23006.5,
+    "High":23008.2,
+    "Low":23000.2,
+    "Close":23003.55
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":199,
+    "current Weight":132,
+    "Time":"14:02",
+    "Open":23003.2,
+    "High":23013.2,
+    "Low":23002.0,
+    "Close":23007.7
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":199,
+    "current Weight":139,
+    "Time":"14:03",
+    "Open":23007.0,
+    "High":23008.9,
+    "Low":23000.3,
+    "Close":23005.55
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":198,
+    "current Weight":122,
+    "Time":"14:04",
+    "Open":23005.8,
+    "High":23013.8,
+    "Low":23005.8,
+    "Close":23012.85
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":198,
+    "current Weight":121,
+    "Time":"14:05",
+    "Open":23012.6,
+    "High":23017.7,
+    "Low":23011.2,
+    "Close":23014.3
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":198,
+    "current Weight":186,
+    "Time":"14:06",
+    "Open":23013.5,
+    "High":23016.9,
+    "Low":23004.8,
+    "Close":23004.75
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":198,
+    "current Weight":128,
+    "Time":"14:07",
+    "Open":23004.5,
+    "High":23016.2,
+    "Low":23004.1,
+    "Close":23013.4
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":198,
+    "current Weight":173,
+    "Time":"14:08",
+    "Open":23013.3,
+    "High":23018.0,
+    "Low":23013.2,
+    "Close":23017.95
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":198,
+    "current Weight":284,
+    "Time":"14:09",
+    "Open":23018.0,
+    "High":23028.8,
+    "Low":23014.0,
+    "Close":23016.35
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":198,
+    "current Weight":159,
+    "Time":"14:10",
+    "Open":23016.5,
+    "High":23023.1,
+    "Low":23015.0,
+    "Close":23022.1
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":198,
+    "current Weight":212,
+    "Time":"14:11",
+    "Open":23022.3,
+    "High":23026.7,
+    "Low":23021.3,
+    "Close":23025.25
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":198,
+    "current Weight":179,
+    "Time":"14:12",
+    "Open":23025.5,
+    "High":23030.7,
+    "Low":23023.7,
+    "Close":23028.35
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":198,
+    "current Weight":132,
+    "Time":"14:13",
+    "Open":23028.5,
+    "High":23030.0,
+    "Low":23023.7,
+    "Close":23024.45
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":197,
+    "current Weight":127,
+    "Time":"14:14",
+    "Open":23024.1,
+    "High":23027.6,
+    "Low":23022.2,
+    "Close":23025.2
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":197,
+    "current Weight":181,
+    "Time":"14:15",
+    "Open":23025.7,
+    "High":23028.2,
+    "Low":23017.5,
+    "Close":23028.1
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":198,
+    "current Weight":295,
+    "Time":"14:16",
+    "Open":23028.2,
+    "High":23048.6,
+    "Low":23027.7,
+    "Close":23041.5
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":198,
+    "current Weight":172,
+    "Time":"14:17",
+    "Open":23041.6,
+    "High":23046.3,
+    "Low":23036.5,
+    "Close":23045.85
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":198,
+    "current Weight":172,
+    "Time":"14:18",
+    "Open":23045.2,
+    "High":23048.8,
+    "Low":23036.5,
+    "Close":23039.45
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":197,
+    "current Weight":143,
+    "Time":"14:19",
+    "Open":23039.5,
+    "High":23048.8,
+    "Low":23039.3,
+    "Close":23040.85
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":197,
+    "current Weight":152,
+    "Time":"14:20",
+    "Open":23039.2,
+    "High":23042.5,
+    "Low":23033.1,
+    "Close":23033.15
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":197,
+    "current Weight":205,
+    "Time":"14:21",
+    "Open":23032.1,
+    "High":23038.6,
+    "Low":23027.8,
+    "Close":23038.6
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":198,
+    "current Weight":301,
+    "Time":"14:22",
+    "Open":23039.0,
+    "High":23054.3,
+    "Low":23038.2,
+    "Close":23052.35
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":198,
+    "current Weight":252,
+    "Time":"14:23",
+    "Open":23052.2,
+    "High":23062.8,
+    "Low":23051.9,
+    "Close":23060.8
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":198,
+    "current Weight":263,
+    "Time":"14:24",
+    "Open":23060.7,
+    "High":23064.5,
+    "Low":23050.0,
+    "Close":23059.8
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":198,
+    "current Weight":236,
+    "Time":"14:25",
+    "Open":23059.3,
+    "High":23061.2,
+    "Low":23055.0,
+    "Close":23058.9
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":199,
+    "current Weight":332,
+    "Time":"14:26",
+    "Open":23059.1,
+    "High":23065.3,
+    "Low":23054.9,
+    "Close":23061.95
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":199,
+    "current Weight":292,
+    "Time":"14:27",
+    "Open":23062.0,
+    "High":23064.5,
+    "Low":23059.2,
+    "Close":23060.3
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":199,
+    "current Weight":298,
+    "Time":"14:28",
+    "Open":23060.2,
+    "High":23063.0,
+    "Low":23052.1,
+    "Close":23055.55
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":199,
+    "current Weight":262,
+    "Time":"14:29",
+    "Open":23055.2,
+    "High":23061.2,
+    "Low":23054.6,
+    "Close":23055.5
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":200,
+    "current Weight":261,
+    "Time":"14:30",
+    "Open":23055.0,
+    "High":23063.5,
+    "Low":23052.2,
+    "Close":23059.55
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":200,
+    "current Weight":223,
+    "Time":"14:31",
+    "Open":23060.0,
+    "High":23064.2,
+    "Low":23057.2,
+    "Close":23062.85
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":200,
+    "current Weight":225,
+    "Time":"14:32",
+    "Open":23062.8,
+    "High":23066.3,
+    "Low":23058.5,
+    "Close":23063.8
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":200,
+    "current Weight":218,
+    "Time":"14:33",
+    "Open":23063.7,
+    "High":23071.5,
+    "Low":23063.2,
+    "Close":23068.9
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":200,
+    "current Weight":136,
+    "Time":"14:34",
+    "Open":23069.2,
+    "High":23072.1,
+    "Low":23066.2,
+    "Close":23067.8
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":200,
+    "current Weight":169,
+    "Time":"14:35",
+    "Open":23068.0,
+    "High":23070.2,
+    "Low":23065.0,
+    "Close":23066.7
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":199,
+    "current Weight":167,
+    "Time":"14:36",
+    "Open":23066.2,
+    "High":23069.7,
+    "Low":23064.2,
+    "Close":23064.45
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":199,
+    "current Weight":187,
+    "Time":"14:37",
+    "Open":23064.3,
+    "High":23069.9,
+    "Low":23064.2,
+    "Close":23068.35
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":199,
+    "current Weight":167,
+    "Time":"14:38",
+    "Open":23068.4,
+    "High":23073.8,
+    "Low":23068.4,
+    "Close":23070.85
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":199,
+    "current Weight":128,
+    "Time":"14:39",
+    "Open":23071.0,
+    "High":23073.5,
+    "Low":23069.7,
+    "Close":23072.9
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":199,
+    "current Weight":138,
+    "Time":"14:40",
+    "Open":23072.4,
+    "High":23073.6,
+    "Low":23069.6,
+    "Close":23070.35
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":199,
+    "current Weight":286,
+    "Time":"14:41",
+    "Open":23070.2,
+    "High":23075.0,
+    "Low":23063.2,
+    "Close":23064.65
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":199,
+    "current Weight":153,
+    "Time":"14:42",
+    "Open":23064.4,
+    "High":23067.0,
+    "Low":23057.5,
+    "Close":23058.0
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":199,
+    "current Weight":233,
+    "Time":"14:43",
+    "Open":23058.0,
+    "High":23062.5,
+    "Low":23057.1,
+    "Close":23060.15
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":199,
+    "current Weight":215,
+    "Time":"14:44",
+    "Open":23060.1,
+    "High":23063.4,
+    "Low":23057.0,
+    "Close":23058.3
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":199,
+    "current Weight":186,
+    "Time":"14:45",
+    "Open":23057.0,
+    "High":23057.7,
+    "Low":23048.5,
+    "Close":23049.95
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":199,
+    "current Weight":220,
+    "Time":"14:46",
+    "Open":23049.6,
+    "High":23052.0,
+    "Low":23044.0,
+    "Close":23045.0
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":199,
+    "current Weight":240,
+    "Time":"14:47",
+    "Open":23044.6,
+    "High":23051.4,
+    "Low":23040.2,
+    "Close":23042.1
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":199,
+    "current Weight":259,
+    "Time":"14:48",
+    "Open":23041.4,
+    "High":23048.2,
+    "Low":23039.2,
+    "Close":23044.0
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":200,
+    "current Weight":279,
+    "Time":"14:49",
+    "Open":23044.0,
+    "High":23046.1,
+    "Low":23038.0,
+    "Close":23043.5
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":200,
+    "current Weight":258,
+    "Time":"14:50",
+    "Open":23043.2,
+    "High":23047.7,
+    "Low":23042.5,
+    "Close":23046.7
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":200,
+    "current Weight":286,
+    "Time":"14:51",
+    "Open":23046.6,
+    "High":23052.7,
+    "Low":23043.5,
+    "Close":23044.4
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":200,
+    "current Weight":325,
+    "Time":"14:52",
+    "Open":23043.7,
+    "High":23047.8,
+    "Low":23041.8,
+    "Close":23046.0
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":201,
+    "current Weight":386,
+    "Time":"14:53",
+    "Open":23046.0,
+    "High":23051.8,
+    "Low":23043.5,
+    "Close":23049.35
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":201,
+    "current Weight":271,
+    "Time":"14:54",
+    "Open":23049.5,
+    "High":23053.5,
+    "Low":23047.5,
+    "Close":23053.5
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":203,
+    "current Weight":694,
+    "Time":"14:55",
+    "Open":23053.7,
+    "High":23056.0,
+    "Low":23046.2,
+    "Close":23046.65
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":206,
+    "current Weight":1345,
+    "Time":"14:56",
+    "Open":23046.6,
+    "High":23056.8,
+    "Low":23045.7,
+    "Close":23048.25
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":207,
+    "current Weight":391,
+    "Time":"14:57",
+    "Open":23048.2,
+    "High":23049.0,
+    "Low":23041.2,
+    "Close":23042.1
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":207,
+    "current Weight":317,
+    "Time":"14:58",
+    "Open":23041.3,
+    "High":23041.8,
+    "Low":23030.8,
+    "Close":23032.3
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":207,
+    "current Weight":295,
+    "Time":"14:59",
+    "Open":23031.8,
+    "High":23036.3,
+    "Low":23031.0,
+    "Close":23035.55
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":208,
+    "current Weight":370,
+    "Time":"15:00",
+    "Open":23035.5,
+    "High":23035.9,
+    "Low":23028.5,
+    "Close":23034.4
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":208,
+    "current Weight":469,
+    "Time":"15:01",
+    "Open":23033.4,
+    "High":23036.0,
+    "Low":23026.3,
+    "Close":23027.6
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":209,
+    "current Weight":454,
+    "Time":"15:02",
+    "Open":23026.5,
+    "High":23028.8,
+    "Low":23019.7,
+    "Close":23019.95
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":210,
+    "current Weight":442,
+    "Time":"15:03",
+    "Open":23018.8,
+    "High":23029.5,
+    "Low":23016.5,
+    "Close":23028.05
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":210,
+    "current Weight":411,
+    "Time":"15:04",
+    "Open":23026.3,
+    "High":23030.7,
+    "Low":23025.3,
+    "Close":23028.05
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":212,
+    "current Weight":628,
+    "Time":"15:05",
+    "Open":23027.5,
+    "High":23036.0,
+    "Low":23026.5,
+    "Close":23034.3
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":213,
+    "current Weight":564,
+    "Time":"15:06",
+    "Open":23033.5,
+    "High":23040.5,
+    "Low":23031.8,
+    "Close":23040.25
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":213,
+    "current Weight":420,
+    "Time":"15:07",
+    "Open":23040.3,
+    "High":23041.5,
+    "Low":23036.0,
+    "Close":23036.45
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":214,
+    "current Weight":448,
+    "Time":"15:08",
+    "Open":23035.8,
+    "High":23043.2,
+    "Low":23035.2,
+    "Close":23042.2
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":215,
+    "current Weight":551,
+    "Time":"15:09",
+    "Open":23042.0,
+    "High":23044.4,
+    "Low":23038.2,
+    "Close":23042.45
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":216,
+    "current Weight":670,
+    "Time":"15:10",
+    "Open":23042.3,
+    "High":23045.2,
+    "Low":23038.9,
+    "Close":23039.65
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":217,
+    "current Weight":659,
+    "Time":"15:11",
+    "Open":23039.5,
+    "High":23041.0,
+    "Low":23028.4,
+    "Close":23028.75
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":220,
+    "current Weight":1092,
+    "Time":"15:12",
+    "Open":23027.0,
+    "High":23030.9,
+    "Low":23020.8,
+    "Close":23021.55
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":221,
+    "current Weight":671,
+    "Time":"15:13",
+    "Open":23019.7,
+    "High":23022.9,
+    "Low":23006.6,
+    "Close":23008.35
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":222,
+    "current Weight":432,
+    "Time":"15:14",
+    "Open":23005.3,
+    "High":23015.5,
+    "Low":23000.7,
+    "Close":23010.75
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":221,
+    "current Weight":4,
+    "Time":"15:15",
+    "Open":23010.0,
+    "High":23010.0,
+    "Low":23010.0,
+    "Close":23010.0
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":220,
+    "current Weight":0,
+    "Time":"15:16",
+    "Open":23010.0,
+    "High":23010.0,
+    "Low":23010.0,
+    "Close":23010.0
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":220,
+    "current Weight":0,
+    "Time":"15:17",
+    "Open":23010.0,
+    "High":23010.0,
+    "Low":23010.0,
+    "Close":23010.0
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":219,
+    "current Weight":0,
+    "Time":"15:18",
+    "Open":23010.0,
+    "High":23010.0,
+    "Low":23010.0,
+    "Close":23010.0
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":218,
+    "current Weight":0,
+    "Time":"15:19",
+    "Open":23010.0,
+    "High":23010.0,
+    "Low":23010.0,
+    "Close":23010.0
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":218,
+    "current Weight":0,
+    "Time":"15:20",
+    "Open":23010.0,
+    "High":23010.0,
+    "Low":23010.0,
+    "Close":23010.0
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":217,
+    "current Weight":0,
+    "Time":"15:21",
+    "Open":23010.0,
+    "High":23010.0,
+    "Low":23010.0,
+    "Close":23010.0
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":217,
+    "current Weight":0,
+    "Time":"15:22",
+    "Open":23010.0,
+    "High":23010.0,
+    "Low":23010.0,
+    "Close":23010.0
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":216,
+    "current Weight":0,
+    "Time":"15:23",
+    "Open":23010.0,
+    "High":23010.0,
+    "Low":23010.0,
+    "Close":23010.0
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":216,
+    "current Weight":0,
+    "Time":"15:24",
+    "Open":23010.0,
+    "High":23010.0,
+    "Low":23010.0,
+    "Close":23010.0
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":215,
+    "current Weight":0,
+    "Time":"15:25",
+    "Open":23010.0,
+    "High":23010.0,
+    "Low":23010.0,
+    "Close":23010.0
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":214,
+    "current Weight":0,
+    "Time":"15:26",
+    "Open":23010.0,
+    "High":23010.0,
+    "Low":23010.0,
+    "Close":23010.0
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":214,
+    "current Weight":0,
+    "Time":"15:27",
+    "Open":23010.0,
+    "High":23010.0,
+    "Low":23010.0,
+    "Close":23010.0
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":238,
+    "current Weight":9298,
+    "Time":"15:28",
+    "Open":23010.0,
+    "High":23053.1,
+    "Low":23010.0,
+    "Close":23053.1
+  },
+  {
+    "Symbol":"NIFTY50-INDEX",
+    "Average weight till row":237,
+    "current Weight":0,
+    "Time":"15:29",
+    "Open":23053.1,
+    "High":23053.1,
+    "Low":23053.1,
+    "Close":23053.1
+  }
+]
